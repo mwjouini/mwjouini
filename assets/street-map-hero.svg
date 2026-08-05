@@ -58,7 +58,7 @@
       <!-- Ground Base Grid -->
       <rect x="-460" y="-360" width="1020" height="760" fill="url(#hexGrid)" opacity="0.5"/>
 
-      <!-- ==================== PURE CHECKERBOARD STREET NETWORK (DAMIER PUR) ==================== -->
+      <!-- ==================== PURE CHECKERBOARD STREET NETWORK ==================== -->
       <g stroke="#131c2e" stroke-width="12" fill="none" stroke-linecap="square">
         <!-- Horizontal Grid Streets (NW to SE) -->
         <path id="hStreet1" d="M -450,-320 L 450,-320"/>
@@ -409,8 +409,8 @@
       <!-- Projects / Footer -->
       <line x1="840" y1="330" x2="1175" y2="330" stroke="#334155" stroke-width="0.8"/>
       
-      <text x="1175" y="360" fill="#94a3b8" font-size="10" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="400" letter-spacing="1.2">PROJETS : GeoBan-France · qgis-geoban-finder</text>
-      <text x="1175" y="382" fill="#64748b" font-size="9" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="400" letter-spacing="1">COMMUNAUTÉ DE COMMUNES DES SABLONS · FR</text>
+      <text x="1175" y="360" fill="#94a3b8" font-size="10" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="400" letter-spacing="1.2">PROJET EXTENSION : GeoBan France (QGIS Official Plugin)</text>
+      <text x="1175" y="382" fill="#64748b" font-size="9" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="400" letter-spacing="1">COMMUNAUTÉ DE COMMUNES DES SABLONS · FRANCE</text>
     </g>
 
     <!-- Outer Frame Border -->
