@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1430" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1431" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 
 # Mohamed Wael JOUINI
 **Responsable SIG | Géomaticien | Analyste SIG**  
-📍 Beauvais, France | 📞 07 44 21 75 74 | ✉️ mohamed.wael.jouini@gmail.com
+✉️ mohamed.wael.jouini@gmail.com
 
 ---
 
@@ -123,5 +123,3 @@ GeoBan France est une extension officielle pour QGIS développée en PyQGIS/Pyth
 - **LinkedIn** : [linkedin.com/in/jouinimohamedwael](https://www.linkedin.com/in/jouinimohamedwael)
 - **Extension Officielle QGIS** : [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/)
 - **Email** : mohamed.wael.jouini@gmail.com
-- **Téléphone** : 07 44 21 75 74
-- **Localisation** : Beauvais, France
