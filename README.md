@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1320" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1321" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 </p>
 
 <p align="center">
@@ -69,7 +69,7 @@ GeoBan France est une extension officielle pour QGIS permettant la recherche ins
 
 - **Mastère Professionnel en Urbanisme**
   École Nationale d'Architecture et d'Urbanisme (ENAU) | *2018 – 2022*
-- **Master en Géomatique, SIG et Télédétection**
+- **Master en Géomatique, SIG et Télédéricion**
   Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis | *2019 – 2021*
 - **Licence Appliquée en Construction et Urbanisme (Option Urbanisme Opérationnel)**
   Institut Supérieur des Technologies de l'Environnement, de l'Urbanisme et du Bâtiment (ISTEUB) | *2015 – 2018*

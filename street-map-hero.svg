@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mohamed Wael Jouini — Cartographie 3D, Voie Ferrée, Rivière, Bateau &amp; VRD">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mohamed Wael Jouini — Cartographie 3D Infini (Sans Cadre / Full Width)">
   <defs>
-    <!-- Cyberpunk Deep Blue Gradients -->
+    <!-- Seamless Canvas Background Gradient -->
     <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#02050e"/>
       <stop offset="35%" stop-color="#060c1d"/>
@@ -17,6 +17,13 @@
       <stop offset="0%" stop-color="#0284c7" stop-opacity="0.85"/>
       <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.95"/>
       <stop offset="100%" stop-color="#0369a1" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Translucent Soft Fade for Right Text Panel (No hard box line) -->
+    <linearGradient id="rightPanelFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#040813" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#040813" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#040813" stop-opacity="0.92"/>
     </linearGradient>
 
     <!-- Glow Filters -->
@@ -40,7 +47,7 @@
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
-    <!-- Train, Boat & Vehicles Symbols -->
+    <!-- Train, Boat & Vehicle Symbols -->
     <g id="trainExpress">
       <rect x="-26" y="-4" width="52" height="8" rx="4" fill="#0284c7" stroke="#ffffff" stroke-width="0.8" filter="url(#glowCyan)"/>
       <circle cx="22" cy="0" r="2.2" fill="#ffffff" filter="url(#glowCyan)"/>
@@ -51,11 +58,8 @@
 
     <!-- Bateau / Péniche 3D Symbol -->
     <g id="boatShip">
-      <!-- Coque du bateau -->
       <path d="M -14,0 C -14,-4 -6,-6 10,-6 L 16,0 L 10,6 C -6,6 -14,4 -14,0 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="1.4"/>
-      <!-- Cabine de pilotage -->
       <rect x="-8" y="-3" width="10" height="6" rx="1.5" fill="#38bdf8" stroke="#ffffff" stroke-width="0.6"/>
-      <!-- Feu de navigation avant -->
       <circle cx="14" cy="0" r="1.8" fill="#ffffff" filter="url(#glowCyan)"/>
     </g>
 
@@ -77,270 +81,265 @@
       <path d="M 30 0 L 15 8.66 L 0 0 L 0 17.32 L 15 25.98 L 30 17.32 Z M 0 25.98 L 15 34.64 L 0 43.3 L 0 60.62 L 15 69.28 L 30 60.62 L 30 43.3 L 15 34.64 Z" 
             fill="none" stroke="#1e293b" stroke-width="0.5" stroke-opacity="0.3"/>
     </pattern>
-
-    <clipPath id="mapClip"><rect width="1200" height="430" rx="16"/></clipPath>
   </defs>
 
-  <g clip-path="url(#mapClip)">
-    <!-- Canvas Background -->
-    <rect width="1200" height="430" fill="url(#bgGrad)"/>
+  <!-- Full Banner Background -->
+  <rect width="1200" height="430" fill="url(#bgGrad)"/>
 
-    <!-- ==================== 3D ISOMETRIC VIEWPORT ==================== -->
-    <g transform="translate(390, 215) rotate(-28) skewX(36) scale(0.88, 0.62)">
+  <!-- ==================== UNBOUNDED 3D ISOMETRIC VIEWPORT (FULL CANVAS FLOW) ==================== -->
+  <g transform="translate(420, 215) rotate(-28) skewX(36) scale(0.92, 0.65)">
 
-      <!-- Ground Base Grid -->
-      <rect x="-460" y="-360" width="1020" height="760" fill="url(#hexGrid)" opacity="0.5"/>
+    <!-- Infinite Ground Base Grid -->
+    <rect x="-600" y="-450" width="1300" height="900" fill="url(#hexGrid)" opacity="0.55"/>
 
-      <!-- ==================== FEATURE 1: WINDING RIVER ==================== -->
-      <path id="riverBody" d="M -460,180 C -260,140 -120,230 100,160 C 260,100 340,210 460,170" 
-            fill="none" stroke="url(#riverGrad)" stroke-width="32" stroke-linecap="round" filter="url(#glowCyan)"/>
+    <!-- ==================== WINDING RIVER (FULL EXPANSION) ==================== -->
+    <path id="riverBody" d="M -600,180 C -360,130 -160,240 100,160 C 320,80 480,220 650,170" 
+          fill="none" stroke="url(#riverGrad)" stroke-width="36" stroke-linecap="round" filter="url(#glowCyan)"/>
 
-      <!-- ANIMATED BOAT ON THE RIVER -->
-      <g>
-        <use href="#shadowDot"><animateMotion dur="11s" repeatCount="indefinite" rotate="auto"><mpath href="#riverBody"/></animateMotion></use>
-        <use href="#boatShip"><animateMotion dur="11s" repeatCount="indefinite" rotate="auto"><mpath href="#riverBody"/></animateMotion></use>
-      </g>
-
-      <!-- ==================== UNDERGROUND VRD UTILITY NETWORKS ==================== -->
-      <g opacity="0.8">
-        <!-- Eau Potable & Assainissement (Blue Pipes) -->
-        <g stroke="#0284c7" stroke-width="2.5" stroke-dasharray="8,4" fill="none" opacity="0.75">
-          <line x1="-450" y1="-252" x2="450" y2="-252"/>
-          <line x1="-450" y1="-132" x2="450" y2="-132"/>
-          <line x1="-450" y1="-12" x2="450" y2="-12"/>
-          <line x1="-332" y1="-360" x2="-332" y2="260"/>
-          <line x1="-212" y1="-360" x2="-212" y2="260"/>
-          <line x1="148" y1="-360" x2="148" y2="260"/>
-        </g>
-        <!-- Fibre Optique FTTH (Purple Conduits) -->
-        <g stroke="#c084fc" stroke-width="1.8" stroke-dasharray="6,3" fill="none" opacity="0.8">
-          <line x1="-450" y1="-268" x2="450" y2="-268"/>
-          <line x1="-450" y1="-148" x2="450" y2="-148"/>
-          <line x1="-348" y1="-360" x2="-348" y2="260"/>
-          <line x1="12" y1="-360" x2="12" y2="260"/>
-        </g>
-      </g>
-
-      <!-- ==================== STREET NETWORK ==================== -->
-      <g stroke="#131c2e" stroke-width="12" fill="none" stroke-linecap="square">
-        <path id="hStreet1" d="M -450,-320 L 450,-320"/>
-        <path id="hStreet2" d="M -450,-260 L 450,-260"/>
-        <path id="hStreet3" d="M -450,-200 L 450,-200"/>
-        <path id="hStreet4" d="M -450,-140 L 450,-140"/>
-        <path id="hStreet5" d="M -450,-80 L 450,-80"/>
-        <path id="hStreet6" d="M -450,-20 L 450,-20"/>
-        
-        <path id="vStreet1" d="M -340,-360 L -340,260"/>
-        <path id="vStreet2" d="M -220,-360 L -220,260"/>
-        <path id="vStreet3" d="M -100,-360 L -100,260"/>
-        <path id="vStreet4" d="M 20,-360 L 20,260"/>
-        <path id="vStreet5" d="M 140,-360 L 140,260"/>
-      </g>
-
-      <!-- Dashed Center Lane Dividers -->
-      <g stroke="#ffffff" stroke-width="0.7" stroke-dasharray="4,4" opacity="0.6">
-        <line x1="-450" y1="-260" x2="450" y2="-260"/>
-        <line x1="-450" y1="-140" x2="450" y2="-140"/>
-        <line x1="-450" y1="-20" x2="450" y2="-20"/>
-        <line x1="-340" y1="-360" x2="-340" y2="260"/>
-        <line x1="-100" y1="-360" x2="-100" y2="260"/>
-        <line x1="140" y1="-360" x2="140" y2="260"/>
-      </g>
-
-      <!-- ==================== FEATURE 2: RAILWAY TRAIN LINE ==================== -->
-      <g id="railwayTrackGroup">
-        <!-- Railway Bed & Ballast -->
-        <path id="railTrack" d="M -460,40 L 460,40" fill="none" stroke="#334155" stroke-width="7"/>
-        <!-- Wooden Railway Ties / Traverses -->
-        <path d="M -460,40 L 460,40" fill="none" stroke="#e2e8f0" stroke-width="1.8" stroke-dasharray="2,6"/>
-        <!-- Steel Rails -->
-        <path d="M -460,38 L 460,38" fill="none" stroke="#94a3b8" stroke-width="0.9"/>
-        <path d="M -460,42 L 460,42" fill="none" stroke="#94a3b8" stroke-width="0.9"/>
-      </g>
-
-      <!-- Animated High-Speed TGV Express Train on Railway -->
-      <g>
-        <use href="#shadowDot"><animateMotion dur="4.5s" repeatCount="indefinite" rotate="auto"><mpath href="#railTrack"/></animateMotion></use>
-        <use href="#trainExpress"><animateMotion dur="4.5s" repeatCount="indefinite" rotate="auto"><mpath href="#railTrack"/></animateMotion></use>
-      </g>
-
-      <!-- ==================== 3D ISOMETRIC BUILDINGS ==================== -->
-      <g stroke="#334155" stroke-width="0.5">
-
-        <!-- Row 1 (-320 Y) -->
-        <g transform="translate(0, -320)">
-          <polygon points="-390,5 -350,5 -350,25 -390,25" fill="#0f172a"/>
-          <polygon points="-390,5 -350,5 -350,-15 -390,-15" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
-          <polygon points="-350,5 -350,25 -350,5 -350,-15" fill="#0b1324"/>
-          <polygon points="-390,-15 -350,-15 -350,5 -390,5" fill="url(#roofGrad)" stroke="#38bdf8" stroke-width="0.5"/>
-
-          <rect x="-330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-210" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="-150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="30" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-        </g>
-
-        <!-- Row 2 (-260 Y) -->
-        <g transform="translate(0, -260)">
-          <rect x="-390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-
-          <polygon points="-150,5 -110,5 -110,25 -150,25" fill="#0f172a"/>
-          <polygon points="-150,5 -110,5 -110,-10 -150,-10" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
-          <polygon points="-110,5 -110,25 -110,10 -110,-10" fill="#0b1324"/>
-          <polygon points="-150,-10 -110,-10 -110,10 -150,10" fill="url(#roofGrad)" stroke="#38bdf8" stroke-width="0.5"/>
-
-          <rect x="-90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="90" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-        </g>
-
-        <!-- Row 3 (-200 Y) -->
-        <g transform="translate(0, -200)">
-          <rect x="-390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-330" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-
-          <polygon points="-90,5 -50,5 -50,25 -90,25" fill="#0f172a"/>
-          <polygon points="-90,5 -50,5 -50,-25 -90,-25" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
-          <polygon points="-50,5 -50,25 -50,-5 -50,-25" fill="#0b1324"/>
-          <polygon points="-90,-25 -50,-25 -50,-5 -90,-5" fill="url(#roofGrad)" stroke="#38bdf8" stroke-width="0.5"/>
-
-          <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="210" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-        </g>
-      </g>
-
-      <!-- ==================== CENTRAL 3D TELECOM / GIS HUB TOWER ==================== -->
-      <g transform="translate(0, -80)">
-        <polygon points="-16,-10 16,-10 16,10 -16,10" fill="#000000" opacity="0.6"/>
-        <polygon points="-16,-10 16,-10 16,-30 -16,-30" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
-        <polygon points="16,-10 16,10 16,-10 16,-30" fill="#0f172a"/>
-        <!-- Central 3D Spire -->
-        <line x1="0" y1="-30" x2="0" y2="-95" stroke="#38bdf8" stroke-width="2.5" filter="url(#glowCyan)"/>
-        <circle cx="0" cy="-95" r="4.5" fill="#ffffff" filter="url(#glowCyan)"/>
-        <!-- Pulsing Spatial Scan Ring -->
-        <circle cx="0" cy="0" r="45" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.6">
-          <animate attributeName="r" values="10;70;10" dur="4s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.9;0;0.9" dur="4s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-
-      <!-- Moving Street Traffic -->
-      <g>
-        <use href="#shadowDot"><animateMotion dur="6.5s" repeatCount="indefinite" rotate="auto"><mpath href="#hStreet6"/></animateMotion></use>
-        <use href="#carEast"><animateMotion dur="6.5s" repeatCount="indefinite" rotate="auto"><mpath href="#hStreet6"/></animateMotion></use>
-      </g>
-
-    </g> <!-- End 3D Isometric Viewport -->
-
-    <!-- GIS Spatial Analysis Laser Scanline -->
-    <line x1="0" y1="0" x2="0" y2="430" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.5" filter="url(#glowCyan)">
-      <animate attributeName="x1" values="-20;820;-20" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="-20;820;-20" dur="8s" repeatCount="indefinite"/>
-    </line>
-
-    <!-- Overlay Technical Annotations & Coordinates -->
-    <g font-family="'JetBrains Mono','SF Mono','Fira Code','Courier New',monospace" font-weight="400" font-size="8.5" fill="#64748b" opacity="0.85">
-      <text x="20" y="24" fill="#38bdf8" font-weight="600" letter-spacing="1">MATRICE URBAINE 3D · RIVIÈRE, BATEAU, VOIE FERRÉE &amp; VRD</text>
-      <text x="20" y="415" letter-spacing="0.8">48°51'24" N  2°21'07" E · EPSG:2154 (RGF93 / LAMBERT-93)</text>
-      <text x="780" y="24" letter-spacing="0.8" text-anchor="end">POSTGIS 3D / CITYGML 3.0</text>
+    <!-- ANIMATED BOAT ON THE RIVER -->
+    <g>
+      <use href="#shadowDot"><animateMotion dur="11s" repeatCount="indefinite" rotate="auto"><mpath href="#riverBody"/></animateMotion></use>
+      <use href="#boatShip"><animateMotion dur="11s" repeatCount="indefinite" rotate="auto"><mpath href="#riverBody"/></animateMotion></use>
     </g>
 
-    <!-- Compass Rose / North Arrow 3D -->
-    <g transform="translate(760, 50)" opacity="0.85">
-      <circle cx="0" cy="0" r="15" fill="#080e21" stroke="#38bdf8" stroke-width="1"/>
-      <polygon points="0,-12 4,0 0,-3 -4,0" fill="#38bdf8"/>
-      <polygon points="0,12 4,0 0,3 -4,0" fill="#64748b"/>
-      <text x="0" y="-15" fill="#38bdf8" font-family="sans-serif" font-size="7.5" font-weight="bold" text-anchor="middle">N</text>
+    <!-- ==================== UNDERGROUND VRD UTILITY NETWORKS ==================== -->
+    <g opacity="0.8">
+      <!-- Eau Potable & Assainissement (Blue Pipes) -->
+      <g stroke="#0284c7" stroke-width="2.5" stroke-dasharray="8,4" fill="none" opacity="0.75">
+        <line x1="-550" y1="-252" x2="600" y2="-252"/>
+        <line x1="-550" y1="-132" x2="600" y2="-132"/>
+        <line x1="-550" y1="-12" x2="600" y2="-12"/>
+        <line x1="-332" y1="-450" x2="-332" y2="350"/>
+        <line x1="-212" y1="-450" x2="-212" y2="350"/>
+        <line x1="148" y1="-450" x2="148" y2="350"/>
+        <line x1="380" y1="-450" x2="380" y2="350"/>
+      </g>
+      <!-- Fibre Optique FTTH (Purple Conduits) -->
+      <g stroke="#c084fc" stroke-width="1.8" stroke-dasharray="6,3" fill="none" opacity="0.8">
+        <line x1="-550" y1="-268" x2="600" y2="-268"/>
+        <line x1="-550" y1="-148" x2="600" y2="-148"/>
+        <line x1="-348" y1="-450" x2="-348" y2="350"/>
+        <line x1="12" y1="-450" x2="12" y2="350"/>
+      </g>
     </g>
 
-    <!-- Scale Bar 3D -->
-    <g transform="translate(670, 405)" stroke="#94a3b8" stroke-width="1" opacity="0.85">
-      <line x1="0" y1="0" x2="60" y2="0"/>
-      <line x1="0" y1="-3" x2="0" y2="3"/>
-      <line x1="30" y1="-2" x2="30" y2="2"/>
-      <line x1="60" y1="-3" x2="60" y2="3"/>
-      <text x="30" y="-5" fill="#94a3b8" font-family="monospace" font-size="7.5" text-anchor="middle" stroke="none">2 km (3D)</text>
+    <!-- ==================== STREET NETWORK ==================== -->
+    <g stroke="#131c2e" stroke-width="12" fill="none" stroke-linecap="square">
+      <path id="hStreet1" d="M -550,-320 L 600,-320"/>
+      <path id="hStreet2" d="M -550,-260 L 600,-260"/>
+      <path id="hStreet3" d="M -550,-200 L 600,-200"/>
+      <path id="hStreet4" d="M -550,-140 L 600,-140"/>
+      <path id="hStreet5" d="M -550,-80 L 600,-80"/>
+      <path id="hStreet6" d="M -550,-20 L 600,-20"/>
+      
+      <path id="vStreet1" d="M -340,-450 L -340,350"/>
+      <path id="vStreet2" d="M -220,-450 L -220,350"/>
+      <path id="vStreet3" d="M -100,-450 L -100,350"/>
+      <path id="vStreet4" d="M 20,-450 L 20,350"/>
+      <path id="vStreet5" d="M 140,-450 L 140,350"/>
+      <path id="vStreet6" d="M 260,-450 L 260,350"/>
+      <path id="vStreet7" d="M 380,-450 L 380,350"/>
     </g>
 
-    <!-- ==================== RIGHT PANEL: PROFILE IDENTITY CARD ==================== -->
-    <rect x="800" y="0" width="400" height="430" fill="#040813" opacity="0.96"/>
-    <line x1="800" y1="0" x2="800" y2="430" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.2"/>
+    <!-- Dashed Center Lane Dividers -->
+    <g stroke="#ffffff" stroke-width="0.7" stroke-dasharray="4,4" opacity="0.6">
+      <line x1="-550" y1="-260" x2="600" y2="-260"/>
+      <line x1="-550" y1="-140" x2="600" y2="-140"/>
+      <line x1="-550" y1="-20" x2="600" y2="-20"/>
+      <line x1="-340" y1="-450" x2="-340" y2="350"/>
+      <line x1="-100" y1="-450" x2="-100" y2="350"/>
+      <line x1="140" y1="-450" x2="140" y2="350"/>
+    </g>
 
-    <!-- Top Neon Accent Bar -->
-    <line x1="800" y1="0" x2="1200" y2="0" stroke="#38bdf8" stroke-width="3.5" stroke-opacity="0.9"/>
+    <!-- ==================== RAILWAY TRAIN LINE ==================== -->
+    <g id="railwayTrackGroup">
+      <!-- Railway Bed & Ballast -->
+      <path id="railTrack" d="M -580,40 L 600,40" fill="none" stroke="#334155" stroke-width="7"/>
+      <!-- Wooden Railway Ties / Traverses -->
+      <path d="M -580,40 L 600,40" fill="none" stroke="#e2e8f0" stroke-width="1.8" stroke-dasharray="2,6"/>
+      <!-- Steel Rails -->
+      <path d="M -580,38 L 600,38" fill="none" stroke="#94a3b8" stroke-width="0.9"/>
+      <path d="M -580,42 L 600,42" fill="none" stroke="#94a3b8" stroke-width="0.9"/>
+    </g>
 
-    <g text-anchor="end">
-      <!-- Role Badge -->
-      <rect x="940" y="32" width="235" height="22" rx="11" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
-      <circle cx="952" cy="43" r="4" fill="#10b981">
-        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    <!-- Animated High-Speed TGV Express Train on Railway -->
+    <g>
+      <use href="#shadowDot"><animateMotion dur="4.5s" repeatCount="indefinite" rotate="auto"><mpath href="#railTrack"/></animateMotion></use>
+      <use href="#trainExpress"><animateMotion dur="4.5s" repeatCount="indefinite" rotate="auto"><mpath href="#railTrack"/></animateMotion></use>
+    </g>
+
+    <!-- ==================== 3D ISOMETRIC BUILDINGS ==================== -->
+    <g stroke="#334155" stroke-width="0.5">
+
+      <!-- Row 1 (-320 Y) -->
+      <g transform="translate(0, -320)">
+        <polygon points="-390,5 -350,5 -350,25 -390,25" fill="#0f172a"/>
+        <polygon points="-390,5 -350,5 -350,-15 -390,-15" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+        <polygon points="-350,5 -350,25 -350,5 -350,-15" fill="#0b1324"/>
+        <polygon points="-390,-15 -350,-15 -350,5 -390,5" fill="url(#roofGrad)" stroke="#38bdf8" stroke-width="0.5"/>
+
+        <rect x="-330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="-210" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
+        <rect x="-150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="-90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="30" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
+        <rect x="90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+      </g>
+
+      <!-- Row 2 (-260 Y) -->
+      <g transform="translate(0, -260)">
+        <rect x="-390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="-330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="-210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+
+        <polygon points="-150,5 -110,5 -110,25 -150,25" fill="#0f172a"/>
+        <polygon points="-150,5 -110,5 -110,-10 -150,-10" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+        <polygon points="-110,5 -110,25 -110,10 -110,-10" fill="#0b1324"/>
+        <polygon points="-150,-10 -110,-10 -110,10 -150,10" fill="url(#roofGrad)" stroke="#38bdf8" stroke-width="0.5"/>
+
+        <rect x="-90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="90" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
+        <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+      </g>
+
+      <!-- Row 3 (-200 Y) -->
+      <g transform="translate(0, -200)">
+        <rect x="-390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="-330" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
+        <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="-210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="-150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+
+        <polygon points="-90,5 -50,5 -50,25 -90,25" fill="#0f172a"/>
+        <polygon points="-90,5 -50,5 -50,-25 -90,-25" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+        <polygon points="-50,5 -50,25 -50,-5 -50,-25" fill="#0b1324"/>
+        <polygon points="-90,-25 -50,-25 -50,-5 -90,-5" fill="url(#roofGrad)" stroke="#38bdf8" stroke-width="0.5"/>
+
+        <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="210" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
+        <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <rect x="390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+      </g>
+    </g>
+
+    <!-- CENTRAL 3D TELECOM / GIS HUB TOWER -->
+    <g transform="translate(0, -80)">
+      <polygon points="-16,-10 16,-10 16,10 -16,10" fill="#000000" opacity="0.6"/>
+      <polygon points="-16,-10 16,-10 16,-30 -16,-30" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+      <polygon points="16,-10 16,10 16,-10 16,-30" fill="#0f172a"/>
+      <!-- Central 3D Spire -->
+      <line x1="0" y1="-30" x2="0" y2="-95" stroke="#38bdf8" stroke-width="2.5" filter="url(#glowCyan)"/>
+      <circle cx="0" cy="-95" r="4.5" fill="#ffffff" filter="url(#glowCyan)"/>
+      <!-- Pulsing Spatial Scan Ring -->
+      <circle cx="0" cy="0" r="45" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.6">
+        <animate attributeName="r" values="10;70;10" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0;0.9" dur="4s" repeatCount="indefinite"/>
       </circle>
-      <text x="1165" y="47" fill="#38bdf8" font-size="10" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="600" letter-spacing="1.5">RESPONSABLE SIG · FRANCE</text>
-
-      <!-- Main Name -->
-      <text x="1175" y="115" fill="#f8fafc" font-size="42" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="600" letter-spacing="0.5">Mohamed Wael Jouini</text>
-      
-      <!-- Subtitle Divider Line -->
-      <line x1="910" y1="135" x2="1175" y2="135" stroke="#38bdf8" stroke-opacity="0.75" stroke-width="1.2"/>
-      <circle cx="910" cy="135" r="2.5" fill="#38bdf8"/>
-      <circle cx="1175" cy="135" r="2.5" fill="#38bdf8"/>
-
-      <!-- Expertise Specialties -->
-      <text x="1175" y="168" fill="#38bdf8" font-size="16" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="500" font-style="italic">Bases de Données Spatiales · PostGIS &amp; QGIS</text>
-      <text x="1175" y="195" fill="#e2e8f0" font-size="15" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="400" opacity="0.9">Infrastructures (Voie Ferrée, VRD &amp; SIG 3D)</text>
-      <text x="1175" y="220" fill="#e2e8f0" font-size="15" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="400" opacity="0.9">Workflows FME Form Advanced, Python &amp; SQL</text>
-
-      <!-- Technical Tags / Pills -->
-      <g transform="translate(1175, 265)">
-        <!-- Tag 1: PostGIS 3D -->
-        <rect x="-260" y="0" width="80" height="20" rx="4" fill="#1e3a8a" opacity="0.85"/>
-        <text x="-220" y="14" fill="#93c5fd" font-size="9.5" font-family="monospace" text-anchor="middle" font-weight="bold">PostGIS 3D</text>
-
-        <!-- Tag 2: QGIS -->
-        <rect x="-172" y="0" width="55" height="20" rx="4" fill="#065f46" opacity="0.85"/>
-        <text x="-145" y="14" fill="#6ee7b7" font-size="9.5" font-family="monospace" text-anchor="middle" font-weight="bold">QGIS</text>
-
-        <!-- Tag 3: VRD & FME -->
-        <rect x="-110" y="0" width="70" height="20" rx="4" fill="#7a2882" opacity="0.85"/>
-        <text x="-75" y="14" fill="#e9d5ff" font-size="9.5" font-family="monospace" text-anchor="middle" font-weight="bold">VRD &amp; FME</text>
-
-        <!-- Tag 4: Python -->
-        <rect x="-33" y="0" width="33" height="20" rx="4" fill="#854d0e" opacity="0.85"/>
-        <text x="-16" y="14" fill="#fde047" font-size="9.5" font-family="monospace" text-anchor="middle" font-weight="bold">Py</text>
-      </g>
-
-      <!-- Projects / Footer -->
-      <line x1="840" y1="330" x2="1175" y2="330" stroke="#334155" stroke-width="0.8"/>
-      
-      <text x="1175" y="360" fill="#94a3b8" font-size="10" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="400" letter-spacing="1.2">PROJET EXTENSION : GeoBan France (QGIS Official Plugin)</text>
-      <text x="1175" y="382" fill="#64748b" font-size="9" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="400" letter-spacing="1">COMMUNAUTÉ DE COMMUNES DES SABLONS · FRANCE</text>
     </g>
 
-    <!-- Outer Frame Border -->
-    <rect x="0.5" y="0.5" width="1199" height="429" rx="16" fill="none" stroke="#38bdf8" stroke-opacity="0.25" stroke-width="1"/>
+    <!-- Moving Street Traffic -->
+    <g>
+      <use href="#shadowDot"><animateMotion dur="6.5s" repeatCount="indefinite" rotate="auto"><mpath href="#hStreet6"/></animateMotion></use>
+      <use href="#carEast"><animateMotion dur="6.5s" repeatCount="indefinite" rotate="auto"><mpath href="#hStreet6"/></animateMotion></use>
+    </g>
+
+  </g> <!-- End Unbounded 3D Isometric Viewport -->
+
+  <!-- GIS Spatial Analysis Laser Scanline -->
+  <line x1="0" y1="0" x2="0" y2="430" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.5" filter="url(#glowCyan)">
+    <animate attributeName="x1" values="-20;1220;-20" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="-20;1220;-20" dur="10s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Overlay Technical Annotations & Coordinates -->
+  <g font-family="'JetBrains Mono','SF Mono','Fira Code','Courier New',monospace" font-weight="400" font-size="8.5" fill="#64748b" opacity="0.85">
+    <text x="25" y="24" fill="#38bdf8" font-weight="600" letter-spacing="1">MATRICE URBAINE 3D · CARTE INFINIE SANS BORDURES</text>
+    <text x="25" y="415" letter-spacing="0.8">48°51'24" N  2°21'07" E · EPSG:2154 (RGF93 / LAMBERT-93)</text>
+  </g>
+
+  <!-- Compass Rose / North Arrow 3D -->
+  <g transform="translate(680, 50)" opacity="0.85">
+    <circle cx="0" cy="0" r="15" fill="#080e21" stroke="#38bdf8" stroke-width="1"/>
+    <polygon points="0,-12 4,0 0,-3 -4,0" fill="#38bdf8"/>
+    <polygon points="0,12 4,0 0,3 -4,0" fill="#64748b"/>
+    <text x="0" y="-15" fill="#38bdf8" font-family="sans-serif" font-size="7.5" font-weight="bold" text-anchor="middle">N</text>
+  </g>
+
+  <!-- Scale Bar 3D -->
+  <g transform="translate(600, 405)" stroke="#94a3b8" stroke-width="1" opacity="0.85">
+    <line x1="0" y1="0" x2="60" y2="0"/>
+    <line x1="0" y1="-3" x2="0" y2="3"/>
+    <line x1="30" y1="-2" x2="30" y2="2"/>
+    <line x1="60" y1="-3" x2="60" y2="3"/>
+    <text x="30" y="-5" fill="#94a3b8" font-family="monospace" font-size="7.5" text-anchor="middle" stroke="none">2 km (3D)</text>
+  </g>
+
+  <!-- ==================== RIGHT PANEL: INTEGRATED PROFILE IDENTITY (NO BOX BOXES/FRAMES) ==================== -->
+  <!-- Smooth Soft Gradient Overlay to ensure crisp readable text over 3D terrain -->
+  <rect x="700" y="0" width="500" height="430" fill="url(#rightPanelFade)"/>
+
+  <g text-anchor="end">
+    <!-- Role Badge -->
+    <rect x="940" y="32" width="235" height="22" rx="11" fill="#1e293b" fill-opacity="0.8" stroke="#38bdf8" stroke-width="0.8"/>
+    <circle cx="952" cy="43" r="4" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1165" y="47" fill="#38bdf8" font-size="10" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="600" letter-spacing="1.5">RESPONSABLE SIG · FRANCE</text>
+
+    <!-- Main Name -->
+    <text x="1175" y="115" fill="#f8fafc" font-size="42" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="600" letter-spacing="0.5">Mohamed Wael Jouini</text>
+    
+    <!-- Subtitle Divider Line -->
+    <line x1="910" y1="135" x2="1175" y2="135" stroke="#38bdf8" stroke-opacity="0.75" stroke-width="1.2"/>
+    <circle cx="910" cy="135" r="2.5" fill="#38bdf8"/>
+    <circle cx="1175" cy="135" r="2.5" fill="#38bdf8"/>
+
+    <!-- Expertise Specialties -->
+    <text x="1175" y="168" fill="#38bdf8" font-size="16" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="500" font-style="italic">Bases de Données Spatiales · PostGIS &amp; QGIS</text>
+    <text x="1175" y="195" fill="#e2e8f0" font-size="15" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="400" opacity="0.9">Infrastructures (Voie Ferrée, VRD &amp; SIG 3D)</text>
+    <text x="1175" y="220" fill="#e2e8f0" font-size="15" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="400" opacity="0.9">Workflows FME Form Advanced, Python &amp; SQL</text>
+
+    <!-- Technical Tags / Pills -->
+    <g transform="translate(1175, 265)">
+      <!-- Tag 1: PostGIS 3D -->
+      <rect x="-260" y="0" width="80" height="20" rx="4" fill="#1e3a8a" opacity="0.85"/>
+      <text x="-220" y="14" fill="#93c5fd" font-size="9.5" font-family="monospace" text-anchor="middle" font-weight="bold">PostGIS 3D</text>
+
+      <!-- Tag 2: QGIS -->
+      <rect x="-172" y="0" width="55" height="20" rx="4" fill="#065f46" opacity="0.85"/>
+      <text x="-145" y="14" fill="#6ee7b7" font-size="9.5" font-family="monospace" text-anchor="middle" font-weight="bold">QGIS</text>
+
+      <!-- Tag 3: VRD & FME -->
+      <rect x="-110" y="0" width="70" height="20" rx="4" fill="#7a2882" opacity="0.85"/>
+      <text x="-75" y="14" fill="#e9d5ff" font-size="9.5" font-family="monospace" text-anchor="middle" font-weight="bold">VRD &amp; FME</text>
+
+      <!-- Tag 4: Python -->
+      <rect x="-33" y="0" width="33" height="20" rx="4" fill="#854d0e" opacity="0.85"/>
+      <text x="-16" y="14" fill="#fde047" font-size="9.5" font-family="monospace" text-anchor="middle" font-weight="bold">Py</text>
+    </g>
+
+    <!-- Footer -->
+    <line x1="840" y1="330" x2="1175" y2="330" stroke="#334155" stroke-width="0.8"/>
+    
+    <text x="1175" y="360" fill="#94a3b8" font-size="10" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="400" letter-spacing="1.2">PROJET EXTENSION : GeoBan France (QGIS Official Plugin)</text>
+    <text x="1175" y="382" fill="#64748b" font-size="9" font-family="'JetBrains Mono','Fira Code',monospace" font-weight="400" letter-spacing="1">COMMUNAUTÉ DE COMMUNES DES SABLONS · FRANCE</text>
   </g>
 </svg>
