@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1432" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1448" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 </p>
 
 <p align="center">
@@ -13,11 +13,33 @@
 # Mohamed Wael JOUINI
 **Responsable SIG | Géomaticien | Analyste SIG**
 
+> 💬 *"Du plan de récolement à l'analyse spatiale : structurer et valoriser la donnée géographique au service des territoires et des décisions publiques."*
+
 ---
 
 ## 👤 Profil
 
 Responsable SIG et géomaticien avec une expérience confirmée en gestion de données territoriales, administration de réseaux, cartographie web (WebGIS), automatisation de flux ETL (FME, Python) et développement d’outils métiers. Double diplômé en géomatique, télédétection, urbanisme et développement, avec une forte capacité à structurer des données spatiales, produire des analyses géographiques complexes et accompagner les services territoriaux dans leurs usages SIG.
+
+---
+
+## 🏛️ Piliers d'Expertise
+
+| 💧 Administration & Réseaux SIG | ⚙️ Automatisation & ETL (FME / Python) |
+| :--- | :--- |
+| Structuration des données réseaux (AEP, EU, EP) conforme au géostandard **RAEPA**, intégration des récolements **STAR-DT**, contrôle d'inspection télévisée (**ITV**) et suivi d'exploitation. | Automatisation de traitements géospatiaux complexes via **FME Form Advanced**, développement de scripts **PyQGIS** / Python et création de chaînes ETL réutilisables. |
+| **📑 Urbanisme & Instruction ADS** | **🖥️ Infrastructures WebGIS & Serveurs** |
+| Numérisation des documents d'urbanisme (**PLU**), servitudes d'utilité publique, intégration du cadastre et appui cartographique à l'instruction du droit des sols. | Déploiement de serveurs cartographiques **GeoServer**, administration de serveurs **Linux (Ubuntu/Debian)** & **Windows Server**, scripts PowerShell/Bash et bases **PostgreSQL / PostGIS**. |
+
+---
+
+## 🚀 Projets Phares & Extension Officielle
+
+| Projet | Domaine & Technologies | Link |
+| :--- | :--- | :---: |
+| 📦 **GeoBan France** *(QGIS Official Plugin)* | Extension officielle QGIS développée en PyQGIS permettant la recherche instantanée d'adresses (API BAN) et de parcelles cadastrales (API APICarto IGN) avec génération de mises en page PDF/A4 prêtes à l'impression. | [Voir l'Extension](https://plugins.qgis.org/plugins/geoban_france/) |
+| 🚰 **SIG Réseaux & Géostandard RAEPA** | Modélisation et suivi patrimonial des réseaux d'eau potable et d'assainissement intercommunaux, intégration automatisée des récolements et indicateurs de performance. | *Communauté de Communes* |
+| 🌐 **Plateforme WebGIS & SPANC** | Maintenance des portails cartographiques web, supervision des flux de signature électronique et développement de projets FME pour l'import de données métiers. | *Projet Métier* |
 
 ---
 
@@ -60,19 +82,11 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 ---
 
-## 🚀 Projet Phare : Extension Officielle QGIS `GeoBan France`
+## 📜 Certifications & Formations Continues
 
-Dépôt officiel QGIS : [plugins.qgis.org/plugins/geoban_france/](https://plugins.qgis.org/plugins/geoban_france/)  
-Code source GitHub : [github.com/mwjouini/GeoBan-France](https://github.com/mwjouini/GeoBan-France)
-
-GeoBan France est une extension officielle pour QGIS développée en PyQGIS/Python permettant la recherche instantanée d'adresses et de parcelles cadastrales en France.
-
-### Fonctionnalités principales :
-- **API BAN** : Recherche d'adresses via l'API de la Base Adresse Nationale avec autocomplétion.
-- **API APICarto IGN** : Recherche de parcelles cadastrales (calcul de surface, périmètre et projection).
-- **Outil d'identification interactif** : Clic dynamique sur le canvas QGIS (adresse + parcelle).
-- **Mises en page automatisées** : Export A4 paysage (PDF/Image) prêtes à l'impression avec cartouche, échelle et flèche Nord.
-- **Export & Buffers** : Multi-formats (CSV, GeoJSON, KML) et calcul de zones tampons.
+- <img src="https://img.shields.io/badge/Certification-FME%20Form%20Advanced%202025-7A2882?style=flat-square&logo=safe&logoColor=white" alt="FME Advanced"> **FME Form Advanced** *(Safe Software / Avineon Tensing)* — Juin 2025
+- <img src="https://img.shields.io/badge/Certification-FME%20Form%20Basic%202024-9C27B0?style=flat-square" alt="FME Basic"> **FME Form Basic** *(Safe Software)* — Juillet 2024
+- <img src="https://img.shields.io/badge/Habilitation-AIPR%20Concepteur-0284C7?style=flat-square" alt="AIPR Concepteur"> **AIPR Concepteur** *(Anti-Endommagement des Réseaux)* — Mai 2023
 
 ---
 
@@ -83,14 +97,6 @@ GeoBan France est une extension officielle pour QGIS développée en PyQGIS/Pyth
 - **Géostandards & Réglementation Urbanisme** : Cadastre, Servitudes, Documents d’urbanisme, Instruction ADS, Normes PLU, STAR-DT, RAEPA.
 - **Développement & Administration Web** : HTML5, CSS3, JavaScript (Leaflet, OpenLayers), Python (PyQGIS), Linux (Ubuntu/Debian), Nginx, Apache, Windows Server, PowerShell, Bash.
 - **Appui Métier & Gestion** : Assistance utilisateurs, rédaction de rapports, coordination avec services techniques, prestataires et délégataires.
-
----
-
-## 📜 Certifications & Formations Continues
-
-- 🏆 **Certification FME Form Advanced** *(Safe Software / Avineon Tensing)* — Juin 2025
-- 🏆 **Certification FME Form Basic** *(Safe Software)* — Juillet 2024
-- 🛡️ **Certification AIPR Concepteur** *(Anti-Endommagement des Réseaux)* — Mai 2023
 
 ---
 
