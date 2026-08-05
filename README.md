@@ -1,19 +1,17 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1431" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1432" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/jouinimohamedwael"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-JOUINI%20Mohamed%20Wael-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="https://plugins.qgis.org/plugins/geoban_france/"><img alt="Extension Officielle QGIS" src="https://img.shields.io/badge/QGIS%20Repository-GeoBan%20France-589632?style=flat-square&logo=qgis&logoColor=white"></a>
   <a href="https://github.com/mwjouini/GeoBan-France"><img alt="Dépôt GitHub" src="https://img.shields.io/badge/GitHub-GeoBan--France-2f9e8f?style=flat-square&logo=github&logoColor=white"></a>
-  <a href="mailto:mohamed.wael.jouini@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Contact-Email-EA4335?style=flat-square&logo=gmail&logoColor=white"></a>
 </p>
 
 ---
 
 # Mohamed Wael JOUINI
-**Responsable SIG | Géomaticien | Analyste SIG**  
-✉️ mohamed.wael.jouini@gmail.com
+**Responsable SIG | Géomaticien | Analyste SIG**
 
 ---
 
@@ -122,4 +120,3 @@ GeoBan France est une extension officielle pour QGIS développée en PyQGIS/Pyth
 
 - **LinkedIn** : [linkedin.com/in/jouinimohamedwael](https://www.linkedin.com/in/jouinimohamedwael)
 - **Extension Officielle QGIS** : [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/)
-- **Email** : mohamed.wael.jouini@gmail.com
