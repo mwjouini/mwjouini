@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1448" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1451" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 </p>
 
 <p align="center">
@@ -13,37 +13,37 @@
 # Mohamed Wael JOUINI
 **Responsable SIG | Géomaticien | Analyste SIG**
 
-> 💬 *"Du plan de récolement à l'analyse spatiale : structurer et valoriser la donnée géographique au service des territoires et des décisions publiques."*
+> *Du plan de récolement à l'analyse spatiale : structurer et valoriser la donnée géographique au service des territoires et des décisions publiques.*
 
 ---
 
-## 👤 Profil
+## Profil
 
 Responsable SIG et géomaticien avec une expérience confirmée en gestion de données territoriales, administration de réseaux, cartographie web (WebGIS), automatisation de flux ETL (FME, Python) et développement d’outils métiers. Double diplômé en géomatique, télédétection, urbanisme et développement, avec une forte capacité à structurer des données spatiales, produire des analyses géographiques complexes et accompagner les services territoriaux dans leurs usages SIG.
 
 ---
 
-## 🏛️ Piliers d'Expertise
+## Piliers d'Expertise
 
-| 💧 Administration & Réseaux SIG | ⚙️ Automatisation & ETL (FME / Python) |
+| Administration & Réseaux SIG | Automatisation & ETL (FME / Python) |
 | :--- | :--- |
 | Structuration des données réseaux (AEP, EU, EP) conforme au géostandard **RAEPA**, intégration des récolements **STAR-DT**, contrôle d'inspection télévisée (**ITV**) et suivi d'exploitation. | Automatisation de traitements géospatiaux complexes via **FME Form Advanced**, développement de scripts **PyQGIS** / Python et création de chaînes ETL réutilisables. |
-| **📑 Urbanisme & Instruction ADS** | **🖥️ Infrastructures WebGIS & Serveurs** |
+| **Urbanisme & Instruction ADS** | **Infrastructures WebGIS & Serveurs** |
 | Numérisation des documents d'urbanisme (**PLU**), servitudes d'utilité publique, intégration du cadastre et appui cartographique à l'instruction du droit des sols. | Déploiement de serveurs cartographiques **GeoServer**, administration de serveurs **Linux (Ubuntu/Debian)** & **Windows Server**, scripts PowerShell/Bash et bases **PostgreSQL / PostGIS**. |
 
 ---
 
-## 🚀 Projets Phares & Extension Officielle
+## Projets Phares & Extension Officielle
 
 | Projet | Domaine & Technologies | Link |
 | :--- | :--- | :---: |
-| 📦 **GeoBan France** *(QGIS Official Plugin)* | Extension officielle QGIS développée en PyQGIS permettant la recherche instantanée d'adresses (API BAN) et de parcelles cadastrales (API APICarto IGN) avec génération de mises en page PDF/A4 prêtes à l'impression. | [Voir l'Extension](https://plugins.qgis.org/plugins/geoban_france/) |
-| 🚰 **SIG Réseaux & Géostandard RAEPA** | Modélisation et suivi patrimonial des réseaux d'eau potable et d'assainissement intercommunaux, intégration automatisée des récolements et indicateurs de performance. | *Communauté de Communes* |
-| 🌐 **Plateforme WebGIS & SPANC** | Maintenance des portails cartographiques web, supervision des flux de signature électronique et développement de projets FME pour l'import de données métiers. | *Projet Métier* |
+| **GeoBan France** *(QGIS Official Plugin)* | Extension officielle QGIS développée en PyQGIS permettant la recherche instantanée d'adresses (API BAN) et de parcelles cadastrales (API APICarto IGN) avec génération de mises en page PDF/A4 prêtes à l'impression. | [Voir l'Extension](https://plugins.qgis.org/plugins/geoban_france/) |
+| **SIG Réseaux & Géostandard RAEPA** | Modélisation et suivi patrimonial des réseaux d'eau potable et d'assainissement intercommunaux, intégration automatisée des récolements et indicateurs de performance. | *Communauté de Communes* |
+| **Plateforme WebGIS & SPANC** | Maintenance des portails cartographiques web, supervision des flux de signature électronique et développement de projets FME pour l'import de données métiers. | *Projet Métier* |
 
 ---
 
-## 💼 Expérience Professionnelle
+## Expérience Professionnelle
 
 ### Responsable SIG
 **Communauté de Communes des Sablons** | *Févr. 2024 – Présent* | France
@@ -82,7 +82,7 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 ---
 
-## 📜 Certifications & Formations Continues
+## Certifications & Formations Continues
 
 - <img src="https://img.shields.io/badge/Certification-FME%20Form%20Advanced%202025-7A2882?style=flat-square&logo=safe&logoColor=white" alt="FME Advanced"> **FME Form Advanced** *(Safe Software / Avineon Tensing)* — Juin 2025
 - <img src="https://img.shields.io/badge/Certification-FME%20Form%20Basic%202024-9C27B0?style=flat-square" alt="FME Basic"> **FME Form Basic** *(Safe Software)* — Juillet 2024
@@ -90,7 +90,7 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 ---
 
-## 🛠️ Compétences Techniques
+## Compétences Techniques
 
 - **SIG & Cartographie** : QGIS, ArcGIS, SIG Web & Mobile, Géoréférencement, Cartographie thématique, Traitements spatiaux, Plans de récolement.
 - **Bases de Données & Interopérabilité** : PostgreSQL, PostGIS, GeoServer, FME, Rapports ITV, Indicateurs de suivi, Automatisation des imports.
@@ -100,7 +100,7 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 ---
 
-## 🎓 Formation & Diplômes
+## Formation & Diplômes
 
 - **Master Professionnel en Urbanisme et Développement**  
   École Nationale d'Architecture et d'Urbanisme (ENAU) | *2018 – 2022*
@@ -113,16 +113,16 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 ---
 
-## 🌍 Langues
+## Langues
 
-- 🇫🇷 **Français** : Bilingue / Courant
-- 🇬🇧 **Anglais** : Bilingue / Courant
-- 🇹🇳 **Arabe** : Langue maternelle
-- 🇩🇪 **Allemand** : Notions / Intermédiaire
+- **Français** : Bilingue / Courant
+- **Anglais** : Bilingue / Courant
+- **Arabe** : Langue maternelle
+- **Allemand** : Notions / Intermédiaire
 
 ---
 
-## 📬 Contact
+## Contact
 
 - **LinkedIn** : [linkedin.com/in/jouinimohamedwael](https://www.linkedin.com/in/jouinimohamedwael)
 - **Extension Officielle QGIS** : [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/)
