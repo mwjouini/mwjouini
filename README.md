@@ -81,9 +81,9 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 - Contribution à la programmation de plans d’occupation des plages et mise en place d’un SIG pour valoriser et organiser le littoral tunisien.
 - Production de plans cartographiques détaillés des zones littorales.
 
-### Stagiaire SIG & Urbanisme (Mémoire de Master)
+### Stagiaire SIG & Urbanisme
 **Ministère de l’Équipement, de l’Habitat et de l’Infrastructure** | *2018 (4 mois)* | Tunisie
-- Sujet du mémoire : La mise en place d’un SIG-urbain appliqué à la gestion de l’espace urbain de la ville de Raoued.
+- Sujet d'étude : La mise en place d’un SIG-urbain appliqué à la gestion de l’espace urbain de la ville de Raoued.
 - Révision du plan d’aménagement urbain (PAU) et proposition de schéma de cohérence spatiale.
 - Structuration de la base de données géographiques d'occupation des sols et équipements publics.
 
