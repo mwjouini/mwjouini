@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1318" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1319" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 </p>
 
 <p align="center">
