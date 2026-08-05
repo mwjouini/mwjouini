@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1346" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1415" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 </p>
 
 <p align="center">
@@ -39,11 +39,11 @@ Spécialisé en administration de bases de données spatiales (PostgreSQL / Post
 **Agence de Protection et d'Aménagement du Littoral (APAL)** (Stage) | *Mars 2021 – Sept. 2021* | Tunis, Tunisie
 - Développement et structuration de bases de données spatiales pour la gestion du domaine public maritime.
 
-### Spécialiste GIS
+### Spécialiste SIG
 **NourGIS** (CDD) | *Janv. 2019 – Juin 2020* | Tunis, Tunisie
 - Réalisation d'analyses spatiales, numérisation et traitements cartographiques.
 
-### Technicien GIS
+### Technicien SIG
 **Ministère d'Équipement, de l'Habitat et de l'Aménagement du Territoire** (Stage) | *Févr. 2018 – Juin 2018* | Tunis, Tunisie
 - Assistance à la numérisation et à la cartographie des plans d'aménagement urbain.
 
@@ -76,7 +76,7 @@ GeoBan France est une extension officielle pour QGIS permettant la recherche ins
 
 ---
 
-## Certifications & Formations Continue
+## Certifications & Formations Continues
 
 - **Certification FME Form Advanced** (Avineon Tensing France / Safe Software)
 
