@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1416" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1423" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 </p>
 
 <p align="center">
@@ -12,90 +12,118 @@
 ---
 
 # Mohamed Wael JOUINI
-**Responsable SIG | Ingénieur en Géomatique & Urbanisme**
-
-Spécialisé en administration de bases de données spatiales (PostgreSQL / PostGIS), déploiement de serveurs cartographiques WebGIS (GeoServer, Linux, Windows Server), développement d'applications Web orientées SIG et automatisation de traitements géospatiaux sous QGIS (PyQGIS, Python, FME).
+**Responsable SIG | Géomaticien | Analyste SIG**  
+📍 Beauvais, France | 📞 07 44 21 75 74 | ✉️ mohamed.wael.jouini@gmail.com
 
 ---
 
-## Expérience Professionnelle
+## 👤 Profil
+
+Responsable SIG et géomaticien avec une expérience confirmée en gestion de données territoriales, administration de réseaux, cartographie web (WebGIS), automatisation de flux ETL (FME, Python) et développement d’outils métiers. 
+
+Double diplômé en géomatique, télédétection et urbanisme, avec une forte capacité à structurer des données spatiales, produire des analyses géographiques complexes et accompagner les services territoriaux dans leurs usages SIG.
+
+---
+
+## 💼 Expérience Professionnelle
 
 ### Responsable SIG
-**Communauté de Communes des Sablons** | *Févr. 2024 – Présent* | France (Hybride)
-- Administration du Système d'Information Géographique intercommunal et gestion des bases de données territoriales.
-- Déploiement et exploitation d'outils métiers et WebGIS (Navigatis, GEO Générateur, GeoServer).
-- Automatisation des traitements de données adresses (BAN), réseaux viaires et découpages administratifs via scripts Python / PowerShell.
-
-### Ingénieur en Géomatique
-**G'AUCUBE** (CDI) | *Avr. 2023 – Févr. 2024* | Paris, Île-de-France, France
-- Conception et modélisation de données géospatiales pour des projets d'ingénierie et d'aménagement.
-- Traitement, analyse et structuration de jeux de données complexes sous QGIS et Excel.
+**Communauté de Communes des Sablons** | *Févr. 2024 – Présent* | France
+- Administration et mise à jour des données liées aux réseaux d’eaux usées, d’eaux pluviales et d’eau potable (géostandards RAEPA).
+- Intégration des plans de récolement, des rapports d’inspection télévisée (ITV), des données de fuites et des contrôles de conformité.
+- Développement d’indicateurs de suivi sur l’état de desserte, la connaissance et l’exploitation des réseaux territoriaux.
+- Mise à jour des données utiles à l’instruction du droit des sols (ADS) : documents d’urbanisme (PLU), servitudes d'utilité publique et cadastre.
+- Développement du patrimoine de données SIG intercommunal : voirie, logements, tourisme, transports, gestion des déchets.
+- Maintenance et évolution d’applications de cartographie web et bureautiques, assistance aux utilisateurs et adaptation des outils aux besoins métiers.
+- Maintenance et amélioration de la plateforme SPANC, supervision de la signature électronique et développement de projets FME pour l’import et la mise à jour des données réseaux.
 
 ### Géomaticien
-**G'AUCUBE** (Stage) | *Juin 2022 – Févr. 2023* | Nanterre, Île-de-France, France
-- Production de livrables cartographiques et intégration de données DAO/SIG (AutoCAD, QGIS).
+**G’AUCUBE – Bureau d’étude en géoscience et géomatique** | *2023 – 2024* | Île-de-France, France
+- Réalisation de rapports techniques et de plans pour des projets de réseaux d'infrastructures.
+- Localisation et géoréférencement de réseaux enterrés dans les systèmes de projection réglementaires (RGF93 / Lambert-93).
+- Mise en place d’une plateforme SIG pour le récolement d’un réseau géothermique.
+- Production de plans de récolement multi-réseaux : électricité, eau potable, eaux usées, eaux pluviales, fibre optique, télécommunications et chauffage urbain (conforme STAR-DT).
 
-### Développeur de Systèmes d’Information Géographique & WebGIS
-**Agence de Protection et d'Aménagement du Littoral (APAL)** (Stage) | *Mars 2021 – Sept. 2021* | Tunis, Tunisie
-- Développement de portails web cartographiques et structuration de bases de données spatiales pour le domaine public maritime.
+### Stagiaire SIG
+**G’AUCUBE – Bureau d’étude en géoscience et géomatique** | *2022* | Rueil-Malmaison, France
+- Contribution à un projet SIG appliqué à un réseau de chauffage urbain à Rueil-Malmaison.
+- Élaboration de plans de récolement d’un réseau géothermique et structuration du SIG pour les réseaux concessionnaires.
+- Déploiement d’une plateforme SIG Web avec interfaces publique et privée.
 
-### Spécialiste SIG
-**NourGIS** (CDD) | *Janv. 2019 – Juin 2020* | Tunis, Tunisie
-- Réalisation d'analyses spatiales, numérisation et traitements cartographiques.
+### Stagiaire SIG
+**Agence de Protection et d’Aménagement du Littoral (APAL)** | *2021* | Tunisie
+- Mise en place d’un projet SIG mobile appliqué aux plans d’occupation des plages.
+- Développement d’une application mobile pour stocker, gérer, analyser et consulter les données SIG sur le terrain.
+- Participation aux travaux d’aménagement du littoral de Bizerte et formation d’une équipe municipale à l’utilisation de QGIS.
 
-### Technicien SIG
-**Ministère d'Équipement, de l'Habitat et de l'Aménagement du Territoire** (Stage) | *Févr. 2018 – Juin 2018* | Tunis, Tunisie
-- Assistance à la numérisation et à la cartographie des plans d'aménagement urbain.
+### Chargé d’études SIG
+**NourGis Consulting** | *2019 – 2020* | Tunisie
+- Participation à des projets d’aménagement du littoral sur le Grand Tunis et Sousse.
+- Contribution à la programmation de plans d’occupation des plages et mise en place d’un SIG pour valoriser et organiser le littoral tunisien.
+- Production de plans cartographiques détaillés des zones littorales.
 
 ---
 
-## Projet Phare : Extension Officielle QGIS `GeoBan France`
+## 🚀 Projet Phare : Extension Officielle QGIS `GeoBan France`
 
-Dépôt officiel QGIS : [plugins.qgis.org/plugins/geoban_france/](https://plugins.qgis.org/plugins/geoban_france/)
-Code source : [github.com/mwjouini/GeoBan-France](https://github.com/mwjouini/GeoBan-France)
+Dépôt officiel QGIS : [plugins.qgis.org/plugins/geoban_france/](https://plugins.qgis.org/plugins/geoban_france/)  
+Code source GitHub : [github.com/mwjouini/GeoBan-France](https://github.com/mwjouini/GeoBan-France)
 
-GeoBan France est une extension officielle pour QGIS permettant la recherche instantanée d'adresses et de parcelles cadastrales en France.
+GeoBan France est une extension officielle pour QGIS développée en PyQGIS/Python permettant la recherche instantanée d'adresses et de parcelles cadastrales en France.
 
 ### Fonctionnalités principales :
-- Recherche d'adresses via l'API de la Base Adresse Nationale (BAN) avec autocomplétion.
-- Recherche de parcelles cadastrales via l'API APICarto de l'IGN (calcul de surface, périmètre et projection).
-- Outil d'identification interactif par clic sur le canvas QGIS (adresse la plus proche + parcelle sous le curseur).
-- Génération automatisée de mises en page A4 paysage (PDF/Image) prêtes à l'export avec échelle, cartouche et flèche Nord.
-- Export multi-formats (CSV, GeoJSON, KML, couche mémoire) et calcul de zones tampons (buffers).
+- **API BAN** : Recherche d'adresses via l'API de la Base Adresse Nationale avec autocomplétion.
+- **API APICarto IGN** : Recherche de parcelles cadastrales (calcul de surface, périmètre et projection).
+- **Outil d'identification interactif** : Clic dynamique sur le canvas QGIS (adresse + parcelle).
+- **Mises en page automatisées** : Export A4 paysage (PDF/Image) prêtes à l'impression avec cartouche, échelle et flèche Nord.
+- **Export & Buffers** : Multi-formats (CSV, GeoJSON, KML) et calcul de zones tampons.
 
 ---
 
-## Formation & Diplômes
+## 🛠️ Compétences Techniques
 
-- **Mastère Professionnel en Urbanisme**
+- **SIG & Cartographie** : QGIS, ArcGIS, SIG Web & Mobile, Géoréférencement, Cartographie thématique, Traitements spatiaux, Plans de récolement.
+- **Bases de Données & Interopérabilité** : PostgreSQL, PostGIS, GeoServer, FME, Rapports ITV, Indicateurs de suivi, Automatisation des imports.
+- **Géostandards & Réglementation Urbanisme** : Cadastre, Servitudes, Documents d’urbanisme, Instruction ADS, Normes PLU, STAR-DT, RAEPA.
+- **Développement & Administration Web** : HTML5, CSS3, JavaScript (Leaflet, OpenLayers), Python (PyQGIS), Linux (Ubuntu/Debian), Nginx, Apache, Windows Server, PowerShell, Bash.
+- **Appui Métier & Gestion** : Assistance utilisateurs, rédaction de rapports, coordination avec services techniques, prestataires et délégataires.
+
+---
+
+## 📜 Certifications & Formations Continues
+
+- 🏆 **Certification FME Form Advanced** *(Safe Software / Avineon Tensing)* — Juin 2025
+- 🏆 **Certification FME Form Basic** *(Safe Software)* — Juillet 2024
+- 🛡️ **Certification AIPR Concepteur** *(Anti-Endommagement des Réseaux)* — Mai 2023
+
+---
+
+## 🎓 Formation & Diplômes
+
+- **Master Professionnel en Urbanisme et Développement**  
   École Nationale d'Architecture et d'Urbanisme (ENAU) | *2018 – 2022*
-- **Master en Géomatique, SIG et Télédétection**
+- **Master Professionnel en Sciences Géomatiques : SIG et Télédétection**  
   Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis | *2019 – 2021*
-- **Licence Appliquée en Construction et Urbanisme (Option Urbanisme Opérationnel)**
-  Institut Supérieur des Technologies de l'Environnement, de l'Urbanisme et du Bâtiment (ISTEUB) | *2015 – 2018*
+- **Licence Appliquée en Construction et Urbanisme (Option Urbanisme Opérationnel)**  
+  ISTEUB | *2015 – 2018*
+- **Baccalauréat en Sciences Techniques**  
+  Lycée Ibn Abi Dhief | *2014 – 2015*
 
 ---
 
-## Certifications & Formations Continues
+## 🌍 Langues
 
-- **Certification FME Form Advanced** (Avineon Tensing France / Safe Software)
-
----
-
-## Compétences Techniques
-
-- **Bases de Données Spatiales** : PostgreSQL, PostGIS, SQL Spatial, Vues & Couches Virtuelles.
-- **Serveurs SIG & Infrastructure WebGIS** : GeoServer, Administration Linux (Ubuntu/Debian), Windows Server, PowerShell.
-- **Développement Web SIG** : Portails & Cartes Web interactives (JavaScript, Leaflet, OpenLayers, APIs OGC WMS/WFS).
-- **Logiciels SIG & Outils métiers** : QGIS, PyQGIS, Navigatis, GEO Générateur, FME, AutoCAD.
-- **Référentiels & Données** : Base Adresse Nationale (BAN), APICarto (IGN), Open Data territorial.
-- **Langages & Scripts** : Python, SQL, PowerShell, Bash, JavaScript, HTML5/CSS3.
+- 🇫🇷 **Français** : Courant / Bilingue
+- 🇬🇧 **Anglais** : Professionnel
+- 🇹🇳 **Arabe** : Maternelle
+- 🇩🇪 **Allemand** : Notions / Intermédiaire
 
 ---
 
-## Contact
+## 📬 Contact
 
 - **LinkedIn** : [linkedin.com/in/jouinimohamedwael](https://www.linkedin.com/in/jouinimohamedwael)
 - **Extension Officielle QGIS** : [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/)
 - **Email** : mohamed.wael.jouini@gmail.com
-- **Localisation** : Bois-Colombes, Île-de-France, France
+- **Téléphone** : 07 44 21 75 74
+- **Localisation** : Beauvais, France
