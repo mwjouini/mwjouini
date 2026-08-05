@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1415" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1416" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
 # Mohamed Wael JOUINI
 **Responsable SIG | Ingénieur en Géomatique & Urbanisme**
 
-Spécialisé en administration de bases de données spatiales (PostgreSQL / PostGIS), automatisation de traitements géospatiaux sous QGIS (PyQGIS, Python) et intégration des référentiels nationaux (Base Adresse Nationale, APICarto IGN).
+Spécialisé en administration de bases de données spatiales (PostgreSQL / PostGIS), déploiement de serveurs cartographiques WebGIS (GeoServer, Linux, Windows Server), développement d'applications Web orientées SIG et automatisation de traitements géospatiaux sous QGIS (PyQGIS, Python, FME).
 
 ---
 
@@ -23,8 +23,8 @@ Spécialisé en administration de bases de données spatiales (PostgreSQL / Post
 ### Responsable SIG
 **Communauté de Communes des Sablons** | *Févr. 2024 – Présent* | France (Hybride)
 - Administration du Système d'Information Géographique intercommunal et gestion des bases de données territoriales.
-- Déploiement et exploitation d'outils métiers (Navigatis, GEO Générateur).
-- Automatisation des traitements de données adresses (BAN), réseaux viaires et découpages administratifs.
+- Déploiement et exploitation d'outils métiers et WebGIS (Navigatis, GEO Générateur, GeoServer).
+- Automatisation des traitements de données adresses (BAN), réseaux viaires et découpages administratifs via scripts Python / PowerShell.
 
 ### Ingénieur en Géomatique
 **G'AUCUBE** (CDI) | *Avr. 2023 – Févr. 2024* | Paris, Île-de-France, France
@@ -35,9 +35,9 @@ Spécialisé en administration de bases de données spatiales (PostgreSQL / Post
 **G'AUCUBE** (Stage) | *Juin 2022 – Févr. 2023* | Nanterre, Île-de-France, France
 - Production de livrables cartographiques et intégration de données DAO/SIG (AutoCAD, QGIS).
 
-### Développeur de Systèmes d’Information Géographique
+### Développeur de Systèmes d’Information Géographique & WebGIS
 **Agence de Protection et d'Aménagement du Littoral (APAL)** (Stage) | *Mars 2021 – Sept. 2021* | Tunis, Tunisie
-- Développement et structuration de bases de données spatiales pour la gestion du domaine public maritime.
+- Développement de portails web cartographiques et structuration de bases de données spatiales pour le domaine public maritime.
 
 ### Spécialiste SIG
 **NourGIS** (CDD) | *Janv. 2019 – Juin 2020* | Tunis, Tunisie
@@ -85,9 +85,11 @@ GeoBan France est une extension officielle pour QGIS permettant la recherche ins
 ## Compétences Techniques
 
 - **Bases de Données Spatiales** : PostgreSQL, PostGIS, SQL Spatial, Vues & Couches Virtuelles.
+- **Serveurs SIG & Infrastructure WebGIS** : GeoServer, Administration Linux (Ubuntu/Debian), Windows Server, PowerShell.
+- **Développement Web SIG** : Portails & Cartes Web interactives (JavaScript, Leaflet, OpenLayers, APIs OGC WMS/WFS).
 - **Logiciels SIG & Outils métiers** : QGIS, PyQGIS, Navigatis, GEO Générateur, FME, AutoCAD.
 - **Référentiels & Données** : Base Adresse Nationale (BAN), APICarto (IGN), Open Data territorial.
-- **Langages & Scripts** : Python, SQL, Bash.
+- **Langages & Scripts** : Python, SQL, PowerShell, Bash, JavaScript, HTML5/CSS3.
 
 ---
 
