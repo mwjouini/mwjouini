@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mohamed Wael Jouini — Analyste SIG, cartographie de réseaux viaires, PostGIS">
+  <defs>
+    <linearGradient id="bgMap" x1="0" y1="0" x2="1" y2="0.7">
+      <stop offset="0%" stop-color="#0d1b24"/>
+      <stop offset="40%" stop-color="#122733"/>
+      <stop offset="75%" stop-color="#16323f"/>
+      <stop offset="100%" stop-color="#1b2a35"/>
+    </linearGradient>
+    <radialGradient id="glowOrigin" cx="25%" cy="51%" r="55%">
+      <stop offset="0%" stop-color="#5fd4c1" stop-opacity="0.22"/>
+      <stop offset="45%" stop-color="#2fa89e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#122733" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowWarm" cx="82%" cy="55%" r="40%">
+      <stop offset="0%" stop-color="#e0a458" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#e0a458" stop-opacity="0"/>
+    </radialGradient>
+    <symbol id="carDot" overflow="visible"><circle r="2.6" fill="#f2f7f5"/><circle r="5.2" fill="#f2f7f5" opacity="0.35"/></symbol>
+    <symbol id="carDotGold" overflow="visible"><circle r="2.2" fill="#e0a458"/><circle r="4.4" fill="#e0a458" opacity="0.35"/></symbol>
+    <symbol id="carDotTeal" overflow="visible"><circle r="2.2" fill="#5fd4c1"/><circle r="4.4" fill="#5fd4c1" opacity="0.35"/></symbol>
+    <clipPath id="frameClipMap"><rect width="1200" height="360" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#frameClipMap)">
+    <rect width="1200" height="360" fill="url(#bgMap)"/>
+    <rect width="1200" height="360" fill="url(#glowOrigin)"/>
+    <rect width="1200" height="360" fill="url(#glowWarm)"/>
+
+    <!-- Street grid (city blocks) -->
+    <g>
+      <rect x="4.6" y="6.6" width="30.4" height="23.6" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="6.0" y="44.1" width="25.3" height="41.3" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="7.3" y="94.5" width="24.0" height="37.2" fill="#eaf1f5" opacity="0.1"/>
+      <rect x="7.9" y="189.2" width="19.0" height="34.9" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="5.2" y="237.3" width="28.4" height="32.0" fill="#eaf1f5" opacity="0.08"/>
+      <rect x="6.2" y="284.3" width="27.3" height="40.3" fill="#eaf1f5" opacity="0.08"/>
+      <rect x="5.3" y="336.3" width="26.8" height="15.5" fill="#eaf1f5" opacity="0.09"/>
+      <rect x="46.3" y="46.1" width="52.2" height="33.4" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="45.7" y="147.0" width="57.7" height="28.0" fill="#eaf1f5" opacity="0.04"/>
+      <rect x="116.8" y="6.4" width="53.0" height="24.5" fill="#eaf1f5" opacity="0.09"/>
+      <rect x="116.7" y="94.2" width="52.5" height="37.6" fill="#eaf1f5" opacity="0.1"/>
+      <rect x="115.5" y="191.7" width="58.8" height="28.9" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="114.2" y="237.1" width="60.8" height="34.4" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="115.8" y="336.2" width="53.1" height="12.7" fill="#eaf1f5" opacity="0.09"/>
+      <rect x="185.7" y="5.4" width="53.4" height="23.4" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="184.9" y="44.9" width="57.2" height="36.6" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="185.7" y="95.5" width="55.3" height="33.3" fill="#eaf1f5" opacity="0.08"/>
+      <rect x="186.5" y="146.7" width="56.7" height="26.2" fill="#eaf1f5" opacity="0.09"/>
+      <rect x="185.6" y="284.4" width="55.0" height="40.8" fill="#eaf1f5" opacity="0.04"/>
+      <rect x="184.6" y="335.4" width="60.4" height="19.3" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="255.5" y="4.1" width="53.8" height="28.1" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="255.4" y="45.5" width="58.5" height="34.0" fill="#eaf1f5" opacity="0.1"/>
+      <rect x="255.9" y="94.3" width="57.5" height="39.3" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="254.1" y="192.8" width="58.6" height="28.5" fill="#eaf1f5" opacity="0.07"/>
+      <rect x="256.1" y="237.9" width="52.6" height="30.0" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="254.7" y="287.1" width="57.5" height="31.2" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="257.2" y="337.9" width="50.4" height="9.3" fill="#eaf1f5" opacity="0.09"/>
+      <rect x="326.1" y="45.4" width="57.7" height="39.0" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="326.8" y="97.8" width="53.8" height="28.7" fill="#eaf1f5" opacity="0.1"/>
+      <rect x="324.9" y="189.9" width="59.1" height="34.0" fill="#eaf1f5" opacity="0.08"/>
+      <rect x="326.6" y="337.2" width="56.3" height="11.6" fill="#eaf1f5" opacity="0.09"/>
+      <rect x="394.7" y="97.2" width="58.6" height="30.9" fill="#eaf1f5" opacity="0.1"/>
+      <rect x="395.6" y="147.8" width="54.4" height="28.4" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="397.6" y="192.2" width="53.9" height="25.6" fill="#eaf1f5" opacity="0.1"/>
+      <rect x="396.2" y="284.5" width="57.5" height="35.1" fill="#eaf1f5" opacity="0.08"/>
+      <rect x="397.7" y="335.7" width="49.3" height="13.6" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="465.2" y="5.0" width="56.1" height="28.5" fill="#eaf1f5" opacity="0.07"/>
+      <rect x="467.6" y="45.4" width="52.0" height="35.7" fill="#eaf1f5" opacity="0.09"/>
+      <rect x="467.7" y="96.0" width="51.5" height="34.8" fill="#eaf1f5" opacity="0.04"/>
+      <rect x="464.7" y="144.0" width="55.7" height="35.9" fill="#eaf1f5" opacity="0.07"/>
+      <rect x="466.1" y="286.2" width="53.1" height="36.9" fill="#eaf1f5" opacity="0.07"/>
+      <rect x="465.1" y="337.1" width="56.7" height="12.5" fill="#eaf1f5" opacity="0.09"/>
+      <rect x="536.5" y="46.0" width="54.0" height="33.8" fill="#eaf1f5" opacity="0.07"/>
+      <rect x="535.9" y="97.8" width="54.0" height="29.2" fill="#eaf1f5" opacity="0.1"/>
+      <rect x="536.2" y="147.8" width="52.5" height="28.6" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="534.3" y="190.0" width="61.0" height="31.1" fill="#eaf1f5" opacity="0.09"/>
+      <rect x="536.9" y="286.6" width="55.4" height="31.4" fill="#eaf1f5" opacity="0.1"/>
+      <rect x="537.8" y="335.6" width="51.5" height="12.9" fill="#eaf1f5" opacity="0.09"/>
+      <rect x="605.7" y="6.1" width="56.5" height="26.7" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="606.2" y="95.8" width="57.5" height="36.5" fill="#eaf1f5" opacity="0.08"/>
+      <rect x="604.3" y="147.9" width="56.8" height="23.3" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="604.2" y="192.1" width="60.1" height="30.0" fill="#eaf1f5" opacity="0.07"/>
+      <rect x="604.6" y="337.7" width="57.4" height="10.4" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="676.8" y="5.7" width="56.1" height="23.0" fill="#eaf1f5" opacity="0.08"/>
+      <rect x="677.4" y="94.3" width="50.0" height="38.7" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="674.5" y="236.1" width="59.5" height="37.1" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="674.8" y="285.2" width="58.6" height="34.9" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="674.7" y="335.4" width="60.5" height="17.7" fill="#eaf1f5" opacity="0.04"/>
+      <rect x="745.9" y="97.7" width="67.6" height="29.6" fill="#eaf1f5" opacity="0.07"/>
+      <rect x="747.3" y="145.6" width="62.3" height="29.7" fill="#eaf1f5" opacity="0.1"/>
+      <rect x="747.3" y="191.8" width="61.5" height="28.9" fill="#eaf1f5" opacity="0.06"/>
+      <rect x="744.5" y="234.3" width="66.5" height="39.9" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="747.4" y="287.5" width="61.2" height="33.3" fill="#eaf1f5" opacity="0.05"/>
+      <rect x="745.8" y="334.6" width="65.6" height="19.2" fill="#eaf1f5" opacity="0.1"/>
+    </g>
+    <g>
+      <line x1="40" y1="0" x2="40" y2="360" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="110" y1="0" x2="110" y2="360" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="180" y1="0" x2="180" y2="360" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="250" y1="0" x2="250" y2="360" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="320" y1="0" x2="320" y2="360" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="390" y1="0" x2="390" y2="360" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="460" y1="0" x2="460" y2="360" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="600" y1="0" x2="600" y2="360" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="670" y1="0" x2="670" y2="360" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="740" y1="0" x2="740" y2="360" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="0" y1="40" x2="820" y2="40" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="0" y1="90" x2="820" y2="90" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="0" y1="140" x2="820" y2="140" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="0" y1="230" x2="820" y2="230" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="0" y1="280" x2="820" y2="280" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="0" y1="330" x2="820" y2="330" stroke="#7d93a3" stroke-opacity="0.22" stroke-width="1"/>
+      <line x1="530" y1="0" x2="530" y2="360" stroke="#e0a458" stroke-opacity="0.55" stroke-width="2.2"/>
+      <line x1="0" y1="185" x2="820" y2="185" stroke="#e0a458" stroke-opacity="0.55" stroke-width="2.2"/>
+      <line x1="0" y1="330" x2="820" y2="20" stroke="#5fd4c1" stroke-opacity="0.4" stroke-width="1.6"/>
+    </g>
+
+    <!-- Intersection nodes -->
+    <g fill="#eaf1f5" opacity="0.5">
+      <circle cx="530" cy="185" r="2.2"/>
+      <circle cx="110" cy="185" r="1.6"/>
+      <circle cx="250" cy="185" r="1.6"/>
+      <circle cx="460" cy="185" r="1.6"/>
+      <circle cx="670" cy="185" r="1.6"/>
+      <circle cx="530" cy="90" r="1.6"/>
+      <circle cx="530" cy="280" r="1.6"/>
+      <circle cx="320" cy="140" r="1.4"/>
+      <circle cx="180" cy="230" r="1.4"/>
+      <circle cx="600" cy="230" r="1.4"/>
+    </g>
+
+    <!-- Origin marker at key intersection -->
+    <g>
+      <circle cx="300" cy="185" r="26" fill="none" stroke="#5fd4c1" stroke-opacity="0.25" stroke-width="0.8">
+        <animate attributeName="r" values="14;42;14" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.5;0;0.5" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="300" cy="185" r="11" fill="none" stroke="#f2f7f5" stroke-opacity="0.5" stroke-width="0.9"/>
+      <circle cx="300" cy="185" r="6" fill="#f2f7f5"/>
+      <circle cx="300" cy="185" r="2.6" fill="#0d1b24"/>
+    </g>
+
+    <!-- Moving dots (traffic / data flow) along streets -->
+    <g>
+      <use href="#carDotGold"><animateMotion dur="6s" repeatCount="indefinite" path="M 0 185 L 820 185"/></use>
+      <use href="#carDotTeal"><animateMotion dur="8s" begin="-2s" repeatCount="indefinite" path="M 820 185 L 0 185"/></use>
+      <use href="#carDot"><animateMotion dur="7s" begin="-1s" repeatCount="indefinite" path="M 530 0 L 530 360"/></use>
+      <use href="#carDotGold"><animateMotion dur="9s" begin="-4s" repeatCount="indefinite" path="M 530 360 L 530 0"/></use>
+      <use href="#carDotTeal"><animateMotion dur="10s" begin="-3s" repeatCount="indefinite" path="M 0 330 L 820 20"/></use>
+      <use href="#carDot"><animateMotion dur="6.5s" begin="-5s" repeatCount="indefinite" path="M 250 0 L 250 360"/></use>
+      <use href="#carDotGold"><animateMotion dur="7.5s" begin="-2.5s" repeatCount="indefinite" path="M 670 360 L 670 0"/></use>
+      <use href="#carDot"><animateMotion dur="8.5s" begin="-6s" repeatCount="indefinite" path="M 0 90 L 820 90"/></use>
+      <use href="#carDotTeal"><animateMotion dur="9.5s" begin="-1.5s" repeatCount="indefinite" path="M 820 280 L 0 280"/></use>
+    </g>
+
+    <!-- Text: technical annotations, monospace -->
+    <g font-family="'JetBrains Mono','SF Mono','Menlo','Courier New',monospace" font-weight="300" letter-spacing="0.5">
+      <text x="20" y="22" fill="#eaf1f5" opacity="0.5" font-size="9" letter-spacing="0.6">RÉSEAU VIAIRE · FLUX SIMULÉ</text>
+      <text x="20" y="346" fill="#eaf1f5" opacity="0.5" font-size="9" letter-spacing="0.6">N → GRILLE URBAINE · 3 AXES PRINCIPAUX</text>
+      <text x="300" y="147" fill="#eaf1f5" opacity="0.8" text-anchor="middle" font-size="8.5" letter-spacing="1.2">NŒUD · 49.43°N 2.08°E</text>
+    </g>
+
+    <!-- Right panel: identity block -->
+    <rect x="820" y="0" width="380" height="360" fill="#0f2027" opacity="0.35"/>
+    <line x1="820" y1="0" x2="820" y2="360" stroke="#eaf1f5" stroke-opacity="0.12" stroke-width="1"/>
+    <g text-anchor="end">
+      <text x="1160" y="80" fill="#e0a458" opacity="0.85" font-size="11" font-family="'JetBrains Mono','SF Mono','Menlo','Courier New',monospace" font-weight="400" letter-spacing="3.2">RESPONSABLE SIG · CARTOGRAPHIE URBAINE</text>
+      <text x="1160" y="172" fill="#eaf1f5" font-size="60" font-family="'Cormorant Garamond','EB Garamond','Garamond','Georgia',serif" font-weight="500">Mohamed Wael Jouini</text>
+      <line x1="940" y1="194" x2="1160" y2="194" stroke="#e0a458" stroke-opacity="0.6" stroke-width="0.6"/>
+      <text x="1160" y="226" fill="#eaf1f5" opacity="0.92" font-size="20" font-family="'Cormorant Garamond','EB Garamond','Garamond','Georgia',serif" font-weight="400" font-style="italic">Réseaux Viaires · PostGIS · QGIS</text>
+      <text x="1160" y="254" fill="#eaf1f5" opacity="0.82" font-size="20" font-family="'Cormorant Garamond','EB Garamond','Garamond','Georgia',serif" font-weight="400" font-style="italic">Atlas de Biodiversité · Géocodage BAN</text>
+      <text x="1160" y="296" fill="#eaf1f5" opacity="0.55" font-size="9" font-family="'JetBrains Mono','SF Mono','Menlo','Courier New',monospace" font-weight="400" letter-spacing="2.6">FRANCE · COMMUNAUTÉ DE COMMUNES DES SABLONS</text>
+    </g>
+    <g fill="#e0a458"><circle cx="940" cy="194" r="1.5"/><circle cx="1160" cy="194" r="1.5"/></g>
+
+    <rect x="0.5" y="0.5" width="1199" height="359" rx="20" fill="none" stroke="#eaf1f5" stroke-opacity="0.18" stroke-width="1"/>
+  </g>
+</svg>
