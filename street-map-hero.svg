@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mohamed Wael Jouini — Cartographie 3D Empilement de Couches SIG (GIS Layer Stack Diagram)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mohamed Wael Jouini — Cartographie 3D Empilement de Couches SIG Espacées (Exploded GIS Slabs Stack)">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
@@ -8,7 +8,7 @@
       <stop offset="100%" stop-color="#030611"/>
     </linearGradient>
 
-    <!-- Slab Top Face Gradients (Glassmorphism White & Cyan) -->
+    <!-- Slab Top Face Gradients (Glassmorphism White & Colors) -->
     <linearGradient id="slabTop5" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
       <stop offset="100%" stop-color="#e0f2fe" stop-opacity="0.88"/>
@@ -55,9 +55,6 @@
       <polygon points="0,0 -7,-2.5 -7,2.5" fill="#0284c7"/>
       <circle r="2" fill="#ffffff"/>
     </g>
-    <g id="dotRed">
-      <circle r="3" fill="#ef4444" filter="url(#glowRed)"/>
-    </g>
 
     <clipPath id="mapClip"><rect width="1200" height="430" rx="16"/></clipPath>
   </defs>
@@ -66,15 +63,23 @@
     <!-- Background -->
     <rect width="1200" height="430" fill="url(#bgGrad)"/>
 
-    <!-- ==================== 3D EXPLODED GIS SLAB STACK VIEWPORT ==================== -->
-    <g transform="translate(370, 235) rotate(-26) skewX(34) scale(0.68, 0.44)">
+    <!-- ==================== 3D EXPLODED GIS SLAB STACK WITH GENEROSITY SPACING ==================== -->
+    <g transform="translate(370, 215) rotate(-26) skewX(34) scale(0.62, 0.38)">
 
-      <!-- SLAB 1 (BOTTOM, Y = 140) : GRILLE DE RÉFÉRENCE SIG & VRD -->
-      <g transform="translate(0, 140)">
+      <!-- VERTICAL CORNER GUIDE LINES CONNECTING ALL 5 SLABS -->
+      <g stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="4,4" opacity="0.4">
+        <!-- Top-Left Axis -->
+        <line x1="-300" y1="-310" x2="-300" y2="310"/>
+        <!-- Top-Right Axis -->
+        <line x1="300" y1="-310" x2="300" y2="310"/>
+      </g>
+
+      <!-- SLAB 1 (BOTTOM, Y = +190) : GRILLE DE RÉFÉRENCE SIG & VRD -->
+      <g transform="translate(0, 190)">
         <!-- Slab Thickness Side -->
-        <polygon points="-300,-120 300,-120 300,-106 -300,-106" fill="#020617" stroke="#334155" stroke-width="1"/>
-        <polygon points="300,-120 300,120 300,134 300,-106" fill="#090d16" stroke="#334155" stroke-width="1"/>
-        <polygon points="-300,120 300,120 300,134 -300,134" fill="#020617" stroke="#334155" stroke-width="1"/>
+        <polygon points="-300,-120 300,-120 300,-104 -300,-104" fill="#020617" stroke="#334155" stroke-width="1"/>
+        <polygon points="300,-120 300,120 300,136 300,-104" fill="#090d16" stroke="#334155" stroke-width="1"/>
+        <polygon points="-300,120 300,120 300,136 -300,136" fill="#020617" stroke="#334155" stroke-width="1"/>
 
         <!-- Slab Top Face -->
         <polygon points="-300,-120 300,-120 300,120 -300,120" fill="url(#slabTop1)" stroke="#475569" stroke-width="2"/>
@@ -100,60 +105,57 @@
         <circle cx="-100" cy="-40" r="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
       </g>
 
-      <!-- SLAB 2 (Y = 70) : ORTHOPHOTOGRAPHIE & OCCUPATION DU SOL -->
-      <g transform="translate(0, 70)">
+      <!-- SLAB 2 (Y = +95) : ORTHOPHOTOGRAPHIE & OCCUPATION DU SOL -->
+      <g transform="translate(0, 95)">
         <!-- Slab Thickness Side -->
-        <polygon points="-300,-120 300,-120 300,-106 -300,-106" fill="#052e16" stroke="#15803d" stroke-width="1"/>
-        <polygon points="300,-120 300,120 300,134 300,-106" fill="#022c22" stroke="#15803d" stroke-width="1"/>
-        <polygon points="-300,120 300,120 300,134 -300,134" fill="#052e16" stroke="#15803d" stroke-width="1"/>
+        <polygon points="-300,-120 300,-120 300,-104 -300,-104" fill="#052e16" stroke="#15803d" stroke-width="1"/>
+        <polygon points="300,-120 300,120 300,136 300,-104" fill="#022c22" stroke="#15803d" stroke-width="1"/>
+        <polygon points="-300,120 300,120 300,136 -300,136" fill="#052e16" stroke="#15803d" stroke-width="1"/>
 
         <!-- Slab Top Face -->
         <polygon points="-300,-120 300,-120 300,120 -300,120" fill="url(#slabTop2)" stroke="#22c55e" stroke-width="1.5"/>
 
         <!-- Agricultural Fields & Forest Parcels Texture -->
         <g stroke="#15803d" stroke-width="1" fill="none">
-          <!-- Fields dividers -->
           <path d="M -300,-60 L -100,-60 L -100,120 M -100,20 L 300,20 M 100,-120 L 100,20" stroke="#86efac" stroke-width="1.5" stroke-dasharray="6,3"/>
-          <path d="M -250,-120 C -200,-50 -180,30 -220,120" stroke="#0284c7" stroke-width="4" fill="none"/> <!-- River -->
-          <!-- Forest Green Patch -->
+          <path d="M -250,-120 C -200,-50 -180,30 -220,120" stroke="#0284c7" stroke-width="4" fill="none"/>
           <polygon points="-80,-100 80,-100 50,-20 -50,-20" fill="#14532d" opacity="0.6"/>
           <polygon points="120,40 280,40 250,100 140,100" fill="#166534" opacity="0.7"/>
         </g>
       </g>
 
-      <!-- SLAB 3 (Y = 0) : TOPOGRAPHIE & RELIEF (MNT / COURBES DE NIVEAU) -->
+      <!-- SLAB 3 (MIDDLE, Y = 0) : TOPOGRAPHIE & RELIEF (MNT / COURBES DE NIVEAU) -->
       <g transform="translate(0, 0)">
         <!-- Slab Thickness Side -->
-        <polygon points="-300,-120 300,-120 300,-106 -300,-106" fill="#64748b" opacity="0.5"/>
-        <polygon points="300,-120 300,120 300,134 300,-106" fill="#475569" opacity="0.5"/>
-        <polygon points="-300,120 300,120 300,134 -300,134" fill="#64748b" opacity="0.5"/>
+        <polygon points="-300,-120 300,-120 300,-104 -300,-104" fill="#64748b" opacity="0.5"/>
+        <polygon points="300,-120 300,120 300,136 300,-104" fill="#475569" opacity="0.5"/>
+        <polygon points="-300,120 300,120 300,136 -300,136" fill="#64748b" opacity="0.5"/>
 
         <!-- Slab Top Face -->
         <polygon points="-300,-120 300,-120 300,120 -300,120" fill="url(#slabTop3)" stroke="#cbd5e1" stroke-width="1.5"/>
 
-        <!-- Topographical Contour Lines (Courbes de niveau) -->
+        <!-- Topographical Contour Lines -->
         <g stroke="#64748b" stroke-width="1.2" fill="none" opacity="0.85">
           <path d="M -260,-80 C -180,-110 -100,-90 -40,-60 C 20,-30 100,-50 180,-80 C 240,-100 280,-70 290,-40"/>
           <path d="M -280,-40 C -200,-70 -120,-50 -60,-20 C 0,10 80,-10 160,-40 C 220,-60 270,-30 285,0"/>
           <path d="M -290,0 C -220,-30 -140,-10 -80,20 C -20,50 60,30 140,0 C 200,-20 250,10 275,40"/>
           <path d="M -295,40 C -230,10 -160,30 -100,60 C -40,90 40,70 120,40 C 180,20 230,50 260,80"/>
-          <!-- Altitude Labels -->
           <text x="-50" y="-62" font-family="monospace" font-size="7" fill="#475569">140m</text>
           <text x="130" y="-42" font-family="monospace" font-size="7" fill="#475569">150m</text>
         </g>
       </g>
 
-      <!-- SLAB 4 (Y = -70) : CADASTRE & MESURES VECTORIELLES (30.2m, 15.1m) -->
-      <g transform="translate(0, -70)">
+      <!-- SLAB 4 (Y = -95) : CADASTRE & MESURES VECTORIELLES (30.2m, 15.1m) -->
+      <g transform="translate(0, -95)">
         <!-- Slab Thickness Side -->
-        <polygon points="-300,-120 300,-120 300,-106 -300,-106" fill="#94a3b8" opacity="0.5"/>
-        <polygon points="300,-120 300,120 300,134 300,-106" fill="#64748b" opacity="0.5"/>
-        <polygon points="-300,120 300,120 300,134 -300,134" fill="#94a3b8" opacity="0.5"/>
+        <polygon points="-300,-120 300,-120 300,-104 -300,-104" fill="#94a3b8" opacity="0.5"/>
+        <polygon points="300,-120 300,120 300,136 300,-104" fill="#64748b" opacity="0.5"/>
+        <polygon points="-300,120 300,120 300,136 -300,136" fill="#94a3b8" opacity="0.5"/>
 
         <!-- Slab Top Face -->
         <polygon points="-300,-120 300,-120 300,120 -300,120" fill="url(#slabTop4)" stroke="#94a3b8" stroke-width="1.5"/>
 
-        <!-- Road Grid & Cadastral Parcels -->
+        <!-- Road Grid -->
         <g stroke="#334155" stroke-width="2" fill="none">
           <path id="s4Road1" d="M -280,-60 L 280,-60"/>
           <path id="s4Road2" d="M -280,50 L 280,50"/>
@@ -161,14 +163,12 @@
           <path d="M 120,-110 L 120,110"/>
         </g>
 
-        <!-- Red Dimension Measurement Arrows (Exactly like user reference image) -->
+        <!-- Red Dimension Measurement Arrows -->
         <g stroke="#ef4444" stroke-width="1.8" fill="none" filter="url(#glowRed)">
-          <!-- Dimension Line 1: 30.2m -->
           <line x1="-80" y1="-10" x2="80" y2="-10"/>
           <polyline points="-74,-14 -80,-10 -74,-6"/>
           <polyline points="74,-14 80,-10 74,-6"/>
 
-          <!-- Dimension Line 2: 15.1m -->
           <line x1="30" y1="-35" x2="110" y2="-35"/>
           <polyline points="36,-39 30,-35 36,-31"/>
           <polyline points="104,-39 110,-35 104,-31"/>
@@ -182,17 +182,17 @@
         <use href="#carEast"><animateMotion dur="5s" repeatCount="indefinite" rotate="auto"><mpath href="#s4Road1"/></animateMotion></use>
       </g>
 
-      <!-- SLAB 5 (TOP, Y = -140) : HYDROGRAPHIE & ÉQUIPEMENTS (GeoBan / BAN) -->
-      <g transform="translate(0, -140)">
+      <!-- SLAB 5 (TOP, Y = -190) : HYDROGRAPHIE & ÉQUIPEMENTS (GeoBan / BAN) -->
+      <g transform="translate(0, -190)">
         <!-- Slab Thickness Side -->
         <polygon points="-300,-120 300,-120 300,-104 -300,-104" fill="#cbd5e1" opacity="0.6"/>
-        <polygon points="300,-120 300,120 300,134 300,-104" fill="#94a3b8" opacity="0.6"/>
-        <polygon points="-300,120 300,120 300,134 -300,134" fill="#cbd5e1" opacity="0.6"/>
+        <polygon points="300,-120 300,120 300,136 300,-104" fill="#94a3b8" opacity="0.6"/>
+        <polygon points="-300,120 300,120 300,136 -300,136" fill="#cbd5e1" opacity="0.6"/>
 
         <!-- Slab Top Face -->
         <polygon points="-300,-120 300,-120 300,120 -300,120" fill="url(#slabTop5)" stroke="#38bdf8" stroke-width="2"/>
 
-        <!-- Organic Hydrography Water Pool Polygon (Exact like user reference image) -->
+        <!-- Organic Hydrography Water Pool Polygon -->
         <path d="M -90,-20 C -60,-60 40,-70 90,-40 C 130,-15 110,40 50,50 C -20,60 -120,40 -90,-20 Z" 
               fill="#7dd3fc" fill-opacity="0.6" stroke="#0284c7" stroke-width="2.5" stroke-dasharray="6,3"/>
 
