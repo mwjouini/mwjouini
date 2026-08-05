@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mohamed Wael Jouini — SIG 3D Empilement de Couches Animées (Layered GIS Architecture)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mohamed Wael Jouini — Cartographie 3D Empilement de Couches SIG (GIS Layer Sandwich)">
   <defs>
     <!-- Cyberpunk Deep Blue Gradients -->
     <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
@@ -8,19 +8,20 @@
       <stop offset="100%" stop-color="#030611"/>
     </linearGradient>
 
-    <linearGradient id="layerGrad1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.4"/>
+    <!-- Translucent Glassmorphism Layer Planes -->
+    <linearGradient id="planeGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.12"/>
     </linearGradient>
 
-    <linearGradient id="layerGrad2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#064e3b" stop-opacity="0.2"/>
+    <linearGradient id="planeGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.12"/>
     </linearGradient>
 
-    <linearGradient id="layerGrad3" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.25"/>
+    <linearGradient id="planeGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.20"/>
     </linearGradient>
 
     <!-- Glow Filters -->
@@ -39,14 +40,14 @@
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
-    <!-- Moving Vehicle & Data Pod Symbols -->
+    <!-- Animated Markers -->
     <g id="carEast">
-      <polygon points="0,0 8,-3 8,3" fill="#38bdf8" opacity="0.8"/>
+      <polygon points="0,0 8,-3 8,3" fill="#38bdf8" opacity="0.9"/>
       <circle r="2.8" fill="#ffffff" filter="url(#glowCyan)"/>
       <circle r="1.5" cx="-3" cy="0" fill="#ef4444"/>
     </g>
     <g id="carWest">
-      <polygon points="0,0 -8,-3 -8,3" fill="#38bdf8" opacity="0.8"/>
+      <polygon points="0,0 -8,-3 -8,3" fill="#38bdf8" opacity="0.9"/>
       <circle r="2.8" fill="#ffffff" filter="url(#glowCyan)"/>
       <circle r="1.5" cx="3" cy="0" fill="#ef4444"/>
     </g>
@@ -55,9 +56,9 @@
       <circle cx="-6" cy="0" r="1.5" fill="#ffffff"/>
       <circle cx="6" cy="0" r="1.5" fill="#ffffff"/>
     </g>
-    <g id="vrdDataPulse">
+    <g id="vrdPulse">
       <circle r="3" fill="#c084fc" filter="url(#glowPurple)"/>
-      <circle r="6" fill="#c084fc" opacity="0.4"/>
+      <circle r="6.5" fill="#c084fc" opacity="0.35"/>
     </g>
 
     <clipPath id="mapClip"><rect width="1200" height="430" rx="16"/></clipPath>
@@ -67,170 +68,173 @@
     <!-- Canvas Background -->
     <rect width="1200" height="430" fill="url(#bgGrad)"/>
 
-    <!-- ==================== 3D EXPLODED LAYER STACK VIEWPORT ==================== -->
-    <g transform="translate(380, 205) rotate(-25) skewX(35) scale(0.72, 0.50)">
+    <!-- ==================== 3D PARALLEL LAYER STACK VIEWPORT ==================== -->
+    <g transform="translate(380, 215) rotate(-24) skewX(36) scale(0.72, 0.48)">
 
-      <!-- VERTICAL CONNECTOR GUIDE LINES LINKING ALL 3 LAYERS -->
-      <g stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.45">
-        <line x1="-300" y1="-200" x2="-300" y2="160"/>
-        <line x1="300" y1="-200" x2="300" y2="160"/>
-        <line x1="-300" y1="100" x2="-300" y2="460"/>
-        <line x1="300" y1="100" x2="300" y2="460"/>
-        <line x1="0" y1="-100" x2="0" y2="260"/>
+      <!-- CORNER DROP LINES CONNECTING THE 3 STACKED LAYERS -->
+      <g stroke="#38bdf8" stroke-width="1" stroke-dasharray="4,4" opacity="0.55">
+        <!-- Top-Left Corner -->
+        <line x1="-320" y1="-230" x2="-320" y2="170"/>
+        <!-- Top-Right Corner -->
+        <line x1="320" y1="-230" x2="320" y2="170"/>
+        <!-- Bottom-Left Corner -->
+        <line x1="-320" y1="-50" x2="-320" y2="350"/>
+        <!-- Bottom-Right Corner -->
+        <line x1="320" y1="-50" x2="320" y2="350"/>
+        <!-- Center Pillar Axis -->
+        <line x1="0" y1="-140" x2="0" y2="260"/>
       </g>
 
       <!-- ========================================================================= -->
-      <!-- COUCHE 1 (BASSE, Z=-1) : VRD & RÉSEAUX SOUTERRAINS (EAU, FIBRE, GAZ)     -->
+      <!-- COUCHE 1 (SOUTERRAIN, Z=-1) : VRD & RÉSEAUX DIVERS (AEP, FIBRE, GAZ)      -->
       <!-- ========================================================================= -->
-      <g transform="translate(0, 160)">
-        <!-- Layer 1 Plane Base -->
-        <polygon points="-350,-220 350,-220 350,180 -350,180" fill="url(#layerGrad1)" stroke="#0284c7" stroke-width="1.2" stroke-opacity="0.6"/>
-        
-        <!-- Grid Sub-surface -->
-        <path d="M -350,-120 L 350,-120 M -350,-20 L 350,-20 M -350,80 L 350,80" stroke="#0f172a" stroke-width="6"/>
-        <path d="M -200,-220 L -200,180 M 0,-220 L 0,180 M 200,-220 L 200,180" stroke="#0f172a" stroke-width="6"/>
+      <g transform="translate(0, 100)">
+        <!-- Layer 1 Translucent Plane -->
+        <polygon points="-320,-140 320,-140 320,140 -320,140" fill="url(#planeGrad1)" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.8"/>
 
-        <!-- VRD Network Lines -->
-        <!-- AEP / EU Water Pipe (Cyan) -->
-        <path id="vrdPipeAEP" d="M -340,-120 L 340,-120" stroke="#0284c7" stroke-width="3" stroke-dasharray="10,5" fill="none"/>
-        <path d="M -200,-210 L -200,170" stroke="#0284c7" stroke-width="3" stroke-dasharray="10,5" fill="none"/>
-        
-        <!-- Fibre Optique FTTH (Purple) -->
-        <path id="vrdPipeFibre" d="M -340,-20 L 340,-20" stroke="#c084fc" stroke-width="2.5" stroke-dasharray="8,4" fill="none"/>
-        <path d="M 0,-210 L 0,170" stroke="#c084fc" stroke-width="2.5" stroke-dasharray="8,4" fill="none"/>
+        <!-- VRD Sub-surface Networks -->
+        <!-- Assainissement & Eau Potable AEP (Blue) -->
+        <path id="l1AEP" d="M -300,-80 L 300,-80" stroke="#0284c7" stroke-width="3.5" stroke-dasharray="12,6" fill="none"/>
+        <path d="M -160,-130 L -160,130" stroke="#0284c7" stroke-width="3.5" stroke-dasharray="12,6" fill="none"/>
+
+        <!-- Telecom & Fibre Optique FTTH (Purple) -->
+        <path id="l1Fibre" d="M -300,0 L 300,0" stroke="#c084fc" stroke-width="3" stroke-dasharray="10,5" fill="none" filter="url(#glowPurple)"/>
+        <path d="M 0,-130 L 0,130" stroke="#c084fc" stroke-width="3" stroke-dasharray="10,5" fill="none"/>
 
         <!-- Gaz & Chaleur Urbaine (Orange) -->
-        <path d="M -340,80 L 340,80" stroke="#f97316" stroke-width="2" stroke-dasharray="6,4" fill="none"/>
+        <path d="M -300,80 L 300,80" stroke="#f97316" stroke-width="2.5" stroke-dasharray="8,4" fill="none"/>
+        <path d="M 160,-130 L 160,130" stroke="#f97316" stroke-width="2.5" stroke-dasharray="8,4" fill="none"/>
 
-        <!-- Regards de visite / Manholes -->
+        <!-- Regards de Visite VRD / Nodes -->
         <g fill="#0f172a" stroke="#38bdf8" stroke-width="1.5">
-          <circle cx="-200" cy="-120" r="5"/><circle cx="-200" cy="-120" r="2" fill="#38bdf8"/>
-          <circle cx="0" cy="-120" r="5"/><circle cx="0" cy="-120" r="2" fill="#38bdf8"/>
-          <circle cx="200" cy="-120" r="5"/><circle cx="200" cy="-120" r="2" fill="#38bdf8"/>
-          <circle cx="0" cy="-20" r="5"/><circle cx="0" cy="-20" r="2" fill="#c084fc"/>
+          <circle cx="-160" cy="-80" r="5"/><circle cx="-160" cy="-80" r="2" fill="#38bdf8"/>
+          <circle cx="0" cy="-80" r="5"/><circle cx="0" cy="-80" r="2" fill="#38bdf8"/>
+          <circle cx="160" cy="-80" r="5"/><circle cx="160" cy="-80" r="2" fill="#38bdf8"/>
+          <circle cx="0" cy="0" r="5"/><circle cx="0" cy="0" r="2" fill="#c084fc"/>
+          <circle cx="160" cy="80" r="5"/><circle cx="160" cy="80" r="2" fill="#f97316"/>
         </g>
 
-        <!-- Animated Data Pulse on Fiber -->
+        <!-- Animated Data Pulse in Subsurface Fiber -->
         <g>
-          <use href="#vrdDataPulse"><animateMotion dur="4s" repeatCount="indefinite" rotate="auto"><mpath href="#vrdPipeFibre"/></animateMotion></use>
+          <use href="#vrdPulse"><animateMotion dur="3.5s" repeatCount="indefinite" rotate="auto"><mpath href="#l1Fibre"/></animateMotion></use>
         </g>
 
         <!-- Layer Label 1 -->
-        <g transform="translate(-340, -200)">
-          <rect x="0" y="0" width="220" height="22" rx="4" fill="#0369a1" opacity="0.85"/>
+        <g transform="translate(-310, -125)">
+          <rect x="0" y="0" width="220" height="22" rx="4" fill="#0369a1" opacity="0.9"/>
           <text x="10" y="15" fill="#ffffff" font-family="'JetBrains Mono',monospace" font-size="10" font-weight="bold">COUCHE 1 : RÉSEAUX VRD (Z=-1)</text>
         </g>
       </g>
 
       <!-- ========================================================================= -->
-      <!-- COUCHE 2 (MILIEU, Z=0) : CADASTRE, VOIRIE & BÂTIMENTS 3D                 -->
+      <!-- COUCHE 2 (SURFACE, Z=0) : CADASTRE, VOIRIE & BÂTIMENTS 3D                -->
       <!-- ========================================================================= -->
       <g transform="translate(0, 0)">
-        <!-- Layer 2 Plane Base -->
-        <polygon points="-350,-220 350,-220 350,180 -350,180" fill="url(#layerGrad2)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6"/>
+        <!-- Layer 2 Translucent Plane -->
+        <polygon points="-320,-140 320,-140 320,140 -320,140" fill="url(#planeGrad2)" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.8"/>
 
-        <!-- Street Network -->
+        <!-- Cadastral Street Network -->
         <g stroke="#1e293b" stroke-width="14" fill="none">
-          <path id="c2Street1" d="M -340,-100 L 340,-100"/>
-          <path id="c2Street2" d="M -340,40 L 340,40"/>
-          <path id="c2Street3" d="M -150,-210 L -150,170"/>
-          <path id="c2Street4" d="M 150,-210 L 150,170"/>
+          <path id="l2Street1" d="M -300,-70 L 300,-70"/>
+          <path id="l2Street2" d="M -300,50 L 300,50"/>
+          <path id="l2Street3" d="M -140,-130 L -140,130"/>
+          <path id="l2Street4" d="M 140,-130 L 140,130"/>
         </g>
         <g stroke="#ffffff" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.6">
-          <line x1="-340" y1="-100" x2="340" y2="-100"/>
-          <line x1="-340" y1="40" x2="340" y2="40"/>
-          <line x1="-150" y1="-210" x2="-150" y2="170"/>
-          <line x1="150" y1="-210" x2="150" y2="170"/>
+          <line x1="-300" y1="-70" x2="300" y2="-70"/>
+          <line x1="-300" y1="50" x2="300" y2="50"/>
+          <line x1="-140" y1="-130" x2="-140" y2="130"/>
+          <line x1="140" y1="-130" x2="140" y2="130"/>
         </g>
 
-        <!-- 3D Cadastral Buildings -->
+        <!-- 3D Isometric Buildings -->
         <g stroke="#334155" stroke-width="0.6">
-          <!-- Building 1 -->
-          <g transform="translate(-250, -180)">
-            <polygon points="0,0 50,0 50,40 0,40" fill="#0f172a"/>
-            <polygon points="0,0 50,0 50,-20 0,-20" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
-            <polygon points="50,0 50,40 50,20 50,-20" fill="#0b1324"/>
+          <!-- Building A -->
+          <g transform="translate(-240, -135)">
+            <polygon points="0,0 55,0 55,35 0,35" fill="#0f172a"/>
+            <polygon points="0,0 55,0 55,-18 0,-18" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+            <polygon points="55,0 55,35 55,17 55,-18" fill="#0b1324"/>
           </g>
-          <!-- Building 2 -->
-          <g transform="translate(40, -180)">
-            <polygon points="0,0 60,0 60,45 0,45" fill="#0f172a"/>
-            <polygon points="0,0 60,0 60,-25 0,-25" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
-            <polygon points="60,0 60,45 60,20 60,-25" fill="#0b1324"/>
+          <!-- Building B -->
+          <g transform="translate(30, -135)">
+            <polygon points="0,0 65,0 65,40 0,40" fill="#0f172a"/>
+            <polygon points="0,0 65,0 65,-22 0,-22" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+            <polygon points="65,0 65,40 65,18 65,-22" fill="#0b1324"/>
           </g>
-          <!-- Building 3 -->
-          <g transform="translate(-80, -30)">
-            <polygon points="0,0 70,0 70,50 0,50" fill="#0f172a"/>
-            <polygon points="0,0 70,0 70,-30 0,-30" fill="#1e293b" stroke="#10b981" stroke-width="0.8"/>
-            <polygon points="70,0 70,50 70,20 70,-30" fill="#0b1324"/>
+          <!-- Building C -->
+          <g transform="translate(-80, -10)">
+            <polygon points="0,0 75,0 75,45 0,45" fill="#0f172a"/>
+            <polygon points="0,0 75,0 75,-25 0,-25" fill="#1e293b" stroke="#10b981" stroke-width="0.8"/>
+            <polygon points="75,0 75,45 75,20 75,-25" fill="#0b1324"/>
           </g>
-          <!-- Building 4 -->
-          <g transform="translate(200, -30)">
-            <polygon points="0,0 55,0 55,40 0,40" fill="#0f172a"/>
-            <polygon points="0,0 55,0 55,-20 0,-20" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
-            <polygon points="55,0 55,40 55,20 55,-20" fill="#0b1324"/>
+          <!-- Building D -->
+          <g transform="translate(190, -10)">
+            <polygon points="0,0 50,0 50,35 0,35" fill="#0f172a"/>
+            <polygon points="0,0 50,0 50,-18 0,-18" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+            <polygon points="50,0 50,35 50,17 50,-18" fill="#0b1324"/>
           </g>
         </g>
 
-        <!-- Animated Street Traffic (Layer 2 Animation) -->
+        <!-- Animated Vehicles on Street Grid -->
         <g>
-          <use href="#carEast"><animateMotion dur="5s" repeatCount="indefinite" rotate="auto"><mpath href="#c2Street1"/></animateMotion></use>
-          <use href="#carWest"><animateMotion dur="6s" begin="-2s" repeatCount="indefinite" rotate="auto"><mpath href="#c2Street2"/></animateMotion></use>
+          <use href="#carEast"><animateMotion dur="5.5s" repeatCount="indefinite" rotate="auto"><mpath href="#l2Street1"/></animateMotion></use>
+          <use href="#carWest"><animateMotion dur="6.2s" begin="-2s" repeatCount="indefinite" rotate="auto"><mpath href="#l2Street2"/></animateMotion></use>
         </g>
 
         <!-- Layer Label 2 -->
-        <g transform="translate(-340, -200)">
-          <rect x="0" y="0" width="240" height="22" rx="4" fill="#0284c7" opacity="0.85"/>
+        <g transform="translate(-310, -125)">
+          <rect x="0" y="0" width="240" height="22" rx="4" fill="#0284c7" opacity="0.9"/>
           <text x="10" y="15" fill="#ffffff" font-family="'JetBrains Mono',monospace" font-size="10" font-weight="bold">COUCHE 2 : CADASTRE &amp; BÂTI 3D (Z=0)</text>
         </g>
       </g>
 
       <!-- ========================================================================= -->
-      <!-- COUCHE 3 (HAUTE, Z=+1) : INFRASTRUCTURES AÉRIENNES & MOBILITÉ          -->
+      <!-- COUCHE 3 (AÉRIEN, Z=+1) : MOBILITÉ, ÉNERGIE & TELECOM                    -->
       <!-- ========================================================================= -->
-      <g transform="translate(0, -160)">
-        <!-- Layer 3 Plane Base -->
-        <polygon points="-350,-220 350,-220 350,180 -350,180" fill="url(#layerGrad3)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.6"/>
+      <g transform="translate(0, -100)">
+        <!-- Layer 3 Translucent Plane -->
+        <polygon points="-320,-140 320,-140 320,140 -320,140" fill="url(#planeGrad3)" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.8"/>
 
-        <!-- High-Voltage Grid & Pylons -->
-        <g transform="translate(-180, -80)">
-          <line x1="0" y1="0" x2="0" y2="-40" stroke="#38bdf8" stroke-width="1.5"/>
-          <line x1="-10" y1="-25" x2="10" y2="-25" stroke="#38bdf8" stroke-width="1.2"/>
-          <circle cx="0" cy="-40" r="2.5" fill="#ffffff" filter="url(#glowCyan)"/>
+        <!-- Overhead Electric Grid & Pylons -->
+        <g transform="translate(-160, -60)">
+          <line x1="0" y1="0" x2="0" y2="-38" stroke="#38bdf8" stroke-width="1.5"/>
+          <line x1="-10" y1="-24" x2="10" y2="-24" stroke="#38bdf8" stroke-width="1.2"/>
+          <circle cx="0" cy="-38" r="2.5" fill="#ffffff" filter="url(#glowCyan)"/>
         </g>
-        <g transform="translate(180, -80)">
-          <line x1="0" y1="0" x2="0" y2="-40" stroke="#38bdf8" stroke-width="1.5"/>
-          <line x1="-10" y1="-25" x2="10" y2="-25" stroke="#38bdf8" stroke-width="1.2"/>
-          <circle cx="0" cy="-40" r="2.5" fill="#ffffff" filter="url(#glowCyan)"/>
+        <g transform="translate(160, -60)">
+          <line x1="0" y1="0" x2="0" y2="-38" stroke="#38bdf8" stroke-width="1.5"/>
+          <line x1="-10" y1="-24" x2="10" y2="-24" stroke="#38bdf8" stroke-width="1.2"/>
+          <circle cx="0" cy="-38" r="2.5" fill="#ffffff" filter="url(#glowCyan)"/>
         </g>
-        <path d="M -180,-120 Q 0,-105 180,-120" fill="none" stroke="#38bdf8" stroke-width="1.2" filter="url(#glowCyan)"/>
+        <path d="M -160,-98 Q 0,-85 160,-98" fill="none" stroke="#38bdf8" stroke-width="1.2" filter="url(#glowCyan)"/>
 
         <!-- Elevated Viaduct Track (Monorail Layer 3) -->
-        <path id="c3Viaduct" d="M -340,30 L 340,30" fill="none" stroke="#10b981" stroke-width="3.5" filter="url(#glowGreen)"/>
-        <path d="M -340,30 L 340,30" fill="none" stroke="#ffffff" stroke-width="0.8" stroke-dasharray="6,4"/>
+        <path id="l3Viaduct" d="M -300,35 L 300,35" fill="none" stroke="#10b981" stroke-width="3.5" filter="url(#glowGreen)"/>
+        <path d="M -300,35 L 300,35" fill="none" stroke="#ffffff" stroke-width="0.8" stroke-dasharray="6,4"/>
 
-        <!-- Central Telecom Antenna -->
-        <g transform="translate(0, -60)">
-          <line x1="0" y1="0" x2="0" y2="-50" stroke="#c084fc" stroke-width="2" filter="url(#glowPurple)"/>
-          <circle cx="0" cy="-50" r="3.5" fill="#ffffff"/>
-          <circle cx="0" cy="0" r="25" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.6">
-            <animate attributeName="r" values="5;40;5" dur="3s" repeatCount="indefinite"/>
+        <!-- Telecom Antenna Spire -->
+        <g transform="translate(0, -50)">
+          <line x1="0" y1="0" x2="0" y2="-45" stroke="#c084fc" stroke-width="2" filter="url(#glowPurple)"/>
+          <circle cx="0" cy="-45" r="3.5" fill="#ffffff"/>
+          <circle cx="0" cy="0" r="22" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.6">
+            <animate attributeName="r" values="5;35;5" dur="3s" repeatCount="indefinite"/>
             <animate attributeName="opacity" values="0.9;0;0.9" dur="3s" repeatCount="indefinite"/>
           </circle>
         </g>
 
-        <!-- Animated High-Speed Monorail Pod (Layer 3 Animation) -->
+        <!-- Animated High-Speed Monorail Transit Pod -->
         <g>
-          <use href="#monorailPod"><animateMotion dur="4.5s" repeatCount="indefinite" rotate="auto"><mpath href="#c3Viaduct"/></animateMotion></use>
+          <use href="#monorailPod"><animateMotion dur="4.2s" repeatCount="indefinite" rotate="auto"><mpath href="#l3Viaduct"/></animateMotion></use>
         </g>
 
         <!-- Layer Label 3 -->
-        <g transform="translate(-340, -200)">
-          <rect x="0" y="0" width="250" height="22" rx="4" fill="#7e22ce" opacity="0.85"/>
+        <g transform="translate(-310, -125)">
+          <rect x="0" y="0" width="250" height="22" rx="4" fill="#7e22ce" opacity="0.9"/>
           <text x="10" y="15" fill="#ffffff" font-family="'JetBrains Mono',monospace" font-size="10" font-weight="bold">COUCHE 3 : AÉRIEN &amp; MOBILITÉ (Z=+1)</text>
         </g>
       </g>
 
-    </g> <!-- End 3D Exploded Layer Stack Viewport -->
+    </g> <!-- End 3D Parallel Layer Stack Viewport -->
 
     <!-- GIS Spatial Analysis Laser Scanline -->
     <line x1="0" y1="0" x2="0" y2="430" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.5" filter="url(#glowCyan)">
@@ -240,7 +244,7 @@
 
     <!-- Overlay Technical Annotations & Coordinates -->
     <g font-family="'JetBrains Mono','SF Mono','Fira Code','Courier New',monospace" font-weight="400" font-size="8.5" fill="#64748b" opacity="0.85">
-      <text x="20" y="24" fill="#38bdf8" font-weight="600" letter-spacing="1">SIG 3D · EMPILEMENT MULTI-COUCHES ANIMÉES (STACK ARCHITECTURE)</text>
+      <text x="20" y="24" fill="#38bdf8" font-weight="600" letter-spacing="1">SIG 3D · EMPILEMENT DE COUCHES SUPERPOSÉES ANIMÉES</text>
       <text x="20" y="415" letter-spacing="0.8">48°51'24" N  2°21'07" E · EPSG:2154 (RGF93 / LAMBERT-93)</text>
       <text x="780" y="24" letter-spacing="0.8" text-anchor="end">POSTGIS 3D / CITYGML 3.0</text>
     </g>
