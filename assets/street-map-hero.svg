@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mohamed Wael Jouini — Cartographie 3D, PostGIS, FME, VRD &amp; Infrastructures">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mohamed Wael Jouini — SIG 3D Empilement de Couches Animées (Layered GIS Architecture)">
   <defs>
     <!-- Cyberpunk Deep Blue Gradients -->
     <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
@@ -8,15 +8,19 @@
       <stop offset="100%" stop-color="#030611"/>
     </linearGradient>
 
-    <linearGradient id="roofGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#334155"/>
-      <stop offset="100%" stop-color="#1e293b"/>
+    <linearGradient id="layerGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.4"/>
     </linearGradient>
 
-    <linearGradient id="waterGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0369a1" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.8"/>
+    <linearGradient id="layerGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#064e3b" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="layerGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.25"/>
     </linearGradient>
 
     <!-- Glow Filters -->
@@ -30,24 +34,19 @@
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
-    <filter id="glowRose" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <filter id="glowOrange" x="-40%" y="-40%" width="180%" height="180%">
+    <filter id="glowPurple" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
-    <!-- Vehicle & VRD Symbols -->
+    <!-- Moving Vehicle & Data Pod Symbols -->
     <g id="carEast">
-      <polygon points="0,0 8,-3 8,3" fill="#38bdf8" opacity="0.7"/>
+      <polygon points="0,0 8,-3 8,3" fill="#38bdf8" opacity="0.8"/>
       <circle r="2.8" fill="#ffffff" filter="url(#glowCyan)"/>
       <circle r="1.5" cx="-3" cy="0" fill="#ef4444"/>
     </g>
     <g id="carWest">
-      <polygon points="0,0 -8,-3 -8,3" fill="#38bdf8" opacity="0.7"/>
+      <polygon points="0,0 -8,-3 -8,3" fill="#38bdf8" opacity="0.8"/>
       <circle r="2.8" fill="#ffffff" filter="url(#glowCyan)"/>
       <circle r="1.5" cx="3" cy="0" fill="#ef4444"/>
     </g>
@@ -56,25 +55,10 @@
       <circle cx="-6" cy="0" r="1.5" fill="#ffffff"/>
       <circle cx="6" cy="0" r="1.5" fill="#ffffff"/>
     </g>
-    <!-- VRD Manhole / Regard de Visite Symbol -->
-    <g id="vrdManhole">
-      <circle r="3.5" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
-      <circle r="1.5" fill="#38bdf8" filter="url(#glowCyan)"/>
+    <g id="vrdDataPulse">
+      <circle r="3" fill="#c084fc" filter="url(#glowPurple)"/>
+      <circle r="6" fill="#c084fc" opacity="0.4"/>
     </g>
-    <!-- VRD Telecom Chamber Symbol -->
-    <g id="vrdTelecomBox">
-      <rect x="-3" y="-3" width="6" height="6" fill="#0f172a" stroke="#c084fc" stroke-width="1"/>
-      <circle r="1.2" fill="#c084fc"/>
-    </g>
-    <g id="dotCyan"><circle r="3" fill="#38bdf8" filter="url(#glowCyan)"/><circle r="7" fill="#38bdf8" opacity="0.3"/></g>
-    <g id="dotRose"><circle r="2.8" fill="#f43f5e" filter="url(#glowRose)"/><circle r="6.5" fill="#f43f5e" opacity="0.35"/></g>
-    <g id="shadowDot"><ellipse rx="4" ry="2" fill="#000000" opacity="0.65"/></g>
-
-    <!-- Grid Base Pattern -->
-    <pattern id="hexGrid" width="30" height="51.96" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 15 8.66 L 0 0 L 0 17.32 L 15 25.98 L 30 17.32 Z M 0 25.98 L 15 34.64 L 0 43.3 L 0 60.62 L 15 69.28 L 30 60.62 L 30 43.3 L 15 34.64 Z" 
-            fill="none" stroke="#1e293b" stroke-width="0.5" stroke-opacity="0.3"/>
-    </pattern>
 
     <clipPath id="mapClip"><rect width="1200" height="430" rx="16"/></clipPath>
   </defs>
@@ -83,387 +67,170 @@
     <!-- Canvas Background -->
     <rect width="1200" height="430" fill="url(#bgGrad)"/>
 
-    <!-- ==================== 3D ISOMETRIC VIEWPORT ==================== -->
-    <g transform="translate(390, 215) rotate(-28) skewX(36) scale(0.88, 0.62)">
+    <!-- ==================== 3D EXPLODED LAYER STACK VIEWPORT ==================== -->
+    <g transform="translate(380, 205) rotate(-25) skewX(35) scale(0.72, 0.50)">
 
-      <!-- Ground Base Grid -->
-      <rect x="-460" y="-360" width="1020" height="760" fill="url(#hexGrid)" opacity="0.5"/>
+      <!-- VERTICAL CONNECTOR GUIDE LINES LINKING ALL 3 LAYERS -->
+      <g stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.45">
+        <line x1="-300" y1="-200" x2="-300" y2="160"/>
+        <line x1="300" y1="-200" x2="300" y2="160"/>
+        <line x1="-300" y1="100" x2="-300" y2="460"/>
+        <line x1="300" y1="100" x2="300" y2="460"/>
+        <line x1="0" y1="-100" x2="0" y2="260"/>
+      </g>
 
-      <!-- ==================== UNDERGROUND VRD UTILITY NETWORKS (VOIES ET RÉSEAUX DIVERS) ==================== -->
-      <g opacity="0.85">
-        <!-- VRD 1: Réseau d'Assainissement & Eau Potable (AEP / EU / EP) - Cyan/Blue Pipes -->
-        <g stroke="#0284c7" stroke-width="2.5" stroke-dasharray="8,4" fill="none" opacity="0.75">
-          <line x1="-450" y1="-252" x2="450" y2="-252"/>
-          <line x1="-450" y1="-132" x2="450" y2="-132"/>
-          <line x1="-450" y1="-12" x2="450" y2="-12"/>
-          <line x1="-450" y1="108" x2="450" y2="108"/>
+      <!-- ========================================================================= -->
+      <!-- COUCHE 1 (BASSE, Z=-1) : VRD & RÉSEAUX SOUTERRAINS (EAU, FIBRE, GAZ)     -->
+      <!-- ========================================================================= -->
+      <g transform="translate(0, 160)">
+        <!-- Layer 1 Plane Base -->
+        <polygon points="-350,-220 350,-220 350,180 -350,180" fill="url(#layerGrad1)" stroke="#0284c7" stroke-width="1.2" stroke-opacity="0.6"/>
+        
+        <!-- Grid Sub-surface -->
+        <path d="M -350,-120 L 350,-120 M -350,-20 L 350,-20 M -350,80 L 350,80" stroke="#0f172a" stroke-width="6"/>
+        <path d="M -200,-220 L -200,180 M 0,-220 L 0,180 M 200,-220 L 200,180" stroke="#0f172a" stroke-width="6"/>
 
-          <line x1="-332" y1="-360" x2="-332" y2="260"/>
-          <line x1="-212" y1="-360" x2="-212" y2="260"/>
-          <line x1="-92" y1="-360" x2="-92" y2="260"/>
-          <line x1="28" y1="-360" x2="28" y2="260"/>
-          <line x1="148" y1="-360" x2="148" y2="260"/>
+        <!-- VRD Network Lines -->
+        <!-- AEP / EU Water Pipe (Cyan) -->
+        <path id="vrdPipeAEP" d="M -340,-120 L 340,-120" stroke="#0284c7" stroke-width="3" stroke-dasharray="10,5" fill="none"/>
+        <path d="M -200,-210 L -200,170" stroke="#0284c7" stroke-width="3" stroke-dasharray="10,5" fill="none"/>
+        
+        <!-- Fibre Optique FTTH (Purple) -->
+        <path id="vrdPipeFibre" d="M -340,-20 L 340,-20" stroke="#c084fc" stroke-width="2.5" stroke-dasharray="8,4" fill="none"/>
+        <path d="M 0,-210 L 0,170" stroke="#c084fc" stroke-width="2.5" stroke-dasharray="8,4" fill="none"/>
+
+        <!-- Gaz & Chaleur Urbaine (Orange) -->
+        <path d="M -340,80 L 340,80" stroke="#f97316" stroke-width="2" stroke-dasharray="6,4" fill="none"/>
+
+        <!-- Regards de visite / Manholes -->
+        <g fill="#0f172a" stroke="#38bdf8" stroke-width="1.5">
+          <circle cx="-200" cy="-120" r="5"/><circle cx="-200" cy="-120" r="2" fill="#38bdf8"/>
+          <circle cx="0" cy="-120" r="5"/><circle cx="0" cy="-120" r="2" fill="#38bdf8"/>
+          <circle cx="200" cy="-120" r="5"/><circle cx="200" cy="-120" r="2" fill="#38bdf8"/>
+          <circle cx="0" cy="-20" r="5"/><circle cx="0" cy="-20" r="2" fill="#c084fc"/>
         </g>
 
-        <!-- VRD 2: Réseau Télécom & Fibre Optique (FTTH) - Purple Conduits -->
-        <g stroke="#c084fc" stroke-width="1.8" stroke-dasharray="6,3" fill="none" opacity="0.8">
-          <line x1="-450" y1="-268" x2="450" y2="-268"/>
-          <line x1="-450" y1="-148" x2="450" y2="-148"/>
-          <line x1="-450" y1="-28" x2="450" y2="-28"/>
-          <line x1="-450" y1="92" x2="450" y2="92"/>
-
-          <line x1="-348" y1="-360" x2="-348" y2="260"/>
-          <line x1="-228" y1="-360" x2="-228" y2="260"/>
-          <line x1="-108" y1="-360" x2="-108" y2="260"/>
-          <line x1="12" y1="-360" x2="12" y2="260"/>
-        </g>
-
-        <!-- VRD 3: Réseau Énergie, Gaz & Chaleur Urbaine - Orange Conduits -->
-        <g stroke="#f97316" stroke-width="1.6" stroke-dasharray="5,5" fill="none" opacity="0.75" filter="url(#glowOrange)">
-          <line x1="-450" y1="-265" x2="450" y2="-265"/>
-          <line x1="-450" y1="-145" x2="450" y2="-145"/>
-          <line x1="-450" y1="-25" x2="450" y2="-25"/>
-
-          <line x1="-345" y1="-360" x2="-345" y2="260"/>
-          <line x1="-105" y1="-360" x2="-105" y2="260"/>
-          <line x1="15" y1="-360" x2="15" y2="260"/>
-        </g>
-
-        <!-- VRD Manholes & Regards de Visite (Intersection Nodes) -->
+        <!-- Animated Data Pulse on Fiber -->
         <g>
-          <use href="#vrdManhole" x="-332" y="-252"/>
-          <use href="#vrdManhole" x="-212" y="-252"/>
-          <use href="#vrdManhole" x="-92" y="-252"/>
-          <use href="#vrdManhole" x="28" y="-252"/>
-          <use href="#vrdManhole" x="148" y="-252"/>
+          <use href="#vrdDataPulse"><animateMotion dur="4s" repeatCount="indefinite" rotate="auto"><mpath href="#vrdPipeFibre"/></animateMotion></use>
+        </g>
 
-          <use href="#vrdManhole" x="-332" y="-132"/>
-          <use href="#vrdManhole" x="-212" y="-132"/>
-          <use href="#vrdManhole" x="-92" y="-132"/>
-          <use href="#vrdManhole" x="28" y="-132"/>
-          <use href="#vrdManhole" x="148" y="-132"/>
-
-          <use href="#vrdManhole" x="-332" y="-12"/>
-          <use href="#vrdManhole" x="-212" y="-12"/>
-          <use href="#vrdManhole" x="-92" y="-12"/>
-          <use href="#vrdManhole" x="28" y="-12"/>
-
-          <use href="#vrdTelecomBox" x="-348" y="-268"/>
-          <use href="#vrdTelecomBox" x="-228" y="-268"/>
-          <use href="#vrdTelecomBox" x="-108" y="-268"/>
-          <use href="#vrdTelecomBox" x="12" y="-268"/>
+        <!-- Layer Label 1 -->
+        <g transform="translate(-340, -200)">
+          <rect x="0" y="0" width="220" height="22" rx="4" fill="#0369a1" opacity="0.85"/>
+          <text x="10" y="15" fill="#ffffff" font-family="'JetBrains Mono',monospace" font-size="10" font-weight="bold">COUCHE 1 : RÉSEAUX VRD (Z=-1)</text>
         </g>
       </g>
 
-      <!-- ==================== INFRASTRUCTURE: WATER CANAL ==================== -->
-      <path id="waterCanal" d="M -460,180 L 460,180" fill="none" stroke="url(#waterGrad)" stroke-width="22"/>
-      <path d="M -460,169 L 460,169" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.4"/>
-      <path d="M -460,191 L 460,191" fill="none" stroke="#0284c7" stroke-width="1" opacity="0.4"/>
+      <!-- ========================================================================= -->
+      <!-- COUCHE 2 (MILIEU, Z=0) : CADASTRE, VOIRIE & BÂTIMENTS 3D                 -->
+      <!-- ========================================================================= -->
+      <g transform="translate(0, 0)">
+        <!-- Layer 2 Plane Base -->
+        <polygon points="-350,-220 350,-220 350,180 -350,180" fill="url(#layerGrad2)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6"/>
 
-      <!-- ==================== STREET NETWORK ==================== -->
-      <g stroke="#131c2e" stroke-width="12" fill="none" stroke-linecap="square">
-        <!-- Horizontal Grid Streets (NW to SE) -->
-        <path id="hStreet1" d="M -450,-320 L 450,-320"/>
-        <path id="hStreet2" d="M -450,-260 L 450,-260"/>
-        <path id="hStreet3" d="M -450,-200 L 450,-200"/>
-        <path id="hStreet4" d="M -450,-140 L 450,-140"/>
-        <path id="hStreet5" d="M -450,-80 L 450,-80"/>
-        <path id="hStreet6" d="M -450,-20 L 450,-20"/>
-        <path id="hStreet7" d="M -450,40 L 450,40"/>
-        <path id="hStreet8" d="M -450,100 L 450,100"/>
-        <path id="hStreet9" d="M -450,240 L 450,240"/>
-
-        <!-- Vertical Grid Streets (SW to NE) -->
-        <path id="vStreet1" d="M -400,-360 L -400,260"/>
-        <path id="vStreet2" d="M -340,-360 L -340,260"/>
-        <path id="vStreet3" d="M -280,-360 L -280,260"/>
-        <path id="vStreet4" d="M -220,-360 L -220,260"/>
-        <path id="vStreet5" d="M -160,-360 L -160,260"/>
-        <path id="vStreet6" d="M -100,-360 L -100,260"/>
-        <path id="vStreet7" d="M -40,-360 L -40,260"/>
-        <path id="vStreet8" d="M 20,-360 L 20,260"/>
-        <path id="vStreet9" d="M 80,-360 L 80,260"/>
-        <path id="vStreet10" d="M 140,-360 L 140,260"/>
-        <path id="vStreet11" d="M 200,-360 L 200,260"/>
-        <path id="vStreet12" d="M 260,-360 L 260,260"/>
-        <path id="vStreet13" d="M 320,-360 L 320,260"/>
-        <path id="vStreet14" d="M 380,-360 L 380,260"/>
-      </g>
-
-      <!-- Dashed Center Lane Dividers on Grid Streets -->
-      <g stroke="#ffffff" stroke-width="0.7" stroke-dasharray="4,4" opacity="0.6">
-        <line x1="-450" y1="-260" x2="450" y2="-260"/>
-        <line x1="-450" y1="-140" x2="450" y2="-140"/>
-        <line x1="-450" y1="-20" x2="450" y2="-20"/>
-        <line x1="-450" y1="100" x2="450" y2="100"/>
-
-        <line x1="-340" y1="-360" x2="-340" y2="260"/>
-        <line x1="-220" y1="-360" x2="-220" y2="260"/>
-        <line x1="-100" y1="-360" x2="-100" y2="260"/>
-        <line x1="20" y1="-360" x2="20" y2="260"/>
-        <line x1="140" y1="-360" x2="140" y2="260"/>
-        <line x1="260" y1="-360" x2="260" y2="260"/>
-      </g>
-
-      <!-- INFRASTRUCTURE BRIDGES OVER CANAL -->
-      <g stroke="#475569" stroke-width="3" fill="#1e293b">
-        <!-- Bridge 1 over Canal -->
-        <rect x="-106" y="166" width="12" height="28" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
-        <!-- Bridge 2 over Canal -->
-        <rect x="134" y="166" width="12" height="28" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
-      </g>
-
-      <!-- ==================== 3D BUILDING BLOCKS & SMART URBAN INFRASTRUCTURE ==================== -->
-      <g stroke="#334155" stroke-width="0.5">
-
-        <!-- Row 1 (-320 Y) -->
-        <g transform="translate(0, -320)">
-          <polygon points="-390,5 -350,5 -350,25 -390,25" fill="#0f172a"/>
-          <polygon points="-390,5 -350,5 -350,-15 -390,-15" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
-          <polygon points="-350,5 -350,25 -350,5 -350,-15" fill="#0b1324"/>
-          <polygon points="-390,-15 -350,-15 -350,5 -390,5" fill="url(#roofGrad)" stroke="#38bdf8" stroke-width="0.5"/>
-
-          <rect x="-330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-210" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="-150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="30" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <!-- Street Network -->
+        <g stroke="#1e293b" stroke-width="14" fill="none">
+          <path id="c2Street1" d="M -340,-100 L 340,-100"/>
+          <path id="c2Street2" d="M -340,40 L 340,40"/>
+          <path id="c2Street3" d="M -150,-210 L -150,170"/>
+          <path id="c2Street4" d="M 150,-210 L 150,170"/>
+        </g>
+        <g stroke="#ffffff" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.6">
+          <line x1="-340" y1="-100" x2="340" y2="-100"/>
+          <line x1="-340" y1="40" x2="340" y2="40"/>
+          <line x1="-150" y1="-210" x2="-150" y2="170"/>
+          <line x1="150" y1="-210" x2="150" y2="170"/>
         </g>
 
-        <!-- Row 2 (-260 Y) -->
-        <g transform="translate(0, -260)">
-          <rect x="-390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-
-          <polygon points="-150,5 -110,5 -110,25 -150,25" fill="#0f172a"/>
-          <polygon points="-150,5 -110,5 -110,-10 -150,-10" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
-          <polygon points="-110,5 -110,25 -110,10 -110,-10" fill="#0b1324"/>
-          <polygon points="-150,-10 -110,-10 -110,10 -150,10" fill="url(#roofGrad)" stroke="#38bdf8" stroke-width="0.5"/>
-
-          <rect x="-90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="90" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
+        <!-- 3D Cadastral Buildings -->
+        <g stroke="#334155" stroke-width="0.6">
+          <!-- Building 1 -->
+          <g transform="translate(-250, -180)">
+            <polygon points="0,0 50,0 50,40 0,40" fill="#0f172a"/>
+            <polygon points="0,0 50,0 50,-20 0,-20" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+            <polygon points="50,0 50,40 50,20 50,-20" fill="#0b1324"/>
+          </g>
+          <!-- Building 2 -->
+          <g transform="translate(40, -180)">
+            <polygon points="0,0 60,0 60,45 0,45" fill="#0f172a"/>
+            <polygon points="0,0 60,0 60,-25 0,-25" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+            <polygon points="60,0 60,45 60,20 60,-25" fill="#0b1324"/>
+          </g>
+          <!-- Building 3 -->
+          <g transform="translate(-80, -30)">
+            <polygon points="0,0 70,0 70,50 0,50" fill="#0f172a"/>
+            <polygon points="0,0 70,0 70,-30 0,-30" fill="#1e293b" stroke="#10b981" stroke-width="0.8"/>
+            <polygon points="70,0 70,50 70,20 70,-30" fill="#0b1324"/>
+          </g>
+          <!-- Building 4 -->
+          <g transform="translate(200, -30)">
+            <polygon points="0,0 55,0 55,40 0,40" fill="#0f172a"/>
+            <polygon points="0,0 55,0 55,-20 0,-20" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+            <polygon points="55,0 55,40 55,20 55,-20" fill="#0b1324"/>
+          </g>
         </g>
 
-        <!-- Row 3 (-200 Y) -->
-        <g transform="translate(0, -200)">
-          <rect x="-390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-330" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-
-          <polygon points="-90,5 -50,5 -50,25 -90,25" fill="#0f172a"/>
-          <polygon points="-90,5 -50,5 -50,-25 -90,-25" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
-          <polygon points="-50,5 -50,25 -50,-5 -50,-25" fill="#0b1324"/>
-          <polygon points="-90,-25 -50,-25 -50,-5 -90,-5" fill="url(#roofGrad)" stroke="#38bdf8" stroke-width="0.5"/>
-
-          <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="210" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-        </g>
-
-        <!-- Row 4 (-140 Y) -->
-        <g transform="translate(0, -140)">
-          <rect x="-390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-30" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-
-          <polygon points="90,5 130,5 130,25 90,25" fill="#0f172a"/>
-          <polygon points="90,5 130,5 130,-20 90,-20" fill="#1e293b" stroke="#ec4899" stroke-width="0.8"/>
-          <polygon points="130,5 130,25 130,0 130,-20" fill="#0b1324"/>
-          <polygon points="90,-20 130,-20 130,0 90,0" fill="url(#roofGrad)" stroke="#ec4899" stroke-width="0.5"/>
-
-          <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-        </g>
-
-        <!-- Row 5 (-80 Y) -->
-        <g transform="translate(0, -80)">
-          <rect x="-390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-270" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="-210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="150" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-        </g>
-
-        <!-- Row 6 (-20 Y) -->
-        <g transform="translate(0, -20)">
-          <rect x="-390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="30" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-        </g>
-
-        <!-- Row 7 (40 Y) -->
-        <g transform="translate(0, 40)">
-          <rect x="-390" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-270" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-210" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="-150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="-30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="30" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="90" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="150" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="210" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-          <rect x="270" y="5" width="40" height="20" rx="2" fill="#064e3b"/>
-          <rect x="330" y="5" width="40" height="20" rx="2" fill="#131e33"/>
-        </g>
-
-        <!-- Courtyards Patios -->
-        <g fill="#059669" opacity="0.75">
-          <rect x="-320" y="-310" width="20" height="8"/>
-          <rect x="-200" y="-310" width="20" height="8"/>
-          <rect x="-80" y="-310" width="20" height="8"/>
-          <rect x="40" y="-310" width="20" height="8"/>
-          <rect x="160" y="-310" width="20" height="8"/>
-          <rect x="-320" y="-190" width="20" height="8"/>
-          <rect x="-200" y="-190" width="20" height="8"/>
-          <rect x="-80" y="-190" width="20" height="8"/>
-          <rect x="40" y="-190" width="20" height="8"/>
-          <rect x="160" y="-190" width="20" height="8"/>
-        </g>
-      </g>
-
-      <!-- ==================== INFRASTRUCTURE: ELEVATED TRANSIT MONORAIL / VIADUCT ==================== -->
-      <g>
-        <!-- Viaduct Pillars -->
-        <g fill="#1e293b" stroke="#334155" stroke-width="0.8">
-          <rect x="-382" y="-120" width="4" height="25"/>
-          <rect x="-222" y="-120" width="4" height="25"/>
-          <rect x="-62" y="-120" width="4" height="25"/>
-          <rect x="98" y="-120" width="4" height="25"/>
-          <rect x="258" y="-120" width="4" height="25"/>
-        </g>
-
-        <!-- Elevated Monorail Track -->
-        <path id="monorailTrack" d="M -460,-120 L 460,-120" fill="none" stroke="#10b981" stroke-width="4" filter="url(#glowGreen)"/>
-        <path d="M -460,-120 L 460,-120" fill="none" stroke="#ffffff" stroke-width="0.8" stroke-dasharray="8,4"/>
-
-        <!-- Animated High-Speed Monorail Transit Pod -->
+        <!-- Animated Street Traffic (Layer 2 Animation) -->
         <g>
-          <use href="#shadowDot"><animateMotion dur="5.0s" repeatCount="indefinite" rotate="auto"><mpath href="#monorailTrack"/></animateMotion></use>
-          <use href="#monorailPod"><animateMotion dur="5.0s" repeatCount="indefinite" rotate="auto"><mpath href="#monorailTrack"/></animateMotion></use>
+          <use href="#carEast"><animateMotion dur="5s" repeatCount="indefinite" rotate="auto"><mpath href="#c2Street1"/></animateMotion></use>
+          <use href="#carWest"><animateMotion dur="6s" begin="-2s" repeatCount="indefinite" rotate="auto"><mpath href="#c2Street2"/></animateMotion></use>
+        </g>
+
+        <!-- Layer Label 2 -->
+        <g transform="translate(-340, -200)">
+          <rect x="0" y="0" width="240" height="22" rx="4" fill="#0284c7" opacity="0.85"/>
+          <text x="10" y="15" fill="#ffffff" font-family="'JetBrains Mono',monospace" font-size="10" font-weight="bold">COUCHE 2 : CADASTRE &amp; BÂTI 3D (Z=0)</text>
         </g>
       </g>
 
-      <!-- ==================== INFRASTRUCTURE: HIGH-VOLTAGE POWER GRID PYLONS ==================== -->
-      <g>
-        <!-- Pylon 1 -->
-        <g transform="translate(-250, -280)">
-          <line x1="0" y1="0" x2="0" y2="-45" stroke="#38bdf8" stroke-width="1.2"/>
-          <line x1="-8" y1="-30" x2="8" y2="-30" stroke="#38bdf8" stroke-width="1"/>
-          <line x1="-12" y1="-40" x2="12" y2="-40" stroke="#38bdf8" stroke-width="1"/>
-          <circle cx="0" cy="-45" r="2" fill="#ffffff" filter="url(#glowCyan)"/>
-        </g>
-        <!-- Pylon 2 -->
-        <g transform="translate(150, -280)">
-          <line x1="0" y1="0" x2="0" y2="-45" stroke="#38bdf8" stroke-width="1.2"/>
-          <line x1="-8" y1="-30" x2="8" y2="-30" stroke="#38bdf8" stroke-width="1"/>
-          <line x1="-12" y1="-40" x2="12" y2="-40" stroke="#38bdf8" stroke-width="1"/>
-          <circle cx="0" cy="-45" r="2" fill="#ffffff" filter="url(#glowCyan)"/>
-        </g>
-        <!-- Overhead Power Grid Lines -->
-        <path d="M -262,-320 Q -50,-310 138,-320" fill="none" stroke="#0284c7" stroke-width="0.8" opacity="0.8"/>
-        <path d="M -250,-325 Q -50,-315 150,-325" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.9" filter="url(#glowCyan)"/>
-        <path d="M -238,-320 Q -50,-310 162,-320" fill="none" stroke="#0284c7" stroke-width="0.8" opacity="0.8"/>
-      </g>
+      <!-- ========================================================================= -->
+      <!-- COUCHE 3 (HAUTE, Z=+1) : INFRASTRUCTURES AÉRIENNES & MOBILITÉ          -->
+      <!-- ========================================================================= -->
+      <g transform="translate(0, -160)">
+        <!-- Layer 3 Plane Base -->
+        <polygon points="-350,-220 350,-220 350,180 -350,180" fill="url(#layerGrad3)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.6"/>
 
-      <!-- ==================== CENTRAL 3D TELECOM / GIS HUB TOWER ==================== -->
-      <g transform="translate(0, -80)">
-        <polygon points="-16,-10 16,-10 16,10 -16,10" fill="#000000" opacity="0.6"/>
-        <polygon points="-16,-10 16,-10 16,-30 -16,-30" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
-        <polygon points="16,-10 16,10 16,-10 16,-30" fill="#0f172a"/>
-        <!-- Central 3D Spire -->
-        <line x1="0" y1="-30" x2="0" y2="-95" stroke="#38bdf8" stroke-width="2.5" filter="url(#glowCyan)"/>
-        <circle cx="0" cy="-95" r="4.5" fill="#ffffff" filter="url(#glowCyan)"/>
-        <!-- Pulsing Spatial Scan Ring -->
-        <circle cx="0" cy="0" r="45" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.6">
-          <animate attributeName="r" values="10;70;10" dur="4s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.9;0;0.9" dur="4s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-
-      <!-- Vertical PostGIS Geocoding Data Pins -->
-      <g>
-        <g transform="translate(-150, -140)">
-          <line x1="0" y1="-10" x2="0" y2="-65" stroke="#38bdf8" stroke-width="2" filter="url(#glowCyan)"/>
-          <circle cx="0" cy="-65" r="4.5" fill="#38bdf8"/>
+        <!-- High-Voltage Grid & Pylons -->
+        <g transform="translate(-180, -80)">
+          <line x1="0" y1="0" x2="0" y2="-40" stroke="#38bdf8" stroke-width="1.5"/>
+          <line x1="-10" y1="-25" x2="10" y2="-25" stroke="#38bdf8" stroke-width="1.2"/>
+          <circle cx="0" cy="-40" r="2.5" fill="#ffffff" filter="url(#glowCyan)"/>
         </g>
-        <g transform="translate(130, -20)">
-          <line x1="0" y1="-20" x2="0" y2="-75" stroke="#ec4899" stroke-width="2" filter="url(#glowRose)"/>
-          <circle cx="0" cy="-75" r="4.5" fill="#ec4899"/>
+        <g transform="translate(180, -80)">
+          <line x1="0" y1="0" x2="0" y2="-40" stroke="#38bdf8" stroke-width="1.5"/>
+          <line x1="-10" y1="-25" x2="10" y2="-25" stroke="#38bdf8" stroke-width="1.2"/>
+          <circle cx="0" cy="-40" r="2.5" fill="#ffffff" filter="url(#glowCyan)"/>
         </g>
-      </g>
+        <path d="M -180,-120 Q 0,-105 180,-120" fill="none" stroke="#38bdf8" stroke-width="1.2" filter="url(#glowCyan)"/>
 
-      <!-- ==================== ANIMATED 3D TRAFFIC ALONG STREET NETWORK ==================== -->
-      <g>
-        <!-- Horizontal Street Traffic (Eastbound & Westbound) -->
+        <!-- Elevated Viaduct Track (Monorail Layer 3) -->
+        <path id="c3Viaduct" d="M -340,30 L 340,30" fill="none" stroke="#10b981" stroke-width="3.5" filter="url(#glowGreen)"/>
+        <path d="M -340,30 L 340,30" fill="none" stroke="#ffffff" stroke-width="0.8" stroke-dasharray="6,4"/>
+
+        <!-- Central Telecom Antenna -->
+        <g transform="translate(0, -60)">
+          <line x1="0" y1="0" x2="0" y2="-50" stroke="#c084fc" stroke-width="2" filter="url(#glowPurple)"/>
+          <circle cx="0" cy="-50" r="3.5" fill="#ffffff"/>
+          <circle cx="0" cy="0" r="25" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.6">
+            <animate attributeName="r" values="5;40;5" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.9;0;0.9" dur="3s" repeatCount="indefinite"/>
+          </circle>
+        </g>
+
+        <!-- Animated High-Speed Monorail Pod (Layer 3 Animation) -->
         <g>
-          <use href="#shadowDot"><animateMotion dur="6.5s" repeatCount="indefinite" rotate="auto"><mpath href="#hStreet6"/></animateMotion></use>
-          <use href="#carEast"><animateMotion dur="6.5s" repeatCount="indefinite" rotate="auto"><mpath href="#hStreet6"/></animateMotion></use>
-        </g>
-        <g>
-          <use href="#shadowDot"><animateMotion dur="7.2s" begin="-2.5s" repeatCount="indefinite" rotate="auto"><mpath href="#hStreet4"/></animateMotion></use>
-          <use href="#dotCyan"><animateMotion dur="7.2s" begin="-2.5s" repeatCount="indefinite" rotate="auto"><mpath href="#hStreet4"/></animateMotion></use>
+          <use href="#monorailPod"><animateMotion dur="4.5s" repeatCount="indefinite" rotate="auto"><mpath href="#c3Viaduct"/></animateMotion></use>
         </g>
 
-        <!-- Vertical Street Traffic (Northbound & Southbound) -->
-        <g>
-          <use href="#shadowDot"><animateMotion dur="6.0s" repeatCount="indefinite" rotate="auto"><mpath href="#vStreet6"/></animateMotion></use>
-          <use href="#carWest"><animateMotion dur="6.0s" repeatCount="indefinite" rotate="auto"><mpath href="#vStreet6"/></animateMotion></use>
-        </g>
-        <g>
-          <use href="#shadowDot"><animateMotion dur="6.8s" begin="-1.5s" repeatCount="indefinite" rotate="auto"><mpath href="#vStreet10"/></animateMotion></use>
-          <use href="#dotRose"><animateMotion dur="6.8s" begin="-1.5s" repeatCount="indefinite" rotate="auto"><mpath href="#vStreet10"/></animateMotion></use>
+        <!-- Layer Label 3 -->
+        <g transform="translate(-340, -200)">
+          <rect x="0" y="0" width="250" height="22" rx="4" fill="#7e22ce" opacity="0.85"/>
+          <text x="10" y="15" fill="#ffffff" font-family="'JetBrains Mono',monospace" font-size="10" font-weight="bold">COUCHE 3 : AÉRIEN &amp; MOBILITÉ (Z=+1)</text>
         </g>
       </g>
 
-    </g> <!-- End 3D Isometric Viewport -->
+    </g> <!-- End 3D Exploded Layer Stack Viewport -->
 
     <!-- GIS Spatial Analysis Laser Scanline -->
     <line x1="0" y1="0" x2="0" y2="430" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.5" filter="url(#glowCyan)">
@@ -473,7 +240,7 @@
 
     <!-- Overlay Technical Annotations & Coordinates -->
     <g font-family="'JetBrains Mono','SF Mono','Fira Code','Courier New',monospace" font-weight="400" font-size="8.5" fill="#64748b" opacity="0.85">
-      <text x="20" y="24" fill="#38bdf8" font-weight="600" letter-spacing="1">MATRICE URBAINE 3D · RÉSEAUX VRD, INFRASTRUCTURES &amp; SIG</text>
+      <text x="20" y="24" fill="#38bdf8" font-weight="600" letter-spacing="1">SIG 3D · EMPILEMENT MULTI-COUCHES ANIMÉES (STACK ARCHITECTURE)</text>
       <text x="20" y="415" letter-spacing="0.8">48°51'24" N  2°21'07" E · EPSG:2154 (RGF93 / LAMBERT-93)</text>
       <text x="780" y="24" letter-spacing="0.8" text-anchor="end">POSTGIS 3D / CITYGML 3.0</text>
     </g>
@@ -520,7 +287,7 @@
 
       <!-- Expertise Specialties -->
       <text x="1175" y="168" fill="#38bdf8" font-size="16" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="500" font-style="italic">Bases de Données Spatiales · PostGIS &amp; QGIS</text>
-      <text x="1175" y="195" fill="#e2e8f0" font-size="15" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="400" opacity="0.9">Réseaux VRD (AEP, EU/EP, Fibre) &amp; SIG 3D</text>
+      <text x="1175" y="195" fill="#e2e8f0" font-size="15" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="400" opacity="0.9">SIG 3D Multi-Couches (VRD, Bâti &amp; Aérien)</text>
       <text x="1175" y="220" fill="#e2e8f0" font-size="15" font-family="'Cormorant Garamond','EB Garamond','Georgia',serif" font-weight="400" opacity="0.9">Workflows FME Form Advanced, Python &amp; SQL</text>
 
       <!-- Technical Tags / Pills -->
