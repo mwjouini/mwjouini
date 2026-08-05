@@ -1,4 +1,4 @@
-<img src="./assets/eixample-3d-hero.svg" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+<img src="./assets/city-plan-hero.svg" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 
 <p align="center">
   <a href="https://www.linkedin.com/in/jouinimohamedwael"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-JOUINI%20Mohamed%20Wael-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>

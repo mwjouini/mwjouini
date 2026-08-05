@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mohamed Wael Jouini — Responsable SIG, plan de ville en 3D, PostGIS">
+  <defs>
+    <linearGradient id="skyBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101b26"/>
+      <stop offset="100%" stop-color="#1a2c38"/>
+    </linearGradient>
+    <symbol id="carWhite" overflow="visible"><circle r="3" fill="#ffffff"/><circle r="6" fill="#ffffff" opacity="0.3"/></symbol>
+    <symbol id="carTeal" overflow="visible"><circle r="2.6" fill="#5fe0d0"/><circle r="5.2" fill="#5fe0d0" opacity="0.3"/></symbol>
+    <clipPath id="frameClipFinal"><rect width="1200" height="380" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#frameClipFinal)">
+    <rect width="1200" height="380" fill="url(#skyBg)"/>
+
+    <g>
+      <rect x="177.0" y="0" width="26" height="380" fill="#26343d"/>
+      <rect x="367.0" y="0" width="26" height="380" fill="#26343d"/>
+      <rect x="557.0" y="0" width="26" height="380" fill="#26343d"/>
+      <rect x="0" y="117.0" width="760" height="26" fill="#26343d"/>
+      <rect x="0" y="247.0" width="760" height="26" fill="#26343d"/>
+    </g>
+
+    <g stroke-linejoin="round">
+      <polygon points="175.0,-24.4 191.0,-33.4 191.0,113.0 175.0,122.0" fill="#d1af6f"/>
+      <polygon points="16,-24.4 175.0,-24.4 175.0,122.0 16,122.0" fill="#a9803f"/>
+      <polygon points="16,-24.4 32.0,-33.4 191.0,-33.4 175.0,-24.4" fill="#f0dcae"/>
+      <line x1="175.0" y1="-24.4" x2="175.0" y2="122.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+
+      <polygon points="175.0,102.4 191.0,93.4 191.0,240.0 175.0,249.0" fill="#5fb3ab"/>
+      <polygon points="16,102.4 175.0,102.4 175.0,249.0 16,249.0" fill="#377b74"/>
+      <polygon points="16,102.4 32.0,93.4 191.0,93.4 175.0,102.4" fill="#a9e0d8"/>
+      <line x1="175.0" y1="102.4" x2="175.0" y2="249.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+
+      <polygon points="175.0,224.7 191.0,215.7 191.0,364.0 175.0,364.0" fill="#d17a74"/>
+      <polygon points="16,224.7 175.0,224.7 175.0,364.0 16,364.0" fill="#a3453f"/>
+      <polygon points="16,224.7 32.0,215.7 191.0,215.7 175.0,224.7" fill="#eab0ac"/>
+      <line x1="175.0" y1="224.7" x2="175.0" y2="364.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+
+      <polygon points="365.0,-13.1 381.0,-22.1 381.0,113.0 365.0,122.0" fill="#93a8c9"/>
+      <polygon points="205.0,-13.1 365.0,-13.1 365.0,122.0 205.0,122.0" fill="#5c7599"/>
+      <polygon points="205.0,-13.1 221.0,-22.1 381.0,-22.1 365.0,-13.1" fill="#c3d6ee"/>
+      <line x1="365.0" y1="-13.1" x2="365.0" y2="122.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+
+      <polygon points="365.0,110.0 381.0,101.0 381.0,240.0 365.0,249.0" fill="#d9b84a"/>
+      <polygon points="205.0,110.0 365.0,110.0 365.0,249.0 205.0,249.0" fill="#a98a2d"/>
+      <polygon points="205.0,110.0 221.0,101.0 381.0,101.0 365.0,110.0" fill="#f2e099"/>
+      <line x1="365.0" y1="110.0" x2="365.0" y2="249.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+
+      <polygon points="365.0,238.8 381.0,229.8 381.0,364.0 365.0,364.0" fill="#9ec172"/>
+      <polygon points="205.0,238.8 365.0,238.8 365.0,364.0 205.0,364.0" fill="#6f8f47"/>
+      <polygon points="205.0,238.8 221.0,229.8 381.0,229.8 365.0,238.8" fill="#cfe0b0"/>
+      <line x1="365.0" y1="238.8" x2="365.0" y2="364.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+
+      <polygon points="555.0,-20.9 571.0,-29.9 571.0,113.0 555.0,122.0" fill="#d1af6f"/>
+      <polygon points="395.0,-20.9 555.0,-20.9 555.0,122.0 395.0,122.0" fill="#a9803f"/>
+      <polygon points="395.0,-20.9 411.0,-29.9 571.0,-29.9 555.0,-20.9" fill="#f0dcae"/>
+      <line x1="555.0" y1="-20.9" x2="555.0" y2="122.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+
+      <polygon points="555.0,106.2 571.0,97.2 571.0,240.0 555.0,249.0" fill="#5fb3ab"/>
+      <polygon points="395.0,106.2 555.0,106.2 555.0,249.0 395.0,249.0" fill="#377b74"/>
+      <polygon points="395.0,106.2 411.0,97.2 571.0,97.2 555.0,106.2" fill="#a9e0d8"/>
+      <line x1="555.0" y1="106.2" x2="555.0" y2="249.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+
+      <polygon points="555.0,232.3 571.0,223.3 571.0,364.0 555.0,364.0" fill="#d17a74"/>
+      <polygon points="395.0,232.3 555.0,232.3 555.0,364.0 395.0,364.0" fill="#a3453f"/>
+      <polygon points="395.0,232.3 411.0,223.3 571.0,223.3 555.0,232.3" fill="#eab0ac"/>
+      <line x1="555.0" y1="232.3" x2="555.0" y2="364.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+
+      <polygon points="744.0,-17.6 760.0,-26.6 760.0,113.0 744.0,122.0" fill="#93a8c9"/>
+      <polygon points="585.0,-17.6 744.0,-17.6 744.0,122.0 585.0,122.0" fill="#5c7599"/>
+      <polygon points="585.0,-17.6 601.0,-26.6 760.0,-26.6 744.0,-17.6" fill="#c3d6ee"/>
+      <line x1="744.0" y1="-17.6" x2="744.0" y2="122.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+
+      <polygon points="744.0,98.9 760.0,89.9 760.0,240.0 744.0,249.0" fill="#d9b84a"/>
+      <polygon points="585.0,98.9 744.0,98.9 744.0,249.0 585.0,249.0" fill="#a98a2d"/>
+      <polygon points="585.0,98.9 601.0,89.9 760.0,89.9 744.0,98.9" fill="#f2e099"/>
+      <line x1="744.0" y1="98.9" x2="744.0" y2="249.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+
+      <polygon points="744.0,220.7 760.0,211.7 760.0,364.0 744.0,364.0" fill="#9ec172"/>
+      <polygon points="585.0,220.7 744.0,220.7 744.0,364.0 585.0,364.0" fill="#6f8f47"/>
+      <polygon points="585.0,220.7 601.0,211.7 760.0,211.7 744.0,220.7" fill="#cfe0b0"/>
+      <line x1="744.0" y1="220.7" x2="744.0" y2="364.0" stroke="#1c2b34" stroke-opacity="0.25" stroke-width="1"/>
+    </g>
+
+    <g>
+      <line x1="187.8" y1="0" x2="187.8" y2="380" stroke="#f5c542" stroke-width="1.4" stroke-dasharray="10 6"/>
+      <line x1="192.2" y1="0" x2="192.2" y2="380" stroke="#f5c542" stroke-width="1.4" stroke-dasharray="10 6"/>
+      <line x1="377.8" y1="0" x2="377.8" y2="380" stroke="#f5c542" stroke-width="1.4" stroke-dasharray="10 6"/>
+      <line x1="382.2" y1="0" x2="382.2" y2="380" stroke="#f5c542" stroke-width="1.4" stroke-dasharray="10 6"/>
+      <line x1="567.8" y1="0" x2="567.8" y2="380" stroke="#f5c542" stroke-width="1.4" stroke-dasharray="10 6"/>
+      <line x1="572.2" y1="0" x2="572.2" y2="380" stroke="#f5c542" stroke-width="1.4" stroke-dasharray="10 6"/>
+      <line x1="0" y1="127.8" x2="760" y2="127.8" stroke="#f5c542" stroke-width="1.4" stroke-dasharray="10 6"/>
+      <line x1="0" y1="132.2" x2="760" y2="132.2" stroke="#f5c542" stroke-width="1.4" stroke-dasharray="10 6"/>
+      <line x1="0" y1="257.8" x2="760" y2="257.8" stroke="#f5c542" stroke-width="1.4" stroke-dasharray="10 6"/>
+      <line x1="0" y1="262.2" x2="760" y2="262.2" stroke="#f5c542" stroke-width="1.4" stroke-dasharray="10 6"/>
+    </g>
+
+    <g>
+      <circle cx="190" cy="130" r="8" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.8"/>
+      <circle cx="190" cy="130" r="4" fill="#ffffff"/>
+      <circle cx="190" cy="130" r="16" fill="none" stroke="#5fe0d0" stroke-width="1" opacity="0.5">
+        <animate attributeName="r" values="8;26;8" dur="4.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.6;0;0.6" dur="4.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <g>
+      <use href="#carWhite"><animateMotion dur="7.8s" repeatCount="indefinite" path="M 190 0 L 190 380"/></use>
+      <use href="#carTeal"><animateMotion dur="8.2s" begin="-3s" repeatCount="indefinite" path="M 190 380 L 190 0"/></use>
+      <use href="#carWhite"><animateMotion dur="6.9s" repeatCount="indefinite" path="M 380 0 L 380 380"/></use>
+      <use href="#carTeal"><animateMotion dur="9.1s" begin="-3s" repeatCount="indefinite" path="M 380 380 L 380 0"/></use>
+      <use href="#carWhite"><animateMotion dur="7.3s" repeatCount="indefinite" path="M 570 0 L 570 380"/></use>
+      <use href="#carTeal"><animateMotion dur="8.7s" begin="-3s" repeatCount="indefinite" path="M 570 380 L 570 0"/></use>
+      <use href="#carWhite"><animateMotion dur="8.5s" repeatCount="indefinite" path="M 0 130 L 760 130"/></use>
+      <use href="#carTeal"><animateMotion dur="7.1s" begin="-3s" repeatCount="indefinite" path="M 760 130 L 0 130"/></use>
+      <use href="#carWhite"><animateMotion dur="9.4s" repeatCount="indefinite" path="M 0 260 L 760 260"/></use>
+      <use href="#carTeal"><animateMotion dur="6.6s" begin="-3s" repeatCount="indefinite" path="M 760 260 L 0 260"/></use>
+    </g>
+
+    <g font-family="'JetBrains Mono','SF Mono','Menlo','Courier New',monospace" letter-spacing="0.5">
+      <text x="18" y="24" fill="#ffffff" opacity="0.55" font-size="10" letter-spacing="0.8">PLAN DE VILLE · BÂTIMENTS 3D</text>
+      <text x="18" y="364" fill="#ffffff" opacity="0.55" font-size="10" letter-spacing="0.8">RÉSEAU VIAIRE · CIRCULATION SIMULÉE</text>
+    </g>
+
+    <rect x="760" y="0" width="440" height="380" fill="#0d1720"/>
+    <line x1="760" y1="0" x2="760" y2="380" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+
+    <g text-anchor="start">
+      <text x="800" y="90" fill="#f5c542" font-size="12" font-family="'JetBrains Mono','SF Mono','Menlo','Courier New',monospace" font-weight="600" letter-spacing="3">RESPONSABLE SIG</text>
+      <text x="800" y="150" fill="#ffffff" font-size="46" font-family="'Georgia','Cormorant Garamond',serif" font-weight="600">Mohamed Wael</text>
+      <text x="800" y="196" fill="#ffffff" font-size="46" font-family="'Georgia','Cormorant Garamond',serif" font-weight="600">Jouini</text>
+      <line x1="800" y1="216" x2="1000" y2="216" stroke="#f5c542" stroke-width="1.2"/>
+      <text x="800" y="248" fill="#e6ecf0" font-size="16" font-family="'JetBrains Mono','SF Mono','Menlo','Courier New',monospace" font-weight="400">PostGIS · QGIS · Python</text>
+      <text x="800" y="272" fill="#e6ecf0" font-size="16" font-family="'JetBrains Mono','SF Mono','Menlo','Courier New',monospace" font-weight="400">Cartographie automatisée</text>
+      <text x="800" y="296" fill="#e6ecf0" font-size="16" font-family="'JetBrains Mono','SF Mono','Menlo','Courier New',monospace" font-weight="400">Atlas de biodiversité</text>
+      <text x="800" y="340" fill="#8fa3b0" font-size="11" font-family="'JetBrains Mono','SF Mono','Menlo','Courier New',monospace" letter-spacing="1.5">FRANCE · COMMUNAUTÉ DE COMMUNES DES SABLONS</text>
+    </g>
+
+    <rect x="0.5" y="0.5" width="1199" height="379" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1"/>
+  </g>
+</svg>
