@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>CV - Mohamed Wael JOUINI - Responsable SIG & Géomaticien</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      color: #1a1a2e;
+      background: #fff;
+      font-size: 8.3pt;
+      line-height: 1.38;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      display: grid;
+      grid-template-columns: 66mm 1fr;
+      overflow: hidden;
+    }
+
+    /* ───── LEFT SIDEBAR ───── */
+    .sidebar {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px 14px;
+    }
+
+    .photo-wrap {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .photo-wrap img {
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
+      border: 3px solid #38bdf8;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
+    }
+
+    .sidebar-name {
+      text-align: center;
+      font-size: 12.5pt;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 2px;
+      letter-spacing: -0.3px;
+    }
+
+    .sidebar-title {
+      text-align: center;
+      font-size: 7.6pt;
+      color: #38bdf8;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 14px;
+    }
+
+    .sidebar h3 {
+      font-size: 8pt;
+      font-weight: 700;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 3px;
+      margin-bottom: 6px;
+      margin-top: 12px;
+    }
+
+    .sidebar h3:first-of-type { margin-top: 0; }
+
+    .contact-list {
+      list-style: none;
+    }
+
+    .contact-list li {
+      font-size: 7.5pt;
+      margin-bottom: 5px;
+      color: #cbd5e1;
+      line-height: 1.3;
+      word-break: break-all;
+    }
+
+    .contact-list .label {
+      display: block;
+      font-weight: 600;
+      color: #94a3b8;
+      font-size: 6.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1px;
+    }
+
+    .contact-list a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .contact-list a:hover {
+      text-decoration: underline;
+      color: #7dd3fc;
+    }
+
+    .skill-group {
+      margin-bottom: 8px;
+    }
+
+    .skill-group-title {
+      font-size: 7.2pt;
+      font-weight: 600;
+      color: #f1f5f9;
+      margin-bottom: 3px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+
+    .skill-tag {
+      display: inline-block;
+      background: #1e293b;
+      border: 1px solid #334155;
+      color: #cbd5e1;
+      font-size: 6.5pt;
+      padding: 1.5px 5px;
+      border-radius: 3px;
+    }
+
+    .lang-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+      font-size: 7.5pt;
+    }
+
+    .lang-name { color: #e2e8f0; font-weight: 500; }
+    .lang-level { color: #94a3b8; font-size: 6.8pt; }
+
+    .cert-item {
+      margin-bottom: 5px;
+    }
+
+    .cert-name {
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: #f1f5f9;
+    }
+
+    .cert-details {
+      font-size: 6.8pt;
+      color: #94a3b8;
+    }
+
+    /* ───── MAIN CONTENT ───── */
+    .main {
+      padding: 16px 18px 14px 18px;
+    }
+
+    .main h2 {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 2px solid #0ea5e9;
+      padding-bottom: 2px;
+      margin-bottom: 8px;
+      margin-top: 10px;
+    }
+
+    .main h2:first-child { margin-top: 0; }
+
+    /* Summary */
+    .summary {
+      background: #f0f9ff;
+      border-left: 3px solid #0ea5e9;
+      padding: 6px 9px;
+      font-size: 8pt;
+      color: #334155;
+      margin-bottom: 10px;
+      border-radius: 0 4px 4px 0;
+      line-height: 1.4;
+    }
+
+    /* Plugin highlight */
+    .plugin-box {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+      border-radius: 4px;
+      padding: 6px 9px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .plugin-box .left { flex: 1; }
+
+    .plugin-name {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #166534;
+    }
+
+    .plugin-name a {
+      color: #15803d;
+      text-decoration: underline;
+    }
+
+    .plugin-name a:hover {
+      color: #166534;
+    }
+
+    .plugin-desc {
+      font-size: 7.2pt;
+      color: #475569;
+      margin-top: 1px;
+    }
+
+    .plugin-badge {
+      background: #15803d;
+      color: #fff;
+      font-size: 6.2pt;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+      margin-left: 8px;
+    }
+
+    /* Experience */
+    .exp-item {
+      margin-bottom: 7.5px;
+      page-break-inside: avoid;
+    }
+
+    .exp-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .exp-role {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .exp-date {
+      font-size: 7pt;
+      color: #64748b;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .exp-company {
+      font-size: 7.8pt;
+      color: #0369a1;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .exp-bullets li {
+      font-size: 7.5pt;
+      color: #334155;
+      margin-bottom: 1.5px;
+      padding-left: 9px;
+      position: relative;
+    }
+
+    .exp-bullets li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #0ea5e9;
+      font-size: 7.5pt;
+    }
+
+    /* Formation */
+    .edu-item {
+      margin-bottom: 5px;
+    }
+
+    .edu-name {
+      font-size: 7.8pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .edu-school {
+      font-size: 7.2pt;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- ───── SIDEBAR ───── -->
+    <div class="sidebar">
+      <div class="photo-wrap">
+        <img src="profile_photo.jpg" alt="Mohamed Wael JOUINI">
+      </div>
+      <div class="sidebar-name">Mohamed Wael JOUINI</div>
+      <div class="sidebar-title">Responsable SIG & Géomaticien</div>
+
+      <h3>Contact</h3>
+      <ul class="contact-list">
+        <li><span class="label">Localisation</span>Beauvais (60) — Mobile France</li>
+        <li><span class="label">Téléphone</span><a href="tel:+33744217574">07 44 21 75 74</a></li>
+        <li><span class="label">Email</span><a href="mailto:mohamed.wael.jouini@gmail.com">mohamed.wael.jouini@gmail.com</a></li>
+        <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/jouinimohamedwael" target="_blank">linkedin.com/in/jouinimohamedwael</a></li>
+        <li><span class="label">GitHub</span><a href="https://github.com/mwjouini" target="_blank">github.com/mwjouini</a></li>
+      </ul>
+
+      <h3>Compétences</h3>
+      <div class="skill-group">
+        <div class="skill-group-title">SIG & Cartographie</div>
+        <div class="skill-tags">
+          <span class="skill-tag">QGIS</span>
+          <span class="skill-tag">ArcGIS</span>
+          <span class="skill-tag">WebGIS</span>
+          <span class="skill-tag">SIG Mobile</span>
+          <span class="skill-tag">Géoréférencement</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Bases de données & ETL</div>
+        <div class="skill-tags">
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">PostGIS</span>
+          <span class="skill-tag">FME Form</span>
+          <span class="skill-tag">GeoServer</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Développement & Admin</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">PyQGIS</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">Leaflet</span>
+          <span class="skill-tag">OpenLayers</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Systèmes & Serveurs</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Windows Server</span>
+          <span class="skill-tag">PowerShell</span>
+          <span class="skill-tag">Bash</span>
+          <span class="skill-tag">Nginx</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Géostandards & Réglementation</div>
+        <div class="skill-tags">
+          <span class="skill-tag">RAEPA</span>
+          <span class="skill-tag">STAR-DT</span>
+          <span class="skill-tag">PLU / POS</span>
+          <span class="skill-tag">ITV</span>
+          <span class="skill-tag">BAN</span>
+          <span class="skill-tag">APICarto</span>
+          <span class="skill-tag">SPANC</span>
+        </div>
+      </div>
+
+      <h3>Certifications</h3>
+      <div class="cert-item">
+        <div class="cert-name">FME Form Advanced</div>
+        <div class="cert-details">Safe Software / Tensing — Juin 2025</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-name">FME Form Basic</div>
+        <div class="cert-details">Safe Software — Juil. 2024</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-name">AIPR Concepteur</div>
+        <div class="cert-details">Habilitation Sécurité Réseaux — Mai 2023</div>
+      </div>
+
+      <h3>Langues</h3>
+      <div class="lang-item"><span class="lang-name">Français</span><span class="lang-level">Bilingue / Courant</span></div>
+      <div class="lang-item"><span class="lang-name">Anglais</span><span class="lang-level">Bilingue / Courant</span></div>
+      <div class="lang-item"><span class="lang-name">Arabe</span><span class="lang-level">Maternelle</span></div>
+      <div class="lang-item"><span class="lang-name">Allemand</span><span class="lang-level">Notions</span></div>
+    </div>
+
+    <!-- ───── MAIN CONTENT ───── -->
+    <div class="main">
+
+      <div class="summary">
+        Responsable SIG et géomaticien expérimenté dans l'administration de données territoriales, la gestion de réseaux (RAEPA, STAR-DT), le WebGIS, l'automatisation ETL (FME Form Advanced, PyQGIS) et l'appui à l'instruction d'urbanisme (ADS, PLU). Double diplômé en géomatique et urbanisme, expert dans la structuration des SI Spatiaux et l’accompagnement des collectivités territoriales & bureaux d'études en France.
+      </div>
+
+      <!-- Plugin -->
+      <div class="plugin-box">
+        <div class="left">
+          <div class="plugin-name">
+            <a href="https://plugins.qgis.org/plugins/geoban_france/" target="_blank">GeoBan France — Extension Officielle QGIS ↗</a>
+          </div>
+          <div class="plugin-desc">Développeur du plugin officiel QGIS : recherche d'adresses (API BAN), parcelles cadastrales (APICarto IGN) & mises en page PDF/A4.</div>
+        </div>
+        <div class="plugin-badge">QGIS REPOSITORY</div>
+      </div>
+
+      <h2>Expérience Professionnelle</h2>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-role">Responsable SIG</span>
+          <span class="exp-date">Févr. 2024 – Présent</span>
+        </div>
+        <div class="exp-company">Communauté de Communes des Sablons — Oise (60), France</div>
+        <ul class="exp-bullets">
+          <li>Administration & modélisation des réseaux AEP, EU, EP conformes au géostandard <strong>RAEPA</strong>.</li>
+          <li>Intégration des récolements, rapports d'inspection télévisée (ITV), contrôles de conformité & fuites.</li>
+          <li>Élaboration d'indicateurs de performance et de suivi d'exploitation patrimoniale du réseau.</li>
+          <li>Gestion des données ADS : documents d'urbanisme (PLU/PLUi), servitudes (SUP) & cadastre PCI.</li>
+          <li>Mise en place de traitements FME automatisés & administration de la plateforme SPANC.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-role">Géomaticien</span>
+          <span class="exp-date">2023 – 2024</span>
+        </div>
+        <div class="exp-company">G'AUCUBE — Bureau d'étude en géoscience & géomatique — Île-de-France</div>
+        <ul class="exp-bullets">
+          <li>Rapports techniques et géoréférencement de réseaux enterrés (RGF93 / Lambert-93).</li>
+          <li>Structuration de la plateforme SIG pour le récolement du réseau géothermique et chauffage urbain.</li>
+          <li>Production de plans de récolement multi-réseaux conformes au standard <strong>STAR-DT</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-role">Stagiaire SIG</span>
+          <span class="exp-date">2022 (6 mois)</span>
+        </div>
+        <div class="exp-company">G'AUCUBE — Rueil-Malmaison (92), France</div>
+        <ul class="exp-bullets">
+          <li>SIG appliqué aux réseaux de chauffage urbain & structuration des réseaux concessionnaires.</li>
+          <li>Déploiement d'une solution WebGIS avec portails d'accès publics et sécurisés métiers.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-role">Stagiaire SIG & Aménagement Littoral</span>
+          <span class="exp-date">2021 (5 mois)</span>
+        </div>
+        <div class="exp-company">Agence de Protection et d'Aménagement du Littoral (APAL)</div>
+        <ul class="exp-bullets">
+          <li>Projet SIG Mobile & application terrain pour la gestion des plans d'occupation des plages.</li>
+          <li>Cartographie de l'aménagement du littoral de Bizerte et formation des agents municipaux à QGIS.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-role">Chargé d'études SIG</span>
+          <span class="exp-date">2019 – 2020</span>
+        </div>
+        <div class="exp-company">NourGis Consulting</div>
+        <ul class="exp-bullets">
+          <li>Études d'aménagement littoral (Grand Tunis, Sousse), constitution du SIG territorial & cartographie.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-role">Stagiaire SIG & Urbanisme (Mémoire de Master)</span>
+          <span class="exp-date">2018 (4 mois)</span>
+        </div>
+        <div class="exp-company">Ministère de l'Équipement, de l'Habitat et de l'Infrastructure</div>
+        <ul class="exp-bullets">
+          <li><strong>Sujet :</strong> Mise en place d'un SIG-urbain appliqué à la gestion de l'espace urbain (ville de Raoued).</li>
+          <li>Révision du plan d'aménagement urbain (PAU) & proposition de schéma de cohérence spatiale.</li>
+          <li>Création de la base de données géographiques d'occupation des sols & équipement public.</li>
+        </ul>
+      </div>
+
+      <h2>Formation</h2>
+
+      <div class="edu-item">
+        <div class="edu-name">Master Pro Urbanisme & Développement</div>
+        <div class="edu-school">ENAU (École Nationale d'Architecture et d'Urbanisme) — 2018 – 2022</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-name">Master Pro Géomatique, SIG & Télédétection</div>
+        <div class="edu-school">Faculté des Sciences de Tunis — 2019 – 2021</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-name">Licence Construction & Urbanisme (Option Urbanisme Opérationnel)</div>
+        <div class="edu-school">ISTEUB — 2015 – 2018</div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

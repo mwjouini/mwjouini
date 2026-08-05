@@ -6,6 +6,7 @@
   <a href="https://www.linkedin.com/in/jouinimohamedwael"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-JOUINI%20Mohamed%20Wael-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="https://plugins.qgis.org/plugins/geoban_france/"><img alt="Extension Officielle QGIS" src="https://img.shields.io/badge/QGIS%20Repository-GeoBan%20France-589632?style=flat-square&logo=qgis&logoColor=white"></a>
   <a href="https://github.com/mwjouini/GeoBan-France"><img alt="Dépôt GitHub" src="https://img.shields.io/badge/GitHub-GeoBan--France-2f9e8f?style=flat-square&logo=github&logoColor=white"></a>
+  <a href="CV_Mohamed_Wael_Jouini.pdf"><img alt="Télécharger CV PDF" src="https://img.shields.io/badge/CV-Télécharger%20PDF-e11d48?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
 </p>
 
 ---
@@ -80,6 +81,13 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 - Contribution à la programmation de plans d’occupation des plages et mise en place d’un SIG pour valoriser et organiser le littoral tunisien.
 - Production de plans cartographiques détaillés des zones littorales.
 
+### Stagiaire SIG & Urbanisme (Mémoire de Master)
+**Ministère de l’Équipement, de l’Habitat et de l’Infrastructure** | *2018 (4 mois)* | Tunisie
+- Sujet du mémoire : La mise en place d’un SIG-urbain appliqué à la gestion de l’espace urbain de la ville de Raoued.
+- Révision du plan d’aménagement urbain (PAU) et proposition de schéma de cohérence spatiale.
+- Structuration de la base de données géographiques d'occupation des sols et équipements publics.
+
+
 ---
 
 ## Certifications & Formations Continues
@@ -122,7 +130,11 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 ---
 
-## Contact
+## Contact & Localisation
 
-- **LinkedIn** : [linkedin.com/in/jouinimohamedwael](https://www.linkedin.com/in/jouinimohamedwael)
-- **Extension Officielle QGIS** : [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/)
+- 📍 **Localisation** : Beauvais (60), France
+- 📧 **Email** : [mohamed.wael.jouini@gmail.com](mailto:mohamed.wael.jouini@gmail.com)
+- 📞 **Téléphone** : [07 44 21 75 74](tel:+33744217574)
+- 💼 **LinkedIn** : [linkedin.com/in/jouinimohamedwael](https://www.linkedin.com/in/jouinimohamedwael)
+- 🗺️ **Extension Officielle QGIS** : [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/)
+- 📄 **CV complet** : [Télécharger le CV (PDF)](CV_Mohamed_Wael_Jouini.pdf)
