@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1423" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1428" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 
 ## 👤 Profil
 
-Responsable SIG et géomaticien avec une expérience confirmée en gestion de données territoriales, administration de réseaux, cartographie web (WebGIS), automatisation de flux ETL (FME, Python) et développement d’outils métiers. 
+Responsable SIG et géomaticien trilingue (Français, Anglais, Arabe) avec une expérience confirmée en gestion de données territoriales, administration de réseaux, cartographie web (WebGIS), automatisation de flux ETL (FME, Python) et développement d’outils métiers. 
 
 Double diplômé en géomatique, télédétection et urbanisme, avec une forte capacité à structurer des données spatiales, produire des analyses géographiques complexes et accompagner les services territoriaux dans leurs usages SIG.
 
@@ -111,11 +111,11 @@ GeoBan France est une extension officielle pour QGIS développée en PyQGIS/Pyth
 
 ---
 
-## 🌍 Langues
+## 🌍 Langues (Profil Trilingue)
 
-- 🇫🇷 **Français** : Courant / Bilingue
-- 🇬🇧 **Anglais** : Professionnel
-- 🇹🇳 **Arabe** : Maternelle
+- 🇫🇷 **Français** : Bilingue / Courant
+- 🇬🇧 **Anglais** : Bilingue / Courant
+- 🇹🇳 **Arabe** : Langue maternelle
 - 🇩🇪 **Allemand** : Notions / Intermédiaire
 
 ---
