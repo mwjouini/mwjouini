@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/street-map-hero.svg" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="./assets/street-map-hero.svg?v=2" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
 </p>
 
 <p align="center">
