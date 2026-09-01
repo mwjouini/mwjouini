@@ -4,8 +4,9 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/jouinimohamedwael"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-JOUINI%20Mohamed%20Wael-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
+  <a href="https://plugins.qgis.org/plugins/OpenGeoDataFR/"><img alt="Extension Officielle QGIS" src="https://img.shields.io/badge/QGIS%20Repository-OpenGeoData%20France-589632?style=flat-square&logo=qgis&logoColor=white"></a>
+  <a href="https://github.com/mwjouini/OpenGeoData-France"><img alt="Dépôt GitHub" src="https://img.shields.io/badge/GitHub-OpenGeoData--France-2f9e8f?style=flat-square&logo=github&logoColor=white"></a>
   <a href="https://plugins.qgis.org/plugins/geoban_france/"><img alt="Extension Officielle QGIS" src="https://img.shields.io/badge/QGIS%20Repository-GeoBan%20France-589632?style=flat-square&logo=qgis&logoColor=white"></a>
-  <a href="https://github.com/mwjouini/GeoBan-France"><img alt="Dépôt GitHub" src="https://img.shields.io/badge/GitHub-GeoBan--France-2f9e8f?style=flat-square&logo=github&logoColor=white"></a>
   <a href="CV_Mohamed_Wael_Jouini.pdf"><img alt="Télécharger CV PDF" src="https://img.shields.io/badge/CV-Télécharger%20PDF-e11d48?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
 </p>
 
@@ -34,11 +35,12 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 ---
 
-## Projets Phares & Extension Officielle
+## Projets Phares & Extensions Officielles QGIS
 
 | Projet | Domaine & Technologies | Link |
 | :--- | :--- | :---: |
-| **GeoBan France** *(QGIS Official Plugin)* | Extension officielle QGIS développée en PyQGIS permettant la recherche instantanée d'adresses (API BAN) et de parcelles cadastrales (API APICarto IGN) avec génération de mises en page PDF/A4 prêtes à l'impression. | [Voir l'Extension](https://plugins.qgis.org/plugins/geoban_france/) |
+| **OpenGeoData France** *(QGIS Official Plugin)* | Moteur de recherche et d'importation unifié de données géographiques ouvertes (IGN GéoPlateforme, Cadastre PCI Etalab, GPU Urbanisme, BAN, Météo en direct, Orthophotos historiques 1950 & satellite Pléiades) avec découpage territorial multi-échelles (Régions, Départements, EPCI, Communes). | [Voir l'Extension](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GitHub](https://github.com/mwjouini/OpenGeoData-France) |
+| **GeoBan France** *(QGIS Official Plugin)* | Extension officielle QGIS développée en PyQGIS permettant la recherche instantanée d'adresses (API BAN) et de parcelles cadastrales (API APICarto IGN) avec génération de mises en page PDF/A4 prêtes à l'impression. | [Voir l'Extension](https://plugins.qgis.org/plugins/geoban_france/) • [GitHub](https://github.com/mwjouini/GeoBan-France) |
 | **SIG Réseaux & Géostandard RAEPA** | Modélisation et suivi patrimonial des réseaux d'eau potable et d'assainissement intercommunaux, intégration automatisée des récolements et indicateurs de performance. | *Communauté de Communes* |
 | **Plateforme WebGIS & SPANC** | Maintenance des portails cartographiques web, supervision des flux de signature électronique et développement de projets FME pour l'import de données métiers. | *Projet Métier* |
 
@@ -136,5 +138,5 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 - 📧 **Email** : [mohamed.wael.jouini@gmail.com](mailto:mohamed.wael.jouini@gmail.com)
 - 📞 **Téléphone** : [07 44 21 75 74](tel:+33744217574)
 - 💼 **LinkedIn** : [linkedin.com/in/jouinimohamedwael](https://www.linkedin.com/in/jouinimohamedwael)
-- 🗺️ **Extension Officielle QGIS** : [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/)
+- 🗺️ **Extensions Officielles QGIS** : [OpenGeoData France](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/)
 - 📄 **CV complet** : [Télécharger le CV (PDF)](CV_Mohamed_Wael_Jouini.pdf)
