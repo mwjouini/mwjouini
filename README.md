@@ -30,7 +30,7 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 | Administration & Réseaux SIG | Automatisation & ETL (FME / Python) |
 | :--- | :--- |
-| Structuration des données réseaux (AEP, EU, EP) conforme au géostandard **RAEPA**, intégration des récolements **STAR-DT**, contrôle d'inspection télévisée (**ITV**) et suivi d'exploitation. | Automatisation de traitements géospatiaux complexes via **FME Form Advanced**, développement de scripts **PyQGIS** / Python et création de chaînes ETL réutilisables. |
+| Structuration des données réseaux (AEP, EU, EP) conforme aux standards **STAR-Eau** et **RAEPA**, intégration des récolements **STAR-DT**, contrôle d'inspection télévisée (**ITV**) et suivi d'exploitation. | Automatisation de traitements géospatiaux complexes via **FME Form Advanced**, développement de scripts **PyQGIS** / Python et création de chaînes ETL réutilisables. |
 | **Urbanisme & Instruction ADS** | **Infrastructures WebGIS & Serveurs** |
 | Numérisation des documents d'urbanisme (**PLU**), servitudes d'utilité publique, intégration du cadastre et appui cartographique à l'instruction du droit des sols. | Déploiement de serveurs cartographiques **GeoServer**, administration de serveurs **Linux (Ubuntu/Debian)** & **Windows Server**, scripts PowerShell/Bash et bases **PostgreSQL / PostGIS**. |
 
@@ -43,7 +43,7 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 | **OpenGeoData France** *(Extension Officielle QGIS)* | Moteur de recherche et d'importation unifié de données géographiques ouvertes (IGN GéoPlateforme, Cadastre PCI Etalab, GPU Urbanisme, BAN, Météo en direct, Orthophotos historiques 1950 & satellite Pléiades) avec découpage territorial multi-échelles (Régions, Départements, EPCI, Communes). | [Voir l'Extension](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GitHub](https://github.com/mwjouini/OpenGeoData-France) |
 | **GeoBan France** *(Extension Officielle QGIS)* | Extension officielle QGIS développée en PyQGIS permettant la recherche instantanée d'adresses (API BAN) et de parcelles cadastrales (API APICarto IGN) avec génération de mises en page PDF/A4 prêtes à l'impression. | [Voir l'Extension](https://plugins.qgis.org/plugins/geoban_france/) • [GitHub](https://github.com/mwjouini/GeoBan-France) |
 | **Plateforme Métier WebGIS SPANC & Hydra** *(Production CC des Sablons)* | Plateforme web intégrée de gestion, diagnostic et contrôle de l'Assainissement Non Collectif (SPANC & Hydra). Comprend une cartographie interactive Leaflet avec parcelles cadastrales IGN Parcellaire Express, signatures électroniques universelles tactiles/stylet (`SignaturePad v5`), formulaires dynamiques avec accordéons et barre de progression, moteur d'exportation de rapports PDF certifiés avec plans parcellaires géoréférencés, et architecture Flask / PostgreSQL sous Linux Debian. | [Accéder au Portail Web](https://spanc.cc-sablons.com) |
-| **SIG Réseaux & Géostandard RAEPA** | Modélisation et suivi patrimonial des réseaux d'eau potable et d'assainissement intercommunaux, intégration automatisée des récolements et indicateurs de performance. | *Communauté de Communes* |
+| **SIG Réseaux & Standard STAR-Eau** | Modélisation et suivi patrimonial des réseaux d'eau potable et d'assainissement intercommunaux conforme au standard STAR-Eau (RAEPA), intégration automatisée des récolements et indicateurs de performance. | *Projet Intercommunal* |
 
 ---
 
@@ -51,7 +51,7 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 ### Responsable SIG
 **Communauté de Communes des Sablons** | *Févr. 2024 – Présent* | France
-- Administration et mise à jour des données liées aux réseaux d’eaux usées, d’eaux pluviales et d’eau potable (géostandards RAEPA).
+- Administration et mise à jour des données liées aux réseaux d’eaux usées, d’eaux pluviales et d’eau potable (géostandards STAR-Eau et RAEPA).
 - Intégration des plans de récolement, des rapports d’inspection télévisée (ITV), des données de fuites et des contrôles de conformité.
 - Développement d’indicateurs de suivi sur l’état de desserte, la connaissance et l’exploitation des réseaux territoriaux.
 - Mise à jour des données utiles à l’instruction du droit des sols (ADS) : documents d’urbanisme (PLU), servitudes d'utilité publique et cadastre.
@@ -105,7 +105,7 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 - **SIG & Cartographie** : QGIS, ArcGIS, SIG Web & Mobile, Géoréférencement, Cartographie thématique, Traitements spatiaux, Plans de récolement.
 - **Bases de Données & Interopérabilité** : PostgreSQL, PostGIS, GeoServer, FME, Rapports ITV, Indicateurs de suivi, Automatisation des imports.
-- **Géostandards & Réglementation Urbanisme** : Cadastre, Servitudes, Documents d’urbanisme, Instruction ADS, Normes PLU, STAR-DT, RAEPA.
+- **Géostandards & Réglementation Réseaux / Urbanisme** : STAR-Eau, RAEPA, STAR-DT, Cadastre, Servitudes, Documents d’urbanisme, Instruction ADS, Normes PLU.
 - **Développement & Administration Web** : HTML5, CSS3, JavaScript (Leaflet, OpenLayers), Python (PyQGIS, Flask), Linux (Ubuntu/Debian), Nginx, Apache, Windows Server, PowerShell, Bash.
 - **Appui Métier & Gestion** : Assistance utilisateurs, rédaction de rapports, coordination avec services techniques, prestataires et délégataires.
 
