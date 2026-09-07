@@ -7,6 +7,7 @@
   <a href="https://plugins.qgis.org/plugins/OpenGeoDataFR/"><img alt="Extension Officielle QGIS" src="https://img.shields.io/badge/QGIS%20Repository-OpenGeoData%20France-589632?style=flat-square&logo=qgis&logoColor=white"></a>
   <a href="https://github.com/mwjouini/OpenGeoData-France"><img alt="Dépôt GitHub" src="https://img.shields.io/badge/GitHub-OpenGeoData--France-2f9e8f?style=flat-square&logo=github&logoColor=white"></a>
   <a href="https://plugins.qgis.org/plugins/geoban_france/"><img alt="Extension Officielle QGIS" src="https://img.shields.io/badge/QGIS%20Repository-GeoBan%20France-589632?style=flat-square&logo=qgis&logoColor=white"></a>
+  <a href="https://github.com/mwjouini/spanc"><img alt="Plateforme WebGIS SPANC" src="https://img.shields.io/badge/GitHub-Plateforme%20SPANC-0284c7?style=flat-square&logo=github&logoColor=white"></a>
   <a href="CV_Mohamed_Wael_Jouini.pdf"><img alt="Télécharger CV PDF" src="https://img.shields.io/badge/CV-Télécharger%20PDF-e11d48?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
 </p>
 
@@ -35,14 +36,14 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 ---
 
-## Projets Phares & Extensions Officielles QGIS
+## Projets Phares & Réalisations WebGIS / SIG
 
-| Projet | Domaine & Technologies | Link |
+| Projet | Domaine & Technologies | Lien |
 | :--- | :--- | :---: |
-| **OpenGeoData France** *(QGIS Official Plugin)* | Moteur de recherche et d'importation unifié de données géographiques ouvertes (IGN GéoPlateforme, Cadastre PCI Etalab, GPU Urbanisme, BAN, Météo en direct, Orthophotos historiques 1950 & satellite Pléiades) avec découpage territorial multi-échelles (Régions, Départements, EPCI, Communes). | [Voir l'Extension](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GitHub](https://github.com/mwjouini/OpenGeoData-France) |
-| **GeoBan France** *(QGIS Official Plugin)* | Extension officielle QGIS développée en PyQGIS permettant la recherche instantanée d'adresses (API BAN) et de parcelles cadastrales (API APICarto IGN) avec génération de mises en page PDF/A4 prêtes à l'impression. | [Voir l'Extension](https://plugins.qgis.org/plugins/geoban_france/) • [GitHub](https://github.com/mwjouini/GeoBan-France) |
+| **OpenGeoData France** *(Extension Officielle QGIS)* | Moteur de recherche et d'importation unifié de données géographiques ouvertes (IGN GéoPlateforme, Cadastre PCI Etalab, GPU Urbanisme, BAN, Météo en direct, Orthophotos historiques 1950 & satellite Pléiades) avec découpage territorial multi-échelles (Régions, Départements, EPCI, Communes). | [Voir l'Extension](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GitHub](https://github.com/mwjouini/OpenGeoData-France) |
+| **GeoBan France** *(Extension Officielle QGIS)* | Extension officielle QGIS développée en PyQGIS permettant la recherche instantanée d'adresses (API BAN) et de parcelles cadastrales (API APICarto IGN) avec génération de mises en page PDF/A4 prêtes à l'impression. | [Voir l'Extension](https://plugins.qgis.org/plugins/geoban_france/) • [GitHub](https://github.com/mwjouini/GeoBan-France) |
+| **Plateforme Métier WebGIS SPANC & Hydra** *(Production CC des Sablons)* | Plateforme web intégrée de gestion, diagnostic et contrôle de l'Assainissement Non Collectif (SPANC & Hydra). Comprend une cartographie interactive Leaflet avec parcelles cadastrales IGN Parcellaire Express, signatures électroniques universelles tactiles/stylet (`SignaturePad v5`), formulaires dynamiques avec accordéons et barre de progression, moteur d'exportation de rapports PDF certifiés avec plans parcellaires géoréférencés, et architecture Flask / PostgreSQL sous Linux Debian. | [GitHub](https://github.com/mwjouini/spanc) |
 | **SIG Réseaux & Géostandard RAEPA** | Modélisation et suivi patrimonial des réseaux d'eau potable et d'assainissement intercommunaux, intégration automatisée des récolements et indicateurs de performance. | *Communauté de Communes* |
-| **Plateforme WebGIS & SPANC** | Maintenance des portails cartographiques web, supervision des flux de signature électronique et développement de projets FME pour l'import de données métiers. | *Projet Métier* |
 
 ---
 
@@ -105,7 +106,7 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 - **SIG & Cartographie** : QGIS, ArcGIS, SIG Web & Mobile, Géoréférencement, Cartographie thématique, Traitements spatiaux, Plans de récolement.
 - **Bases de Données & Interopérabilité** : PostgreSQL, PostGIS, GeoServer, FME, Rapports ITV, Indicateurs de suivi, Automatisation des imports.
 - **Géostandards & Réglementation Urbanisme** : Cadastre, Servitudes, Documents d’urbanisme, Instruction ADS, Normes PLU, STAR-DT, RAEPA.
-- **Développement & Administration Web** : HTML5, CSS3, JavaScript (Leaflet, OpenLayers), Python (PyQGIS), Linux (Ubuntu/Debian), Nginx, Apache, Windows Server, PowerShell, Bash.
+- **Développement & Administration Web** : HTML5, CSS3, JavaScript (Leaflet, OpenLayers), Python (PyQGIS, Flask), Linux (Ubuntu/Debian), Nginx, Apache, Windows Server, PowerShell, Bash.
 - **Appui Métier & Gestion** : Assistance utilisateurs, rédaction de rapports, coordination avec services techniques, prestataires et délégataires.
 
 ---
@@ -138,5 +139,5 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 - 📧 **Email** : [mohamed.wael.jouini@gmail.com](mailto:mohamed.wael.jouini@gmail.com)
 - 📞 **Téléphone** : [07 44 21 75 74](tel:+33744217574)
 - 💼 **LinkedIn** : [linkedin.com/in/jouinimohamedwael](https://www.linkedin.com/in/jouinimohamedwael)
-- 🗺️ **Extensions Officielles QGIS** : [OpenGeoData France](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/)
+- 🗺️ **Extensions & Projets** : [OpenGeoData France](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/) • [Plateforme SPANC](https://github.com/mwjouini/spanc)
 - 📄 **CV complet** : [Télécharger le CV (PDF)](CV_Mohamed_Wael_Jouini.pdf)
