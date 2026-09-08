@@ -40,6 +40,7 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 | Projet | Domaine & Technologies | Lien |
 | :--- | :--- | :---: |
+| **QGIS CAD Suite** *(Extension Phare QGIS 3.x / 4.x)* | Suite professionnelle de CAO/CAD intégrée à QGIS reproduisant fidèlement l'environnement AutoCAD 2025 (Ruban complet, curseur réticule, accrochage visuel OSNAP en temps réel, ligne de commande flottante avec autocomplétion `QCompleter`, propriétés ByLayer, détection heuristique intelligente du SCR pré-import, conversion/reprojection géométrique vers Lambert-93, et cartouches d'ingénierie ISO 7200 A3/A4). | [Dépôt GitHub](https://github.com/mwjouini/qgis-cad-suite) • [Télécharger (ZIP)](https://github.com/mwjouini/qgis-cad-suite/releases/latest) |
 | **OpenGeoData France** *(Extension Officielle QGIS)* | Moteur de recherche et d'importation unifié de données géographiques ouvertes (IGN GéoPlateforme, Cadastre PCI Etalab, GPU Urbanisme, BAN, Météo en direct, Orthophotos historiques 1950 & satellite Pléiades) avec découpage territorial multi-échelles (Régions, Départements, EPCI, Communes). | [Voir l'Extension](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GitHub](https://github.com/mwjouini/OpenGeoData-France) |
 | **GeoBan France** *(Extension Officielle QGIS)* | Extension officielle QGIS développée en PyQGIS permettant la recherche instantanée d'adresses (API BAN) et de parcelles cadastrales (API APICarto IGN) avec génération de mises en page PDF/A4 prêtes à l'impression. | [Voir l'Extension](https://plugins.qgis.org/plugins/geoban_france/) • [GitHub](https://github.com/mwjouini/GeoBan-France) |
 | **Plateforme Métier WebGIS SPANC & Hydra** *(Production CC des Sablons)* | Plateforme web intégrée de gestion, diagnostic et contrôle de l'Assainissement Non Collectif (SPANC & Hydra). Comprend une cartographie interactive Leaflet avec parcelles cadastrales IGN Parcellaire Express, signatures électroniques universelles tactiles/stylet (`SignaturePad v5`), formulaires dynamiques avec accordéons et barre de progression, moteur d'exportation de rapports PDF certifiés avec plans parcellaires géoréférencés, et architecture Flask / PostgreSQL sous Linux Debian. | [Accéder au Portail Web](https://spanc.cc-sablons.com) |
@@ -103,7 +104,7 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 
 ## Compétences Techniques
 
-- **SIG & Cartographie** : QGIS, ArcGIS, SIG Web & Mobile, Géoréférencement, Cartographie thématique, Traitements spatiaux, Plans de récolement.
+- **SIG, Cartographie & CAO** : QGIS, AutoCAD, MicroStation, Interopérabilité DWG/DXF/GeoPackage, ArcGIS, SIG Web & Mobile, Géoréférencement, Cartographie thématique, Traitements spatiaux, Plans de récolement.
 - **Bases de Données & Interopérabilité** : PostgreSQL, PostGIS, GeoServer, FME, Rapports ITV, Indicateurs de suivi, Automatisation des imports.
 - **Géostandards & Réglementation Réseaux / Urbanisme** : STAR-Eau, RAEPA, STAR-DT, Cadastre, Servitudes, Documents d’urbanisme, Instruction ADS, Normes PLU.
 - **Développement & Administration Web** : HTML5, CSS3, JavaScript (Leaflet, OpenLayers), Python (PyQGIS, Flask), Linux (Ubuntu/Debian), Nginx, Apache, Windows Server, PowerShell, Bash.
@@ -139,5 +140,5 @@ Responsable SIG et géomaticien avec une expérience confirmée en gestion de do
 - 📧 **Email** : [mohamed.wael.jouini@gmail.com](mailto:mohamed.wael.jouini@gmail.com)
 - 📞 **Téléphone** : [07 44 21 75 74](tel:+33744217574)
 - 💼 **LinkedIn** : [linkedin.com/in/jouinimohamedwael](https://www.linkedin.com/in/jouinimohamedwael)
-- 🗺️ **Extensions & Projets** : [OpenGeoData France](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/) • [Portail SPANC en ligne](https://spanc.cc-sablons.com)
+- 🗺️ **Extensions & Projets** : [QGIS CAD Suite](https://github.com/mwjouini/qgis-cad-suite) • [OpenGeoData France](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/) • [Portail SPANC en ligne](https://spanc.cc-sablons.com)
 - 📄 **CV complet** : [Télécharger le CV (PDF)](CV_Mohamed_Wael_Jouini.pdf)
