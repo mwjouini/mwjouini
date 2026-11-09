@@ -1,144 +1,147 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1451" alt="Mohamed Wael Jouini - Responsable SIG" width="100%">
+  <img src="https://raw.githubusercontent.com/mwjouini/mwjouini/main/assets/street-map-hero.svg?v=20260805_1451" alt="Mohamed Wael Jouini - GIS Manager & Spatial Data Engineer" width="100%">
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/jouinimohamedwael"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-JOUINI%20Mohamed%20Wael-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
-  <a href="https://plugins.qgis.org/plugins/OpenGeoDataFR/"><img alt="Extension Officielle QGIS" src="https://img.shields.io/badge/QGIS%20Repository-OpenGeoData%20France-589632?style=flat-square&logo=qgis&logoColor=white"></a>
-  <a href="https://github.com/mwjouini/OpenGeoData-France"><img alt="Dépôt GitHub" src="https://img.shields.io/badge/GitHub-OpenGeoData--France-2f9e8f?style=flat-square&logo=github&logoColor=white"></a>
-  <a href="https://plugins.qgis.org/plugins/geoban_france/"><img alt="Extension Officielle QGIS" src="https://img.shields.io/badge/QGIS%20Repository-GeoBan%20France-589632?style=flat-square&logo=qgis&logoColor=white"></a>
-  <a href="https://spanc.cc-sablons.com"><img alt="Plateforme WebGIS SPANC" src="https://img.shields.io/badge/Portail%20Web-Plateforme%20SPANC-0284c7?style=flat-square&logo=googlechrome&logoColor=white"></a>
-  <a href="CV_Mohamed_Wael_Jouini.pdf"><img alt="Télécharger CV PDF" src="https://img.shields.io/badge/CV-Télécharger%20PDF-e11d48?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
+  <a href="https://pypi.org/project/fme-mcp-ultra/"><img alt="PyPI fme-mcp-ultra" src="https://img.shields.io/pypi/v/fme-mcp-ultra?style=flat-square&logo=pypi&logoColor=white&label=PyPI%20fme-mcp-ultra&color=3775A9"></a>
+  <a href="https://github.com/mwjouini/fme-mcp-ultra"><img alt="GitHub fme-mcp-ultra" src="https://img.shields.io/badge/GitHub-fme--mcp--ultra-2f9e8f?style=flat-square&logo=github&logoColor=white"></a>
+  <a href="https://glama.ai/mcp/servers/mwjouini/fme-mcp-ultra"><img alt="Glama Score" src="https://glama.ai/mcp/servers/mwjouini/fme-mcp-ultra/badges/score.svg"></a>
+  <a href="https://plugins.qgis.org/plugins/OpenGeoDataFR/"><img alt="Official QGIS Plugin" src="https://img.shields.io/badge/QGIS%20Repository-OpenGeoData%20France-589632?style=flat-square&logo=qgis&logoColor=white"></a>
+  <a href="https://plugins.qgis.org/plugins/geoban_france/"><img alt="Official QGIS Plugin" src="https://img.shields.io/badge/QGIS%20Repository-GeoBan%20France-589632?style=flat-square&logo=qgis&logoColor=white"></a>
+  <a href="https://spanc.cc-sablons.com"><img alt="WebGIS Platform SPANC" src="https://img.shields.io/badge/Web%20Portal-SPANC%20Platform-0284c7?style=flat-square&logo=googlechrome&logoColor=white"></a>
+  <a href="CV_Mohamed_Wael_Jouini.pdf"><img alt="Download CV PDF" src="https://img.shields.io/badge/CV-Download%20PDF-e11d48?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
 </p>
 
 ---
 
 # Mohamed Wael JOUINI
-**Responsable SIG | Géomaticien | Analyste SIG**
+**GIS Manager | Spatial Data Engineer | Geospatial & AI Systems Architect**
 
-> *Du plan de récolement à l'analyse spatiale : structurer et valoriser la donnée géographique au service des territoires et des décisions publiques.*
-
----
-
-## Profil
-
-Responsable SIG et géomaticien avec une expérience confirmée en gestion de données territoriales, administration de réseaux, cartographie web (WebGIS), automatisation de flux ETL (FME, Python) et développement d’outils métiers. Double diplômé en géomatique, télédétection, urbanisme et développement, avec une forte capacité à structurer des données spatiales, produire des analyses géographiques complexes et accompagner les services territoriaux dans leurs usages SIG.
+> *From utility network infrastructure to spatial AI: structuring, automating, and scaling geographic data for territories and enterprise decision systems.*
 
 ---
 
-## Piliers d'Expertise
+## Profile
 
-| Administration & Réseaux SIG | Automatisation & ETL (FME / Python) |
+Senior GIS Manager and Spatial Data Engineer with extensive experience in enterprise geospatial infrastructure, spatial ETL automation (Safe Software FME, Python, PyQGIS), utility network modeling (drinking water, wastewater, stormwater), WebGIS architecture, and Agentic AI integration. Double Master's graduate in Geomatics, Remote Sensing, and Urban Planning, with a proven track record of architecting high-reliability spatial pipelines, official QGIS plugins, and production Model Context Protocol (MCP) tooling. Creator of **`fme-mcp-ultra`**, the production-grade MCP server bridging enterprise GIS with autonomous AI agents.
+
+---
+
+## Core Pillars of Expertise
+
+| Utility Networks & GIS Administration | Spatial ETL & Automation (FME / Python / MCP) |
 | :--- | :--- |
-| Structuration des données réseaux (AEP, EU, EP) conforme aux standards **STAR-Eau** et **RAEPA**, intégration des récolements **STAR-DT**, contrôle d'inspection télévisée (**ITV**) et suivi d'exploitation. | Automatisation de traitements géospatiaux complexes via **FME Form Advanced**, développement de scripts **PyQGIS** / Python et création de chaînes ETL réutilisables. |
-| **Urbanisme & Instruction ADS** | **Infrastructures WebGIS & Serveurs** |
-| Numérisation des documents d'urbanisme (**PLU**), servitudes d'utilité publique, intégration du cadastre et appui cartographique à l'instruction du droit des sols. | Déploiement de serveurs cartographiques **GeoServer**, administration de serveurs **Linux (Ubuntu/Debian)** & **Windows Server**, scripts PowerShell/Bash et bases **PostgreSQL / PostGIS**. |
+| Structuring and governance of utility network data (Drinking Water, Wastewater, Stormwater) compliant with French national standards **STAR-Eau** and **RAEPA**, integration of **STAR-DT** as-built surveys, CCTV pipeline inspection (**ITV**) validation, and operational performance indicators. | Enterprise geospatial workflows automated with certified **FME Form Advanced**, custom **PyQGIS** development, production-grade Python automation suites, and Model Context Protocol (MCP) servers connecting GIS engines to autonomous AI agents. |
+| **Urban Planning & Statutory Land Use (ADS)** | **WebGIS Infrastructure & Cloud Servers** |
+| Digitization of municipal master plans (**PLU**), public utility easements (**SUP**), cadastral fabric integration (PCI Etalab), and spatial analysis supporting statutory planning and building permit reviews. | Production **GeoServer** map servers, **Linux (Debian/Ubuntu)** & **Windows Server** administration, Bash/PowerShell scripting, and high-performance databases with **PostgreSQL / PostGIS**. |
 
 ---
 
-## Projets Phares & Réalisations WebGIS / SIG
+## Featured Projects & Engineering Work
 
-| Projet | Domaine & Technologies | Lien |
+| Project | Domain & Technologies | Links |
 | :--- | :--- | :---: |
-| **QGIS CAD Suite** *(Extension Phare QGIS 3.x / 4.x)* | Suite professionnelle de CAO/CAD intégrée à QGIS reproduisant fidèlement l'environnement AutoCAD 2025 (Ruban complet, curseur réticule, accrochage visuel OSNAP en temps réel, ligne de commande flottante avec autocomplétion `QCompleter`, propriétés ByLayer, détection heuristique intelligente du SCR pré-import, conversion/reprojection géométrique vers Lambert-93, et cartouches d'ingénierie ISO 7200 A3/A4). | [Dépôt GitHub](https://github.com/mwjouini/qgis-cad-suite) • [Télécharger (ZIP)](https://github.com/mwjouini/qgis-cad-suite/releases/latest) |
-| **OpenGeoData France** *(Extension Officielle QGIS)* | Moteur de recherche et d'importation unifié de données géographiques ouvertes (IGN GéoPlateforme, Cadastre PCI Etalab, GPU Urbanisme, BAN, Météo en direct, Orthophotos historiques 1950 & satellite Pléiades) avec découpage territorial multi-échelles (Régions, Départements, EPCI, Communes). | [Voir l'Extension](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GitHub](https://github.com/mwjouini/OpenGeoData-France) |
-| **GeoBan France** *(Extension Officielle QGIS)* | Extension officielle QGIS développée en PyQGIS permettant la recherche instantanée d'adresses (API BAN) et de parcelles cadastrales (API APICarto IGN) avec génération de mises en page PDF/A4 prêtes à l'impression. | [Voir l'Extension](https://plugins.qgis.org/plugins/geoban_france/) • [GitHub](https://github.com/mwjouini/GeoBan-France) |
-| **Plateforme Métier WebGIS SPANC & Hydra** *(Production CC des Sablons)* | Plateforme web intégrée de gestion, diagnostic et contrôle de l'Assainissement Non Collectif (SPANC & Hydra). Comprend une cartographie interactive Leaflet avec parcelles cadastrales IGN Parcellaire Express, signatures électroniques universelles tactiles/stylet (`SignaturePad v5`), formulaires dynamiques avec accordéons et barre de progression, moteur d'exportation de rapports PDF certifiés avec plans parcellaires géoréférencés, et architecture Flask / PostgreSQL sous Linux Debian. | [Accéder au Portail Web](https://spanc.cc-sablons.com) |
-| **SIG Réseaux & Standard STAR-Eau** | Modélisation et suivi patrimonial des réseaux d'eau potable et d'assainissement intercommunaux conforme au standard STAR-Eau (RAEPA), intégration automatisée des récolements et indicateurs de performance. | *Projet Intercommunal* |
+| **fme-mcp-ultra** *(Flagship MCP Server & PyPI Package)* | Universal Model Context Protocol (MCP) server for Safe Software FME (2018.0 - 2026+), FME Form Desktop and FME Flow. Enables autonomous AI agents (Claude Code, Cursor, Codex, QGIS, Agensi) to introspect, parse, diagnose, execute workspaces, inspect visual canvas pipelines, and automate enterprise spatial ETL. Official PyPI release, verified with 32 automated test suites, zero-config FME bridge, and sub-10ms path & command security sandboxing. | [PyPI Package](https://pypi.org/project/fme-mcp-ultra/) • [GitHub Repository](https://github.com/mwjouini/fme-mcp-ultra) • [Glama Registry](https://glama.ai/mcp/servers/mwjouini/fme-mcp-ultra) |
+| **QGIS CAD Suite** *(Flagship QGIS 3.x / 4.x Plugin)* | Professional CAD/CAO suite embedded into QGIS replicating the AutoCAD 2025 engineering environment (full Ribbon, crosshair cursor, real-time visual OSNAP object snapping, floating command line with `QCompleter` autocompletion, ByLayer properties, pre-import heuristic CRS detection, geometric conversion to Lambert-93, and ISO 7200 A3/A4 engineering title blocks). | [GitHub Repository](https://github.com/mwjouini/qgis-cad-suite) • [Download Release (ZIP)](https://github.com/mwjouini/qgis-cad-suite/releases/latest) |
+| **OpenGeoData France** *(Official QGIS Plugin)* | Unified search and direct import engine for French open geospatial data (IGN GéoPlateforme, Cadastre PCI Etalab, GPU Urbanisme, BAN, Live Weather, historical 1950s orthophotos & Pléiades high-resolution satellite imagery) with multi-scale territorial filtering (Regions, Departments, Intercommunalities, Municipalities). | [QGIS Plugin Portal](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GitHub Repository](https://github.com/mwjouini/OpenGeoData-France) |
+| **GeoBan France** *(Official QGIS Plugin)* | Official QGIS plugin developed in PyQGIS enabling instant address geocoding (French National Address Database BAN API) and cadastral parcel lookups (IGN APICarto API) with one-click print-ready PDF/A4 cartographic layouts. | [QGIS Plugin Portal](https://plugins.qgis.org/plugins/geoban_france/) • [GitHub Repository](https://github.com/mwjouini/GeoBan-France) |
+| **SPANC & Hydra Enterprise WebGIS Platform** *(Production CC des Sablons)* | Integrated enterprise web platform for managing, diagnosing, and inspecting on-site sanitation facilities (SPANC & Hydra). Features Leaflet interactive mapping with IGN Parcellaire Express cadastral parcels, universal stylus/touch digital signatures (`SignaturePad v5`), dynamic multi-step forms with progress tracking, automated generation of certified PDF inspection reports with georeferenced cadastral plans, and a Flask / PostgreSQL stack running on Linux Debian. | [Access Web Portal](https://spanc.cc-sablons.com) |
+| **STAR-Eau Utility Network GIS Infrastructure** | Standardized geospatial modeling and asset management for drinking water, wastewater, and stormwater infrastructure compliant with French STAR-Eau (RAEPA) standards, automated as-built survey integration, and compliance dashboards. | *Intercommunal Infrastructure* |
 
 ---
 
-## Expérience Professionnelle
+## Professional Experience
 
-### Responsable SIG
-**Communauté de Communes des Sablons** | *Févr. 2024 – Présent* | France
-- Administration et mise à jour des données liées aux réseaux d’eaux usées, d’eaux pluviales et d’eau potable (géostandards STAR-Eau et RAEPA).
-- Intégration des plans de récolement, des rapports d’inspection télévisée (ITV), des données de fuites et des contrôles de conformité.
-- Développement d’indicateurs de suivi sur l’état de desserte, la connaissance et l’exploitation des réseaux territoriaux.
-- Mise à jour des données utiles à l’instruction du droit des sols (ADS) : documents d’urbanisme (PLU), servitudes d'utilité publique et cadastre.
-- Développement du patrimoine de données SIG intercommunal : voirie, logements, tourisme, transports, gestion des déchets.
-- Maintenance et évolution d’applications de cartographie web et bureautiques, assistance aux utilisateurs et adaptation des outils aux besoins métiers.
-- Maintenance et amélioration de la plateforme SPANC, supervision de la signature électronique et développement de projets FME pour l’import et la mise à jour des données réseaux.
+### GIS Manager
+**Communauté de Communes des Sablons** | *Feb. 2024 – Present* | France
+- Oversee and administer enterprise GIS datasets for wastewater, stormwater, and drinking water networks compliant with STAR-Eau and RAEPA geostandards.
+- Integrate contractor as-built plans, CCTV pipe inspection reports (ITV), leak detection surveys, and regulatory compliance audits.
+- Build and monitor operational KPIs on utility coverage, network condition, and municipal asset lifecycle.
+- Manage spatial datasets supporting statutory planning and building permit reviews (ADS): Local Master Plans (PLU), public utility easements (SUP), and cadastral parcels.
+- Expand the intercommunal spatial data catalog: road infrastructure, housing, tourism, public transit, and waste management.
+- Maintain and scale web mapping applications and desktop GIS tools; provide technical support and customize GIS tooling to match operational business workflows.
+- Maintain and enhance the SPANC WebGIS platform, oversee electronic signature workflows, and author FME automation workspaces for network data ingestion and continuous synchronization.
 
-### Géomaticien
-**G’AUCUBE – Bureau d’étude en géoscience et géomatique** | *2023 – 2024* | Île-de-France, France
-- Réalisation de rapports techniques et de plans pour des projets de réseaux d'infrastructures.
-- Localisation et géoréférencement de réseaux enterrés dans les systèmes de projection réglementaires (RGF93 / Lambert-93).
-- Mise en place d’une plateforme SIG pour le récolement d’un réseau géothermique.
-- Production de plans de récolement multi-réseaux : électricité, eau potable, eaux usées, eaux pluviales, fibre optique, télécommunications et chauffage urbain (conforme STAR-DT).
+### Geomatician / GIS Engineer
+**G’AUCUBE – Geoscience & Geomatics Consultancy** | *2023 – 2024* | Île-de-France, France
+- Authored engineering technical reports and spatial cartographic deliverables for major infrastructure utility networks.
+- Located and georeferenced underground utility networks in national legal coordinate reference systems (RGF93 / Lambert-93).
+- Built and configured a centralized GIS platform for geothermal district heating as-built tracking.
+- Generated multi-utility as-built surveys: electricity, drinking water, wastewater, stormwater, fiber optics, telecom, and district heating (STAR-DT compliant).
 
-### Stagiaire SIG
-**G’AUCUBE – Bureau d’étude en géoscience et géomatique** | *2022* | Rueil-Malmaison, France
-- Contribution à un projet SIG appliqué à un réseau de chauffage urbain à Rueil-Malmaison.
-- Élaboration de plans de récolement d’un réseau géothermique et structuration du SIG pour les réseaux concessionnaires.
-- Déploiement d’une plateforme SIG Web avec interfaces publique et privée.
+### GIS Intern
+**G’AUCUBE – Geoscience & Geomatics Consultancy** | *2022* | Rueil-Malmaison, France
+- Contributed to district heating GIS workflows in Rueil-Malmaison.
+- Drafted geothermal network as-built maps and structured concessionaire utility databases.
+- Deployed an interactive WebGIS platform with public and private user tiers.
 
-### Stagiaire SIG
-**Agence de Protection et d’Aménagement du Littoral (APAL)** | *2021* | Tunisie
-- Mise en place d’un projet SIG mobile appliqué aux plans d’occupation des plages.
-- Développement d’une application mobile pour stocker, gérer, analyser et consulter les données SIG sur le terrain.
-- Participation aux travaux d’aménagement du littoral de Bizerte et formation d’une équipe municipale à l’utilisation de QGIS.
+### GIS Intern
+**Coastal Protection and Planning Agency (APAL)** | *2021* | Tunisia
+- Implemented a mobile GIS application for field beach occupancy and concession surveys.
+- Developed a mobile data collection system to store, manage, and query geospatial field data.
+- Participated in coastal defense planning for the Bizerte shoreline and trained municipal staff on QGIS.
 
-### Chargé d’études SIG
-**NourGis Consulting** | *2019 – 2020* | Tunisie
-- Participation à des projets d’aménagement du littoral sur le Grand Tunis et Sousse.
-- Contribution à la programmation de plans d’occupation des plages et mise en place d’un SIG pour valoriser et organiser le littoral tunisien.
-- Production de plans cartographiques détaillés des zones littorales.
+### GIS Project Officer
+**NourGis Consulting** | *2019 – 2020* | Tunisia
+- Contributed to coastal planning and zone management projects across Greater Tunis and Sousse.
+- Programmed beach zoning plans and built a structured GIS repository to enhance coastal space stewardship.
+- Produced detailed cartographic atlases and environmental sensitivity maps.
 
-### Stagiaire SIG & Urbanisme
-**Ministère de l’Équipement, de l’Habitat et de l’Infrastructure** | *2018 (4 mois)* | Tunisie
-- Sujet d'étude : La mise en place d’un SIG-urbain appliqué à la gestion de l’espace urbain de la ville de Raoued.
-- Révision du plan d’aménagement urbain (PAU) et proposition de schéma de cohérence spatiale.
-- Structuration de la base de données géographiques d'occupation des sols et équipements publics.
-
-
----
-
-## Certifications & Formations Continues
-
-- <img src="https://img.shields.io/badge/Certification-FME%20Form%20Advanced%202025-7A2882?style=flat-square&logo=safe&logoColor=white" alt="FME Advanced"> **FME Form Advanced** *(Safe Software / Avineon Tensing)* — Juin 2025
-- <img src="https://img.shields.io/badge/Certification-FME%20Form%20Basic%202024-9C27B0?style=flat-square" alt="FME Basic"> **FME Form Basic** *(Safe Software)* — Juillet 2024
-- <img src="https://img.shields.io/badge/Habilitation-AIPR%20Concepteur-0284C7?style=flat-square" alt="AIPR Concepteur"> **AIPR Concepteur** *(Anti-Endommagement des Réseaux)* — Mai 2023
+### GIS & Urban Planning Intern
+**Ministry of Equipment, Housing and Infrastructure** | *2018 (4 months)* | Tunisia
+- Conducted spatial research on establishing an Urban GIS for the city of Raoued.
+- Assisted in the revision of the Urban Master Plan (PAU) and proposed spatial coherence guidelines.
+- Modeled the municipal geographic database for land use patterns and public facilities.
 
 ---
 
-## Compétences Techniques
+## Certifications & Continuing Education
 
-- **SIG, Cartographie & CAO** : QGIS, AutoCAD, MicroStation, Interopérabilité DWG/DXF/GeoPackage, ArcGIS, SIG Web & Mobile, Géoréférencement, Cartographie thématique, Traitements spatiaux, Plans de récolement.
-- **Bases de Données & Interopérabilité** : PostgreSQL, PostGIS, GeoServer, FME, Rapports ITV, Indicateurs de suivi, Automatisation des imports.
-- **Géostandards & Réglementation Réseaux / Urbanisme** : STAR-Eau, RAEPA, STAR-DT, Cadastre, Servitudes, Documents d’urbanisme, Instruction ADS, Normes PLU.
-- **Développement & Administration Web** : HTML5, CSS3, JavaScript (Leaflet, OpenLayers), Python (PyQGIS, Flask), Linux (Ubuntu/Debian), Nginx, Apache, Windows Server, PowerShell, Bash.
-- **Appui Métier & Gestion** : Assistance utilisateurs, rédaction de rapports, coordination avec services techniques, prestataires et délégataires.
+- <img src="https://img.shields.io/badge/Certification-FME%20Form%20Advanced%202025-7A2882?style=flat-square&logo=safe&logoColor=white" alt="FME Advanced"> **FME Form Advanced** *(Safe Software / Avineon Tensing)* — June 2025
+- <img src="https://img.shields.io/badge/Certification-FME%20Form%20Basic%202024-9C27B0?style=flat-square" alt="FME Basic"> **FME Form Basic** *(Safe Software)* — July 2024
+- <img src="https://img.shields.io/badge/Accreditation-AIPR%20Designer-0284C7?style=flat-square" alt="AIPR Designer"> **AIPR Designer** *(Network Damage Prevention Accreditation)* — May 2023
 
 ---
 
-## Formation & Diplômes
+## Technical Skills & Tooling
 
-- **Master Professionnel en Urbanisme et Développement**  
-  École Nationale d'Architecture et d'Urbanisme (ENAU) | *2018 – 2022*
-- **Master Professionnel en Sciences Géomatiques : SIG et Télédétection**  
-  Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis | *2019 – 2021*
-- **Licence Appliquée en Construction et Urbanisme (Option Urbanisme Opérationnel)**  
+- **GIS, Cartography & CAD**: QGIS, AutoCAD, MicroStation, DWG/DXF/GeoPackage Interoperability, ArcGIS Pro, WebGIS & Mobile GIS, Georeferencing, Thematic Mapping, Spatial Analysis, As-Built Surveying.
+- **Databases & Interoperability**: PostgreSQL, PostGIS, GeoServer, Safe Software FME Form / Flow, CCTV Inspection Reports (ITV), Automated Ingestion Pipelines.
+- **Geostandards & Regulations**: STAR-Eau, RAEPA, STAR-DT, Cadastre PCI Etalab, Statutory Planning (PLU / SUP), Building Permit Review (ADS).
+- **Development & Cloud Systems**: Python (PyQGIS, Typer, Flask, Pydantic), MCP (Model Context Protocol), JavaScript (Leaflet, OpenLayers), Linux (Ubuntu/Debian), Nginx, Apache, Windows Server, PowerShell, Bash.
+- **Technical Leadership**: Stakeholder training, user support, engineering documentation, cross-functional project management, public contractor supervision.
+
+---
+
+## Education & Degrees
+
+- **Master’s Degree in Urban Planning and Territorial Development**  
+  National School of Architecture and Urbanism (ENAU) | *2018 – 2022*
+- **Master’s Degree in Geomatics Sciences: GIS and Remote Sensing**  
+  Faculty of Mathematical, Physical and Natural Sciences of Tunis | *2019 – 2021*
+- **Bachelor’s Degree in Construction and Urban Planning (Operational Urbanism)**  
   ISTEUB | *2015 – 2018*
-- **Baccalauréat en Sciences Techniques**  
+- **Baccalaureate in Technical Sciences**  
   Lycée Ibn Abi Dhief | *2014 – 2015*
 
 ---
 
-## Langues
+## Languages
 
-- **Français** : Bilingue / Courant
-- **Anglais** : Bilingue / Courant
-- **Arabe** : Langue maternelle
-- **Allemand** : Notions / Intermédiaire
+- **English**: Fluent / Professional Working Proficiency
+- **French**: Bilingual / Native-level
+- **Arabic**: Native Language
+- **German**: Intermediate / Working Knowledge
 
 ---
 
-## Contact & Localisation
+## Contact & Connect
 
-- 📍 **Localisation** : Beauvais (60), France
-- 📧 **Email** : [mohamed.wael.jouini@gmail.com](mailto:mohamed.wael.jouini@gmail.com)
-- 📞 **Téléphone** : [07 44 21 75 74](tel:+33744217574)
-- 💼 **LinkedIn** : [linkedin.com/in/jouinimohamedwael](https://www.linkedin.com/in/jouinimohamedwael)
-- 🗺️ **Extensions & Projets** : [QGIS CAD Suite](https://github.com/mwjouini/qgis-cad-suite) • [OpenGeoData France](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/) • [Portail SPANC en ligne](https://spanc.cc-sablons.com)
-- 📄 **CV complet** : [Télécharger le CV (PDF)](CV_Mohamed_Wael_Jouini.pdf)
+- 📍 **Location**: France
+- 📧 **Email**: [mohamed.wael.jouini@gmail.com](mailto:mohamed.wael.jouini@gmail.com)
+- 💼 **LinkedIn**: [linkedin.com/in/jouinimohamedwael](https://www.linkedin.com/in/jouinimohamedwael)
+- 🐙 **GitHub**: [github.com/mwjouini](https://github.com/mwjouini)
+- 📦 **PyPI**: [pypi.org/project/fme-mcp-ultra](https://pypi.org/project/fme-mcp-ultra/)
+- 🗺️ **Projects & Extensions**: [fme-mcp-ultra](https://github.com/mwjouini/fme-mcp-ultra) • [QGIS CAD Suite](https://github.com/mwjouini/qgis-cad-suite) • [OpenGeoData France](https://plugins.qgis.org/plugins/OpenGeoDataFR/) • [GeoBan France](https://plugins.qgis.org/plugins/geoban_france/) • [SPANC Web Portal](https://spanc.cc-sablons.com)
+- 📄 **Full Resume**: [Download CV (PDF)](CV_Mohamed_Wael_Jouini.pdf)
